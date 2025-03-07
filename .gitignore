@@ -1,0 +1,88 @@
+# Eclipse project files
+.classpath
+.project
+.settings/
+bin/
+
+# Compiled class files
+*.class
+
+# Build directories
+/target/
+/build/
+/out/
+
+# Package files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Gradle
+.gradle/
+build/
+
+# TestNG
+test-output/
+
+# Logs
+*.log
+logs/
+
+# Reports
+extent-reports/
+allure-results/
+allure-report/
+
+# WebDriver binaries
+drivers/
+*.exe
+chromedriver
+geckodriver
+
+# Screenshots and videos
+screenshots/
+videos/
+
+# IDE-specific files
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temp files
+*~
+*.bak
+*.swp
+*.tmp
+
+# Properties files with sensitive information
+*.properties
+!default.properties
+
+# But allow specific property files that don't contain sensitive info
+!log4j.properties
+!extent.properties
+
+# Configuration for different environments - exclude if they contain sensitive info
+# config/
