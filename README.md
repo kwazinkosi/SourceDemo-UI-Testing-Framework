@@ -1,4 +1,4 @@
-# Takealot Online Store POM Framework
+# SourceDemo-UI-Testing-Framework
 
 This is a Selenium-based Page Object Model (POM) framework designed for automated testing of Takealot.com
 
@@ -19,24 +19,18 @@ Follow the steps below to clone and set up the project on your local machine.
 Open your terminal or command prompt and run the following command:
 
 ```sh
-git clone https://git.nagarro.com/GITG00641/Automation-Manual_QA/3213851.git
+git clone https://github.com/kwazinkosi/SourceDemo-UI-Testing-Framework.git
 ```
 ### 2. Navigate to the Project Directory
 Once the repository is cloned, navigate to the project's root directory:
 
 ```sh
-cd TakealotAutomation
+cd SourceDemo
 ```
 ### 3. Open the Command Line
 Ensure you're in the project's root directory, where the pom.xml file is located.
 - Run the following commands.
 
-``` sh 
-mvn install:install-file -Dfile=libs/wait-utils-0.0.1-SNAPSHOT.jar -DgroupId=com.kwazi -DartifactId=wait-utils -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -DgeneratePom=true
-mvn install:install-file -Dfile=libs/file-utils-0.0.1-SNAPSHOT.jar -DgroupId=com.kwazi -DartifactId=file-utils -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -DgeneratePom=true
-mvn install:install-file -Dfile=libs/logs-report-util-0.0.1-SNAPSHOT.jar -DgroupId=com.kwazi -DartifactId=logs-report-util -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -DgeneratePom=true
-
-```
 
 ### 4. Run Tests
 You can run the test suite using Maven by executing the following command:
@@ -58,59 +52,54 @@ mvn test
 
 
 ```plaintext
-TakealotAutomation/
+SourceDemo/
 │
 ├── src/main/java
 │   ├── components
 │   │   ├── BaseComponent.java
-│   │   ├── CartOverlay.java
-│   │   ├── Product.java
-│   │   ├── CartItem.java
-│   │   ├── NavBar.java
-│   │   └── RatingDetails.java
+│   │   ├── MenuComponent.java
+│   │   ├── ProductComponent.java
+│   │   ├── CartComponent.java
+│   │   └── SocialsComponent.java
 │   │
 │   ├── config
 │   │   └── ConfigReader.java
 │   │
 │   ├── interfaces
-│   │   └── ICart.java
+│   │   └── 
 │   │
 │   ├── pages
 │   │   ├── BasePage.java
-│   │   ├── HomePage.java
+│   │   ├── LandingPage.java
 │   │   ├── CartPage.java
-│   │   ├── ProductsPage.java
-│   │   ├── RegistrationPage.java
+│   │   ├── ProductDetailsPage.java
+│   │   ├── CheckoutOverviewPage.java
+│   │   ├── CheckoutCompletePage.java
 │   │   ├── LoginPage.java
 │   │   └── CheckoutPage.java
 │   │
-│   └── utilities
-│       ├── ActionUtil.java
-│       ├── AdOverlayListener.java
-│       ├── DataProviderUtil.java
+│   └── utils
+│       ├── ConfigReader.java
+│       ├── LoggingManager.java
 │       ├── DriverFactory.java
-│       └── TestSetup.java
+│       └── ScreenshotUtil.java
 │
-├── src/main/test/resources
+├── src/main/test/resources/data/
 │   └── testdata.xlsx
 │
 ├── src/test/java
-│   └── tests
+│   └── tests/
 │       ├── BasePageTest.java
-│       ├── HomePageTest.java
+│       ├── LandingPage.java
 │       ├── CartPageTest.java
-│       ├── ProductsPageTest.java
-│       ├── RegistrationPageTest.java
+│       ├── ProductDetailsPageTest.java
+│       ├── CheckoutOverviewPageTest.java
+│       ├── CheckoutCompletePageTest.java
 │       ├── LoginPageTest.java
 │       └── CheckoutPageTest.java
 │
-├── libs
-│   ├── file-utils.jar
-│   ├── logs-report-util.jar
-│   └── wait-utils.jar
-│
-├── logs
-│   └── takealot.log
+├── logs/
+│   └── soucerdemo.log
 │
 ├── reports
 │
@@ -118,7 +107,6 @@ TakealotAutomation/
 │
 ├── config.properties
 │
-├── jenkinsfile
 │
 ├── log4j2.xml
 │
@@ -132,7 +120,7 @@ TakealotAutomation/
 
 ### Configuration
 - **Test Data:** Located in the src/test/resources directory.
-- **Config Files:** Configuration files like config.properties are located in the TakealotAtomation/ directory.
+- **Config Files:** Configuration files like config.properties are located in the SourceDemo/ directory.
 
 ### Logging
 Logging is managed by LoggingManager, which outputs logs to both the console and a file in the logs/ directory.
