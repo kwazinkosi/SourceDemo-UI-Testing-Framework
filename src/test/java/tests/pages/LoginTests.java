@@ -4,13 +4,11 @@ import org.testng.annotations.Test;
 
 
 import org.testng.annotations.BeforeClass;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import pages.LandingPage;
 import pages.LoginPage;
 import tests.base.BaseTest;
 import utils.ConfigReader;
-import utils.DriverFactory;
 import utils.dataproviders.SourceDemoDataProviders;
 import pages.BasePage;
 

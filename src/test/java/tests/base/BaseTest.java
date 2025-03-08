@@ -3,9 +3,6 @@ package tests.base;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
-import components.CartComponent;
-import components.MenuComponent;
 import utils.DriverFactory;
 
 public class BaseTest {

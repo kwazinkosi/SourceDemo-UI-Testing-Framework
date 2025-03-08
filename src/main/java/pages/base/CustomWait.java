@@ -3,9 +3,7 @@ package pages.base;
 import java.time.Duration;
 import java.util.function.Function;
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class CustomWait {

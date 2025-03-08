@@ -4,7 +4,6 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 
 
 public class LoginPage extends BasePage {
@@ -21,8 +20,6 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "login-button")
 	private WebElement loginButton;
 
-	private String errorMessage = "no error message";
-	
 	public LoginPage(WebDriver driver) {
 		super(driver);
 	}
@@ -38,7 +35,8 @@ public class LoginPage extends BasePage {
 	
 	
 	public BasePage login(String username, String password) {
-	    enterUsername(username);
+	    
+		enterUsername(username);
 	    enterPassword(password);
 	    clickElement(loginButton);
 	    

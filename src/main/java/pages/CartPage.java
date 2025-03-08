@@ -1,6 +1,8 @@
 package pages;
 
 import components.ProductComponent;
+import exceptions.ProductNotFoundException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,7 +23,8 @@ public class CartPage extends BasePage {
     private List<ProductComponent> productComponents;
 
     public CartPage(WebDriver driver) {
-        super(driver);
+        
+    	super(driver);
         initializeProductComponents();
     }
 
@@ -32,14 +35,25 @@ public class CartPage extends BasePage {
             .collect(Collectors.toList());
     }
 
+    public ProductComponent getProductByName(String name) {
+
+		return productComponents.stream()
+				.filter(p -> p.getProductName()
+				.equalsIgnoreCase(name))
+				.findFirst()
+				.orElseThrow(() -> new ProductNotFoundException(name));
+	}
+
     public CartPage removeProduct(String productName) {
-        productComponents.stream()
+        
+    	productComponents.stream()
             .filter(p -> p.getProductName().equals(productName))
             .findFirst()
             .ifPresentOrElse(
                 ProductComponent::removeProductFromCart,
                 () -> { throw new RuntimeException("Product not found in cart: " + productName); }
             );
+    	
         return this;
     }
 
@@ -56,21 +70,27 @@ public class CartPage extends BasePage {
     }
 
     public CheckoutPage proceedToCheckout() {
-        clickElement(checkoutButton);
+       
+    	clickElement(checkoutButton);
         return new CheckoutPage(driver);
     }
 
     public LandingPage continueShopping() {
-        clickElement(continueShoppingButton);
+        
+    	clickElement(continueShoppingButton);
         return new LandingPage(driver);
     }
 
-	public CartPage verifyEmptyState() {
-		
-		if(cartItems.isEmpty() || cartItems ==null) {
-			
-		}
-		return null;
+	public boolean containsProduct(String productName) {
+	    
+		return getCartItems()
+				.stream()
+				.anyMatch(p -> p.getProductName()
+				.equals(productName));
 	}
 
+	public boolean isCartEmpty() {
+	    
+		return getCartItemCount() == 0 && isElementDisplayed(cartItems.get(0));
+	}
 }

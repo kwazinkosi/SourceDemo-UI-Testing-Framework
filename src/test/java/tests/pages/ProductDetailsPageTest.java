@@ -13,7 +13,8 @@ public class ProductDetailsPageTest extends BaseTest {
 
     @BeforeMethod
     public void setUpTest() {
-        LandingPage landingPage = new LandingPage(driver);
+        
+    	LandingPage landingPage = new LandingPage(driver);
         landingPage.navigateTo("https://your-app-url.com/inventory.html");
         productDetailsPage = landingPage.viewProductDetails(0);
     }

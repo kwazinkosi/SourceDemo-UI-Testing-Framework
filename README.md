@@ -29,7 +29,6 @@ cd SourceDemo
 ```
 ### 3. Open the Command Line
 Ensure you're in the project's root directory, where the pom.xml file is located.
-- Run the following commands.
 
 
 ### 4. Run Tests

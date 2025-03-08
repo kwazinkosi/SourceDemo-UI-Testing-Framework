@@ -2,6 +2,7 @@ package utils.dataproviders;
 
 import utils.dataproviders.factory.DataProviderFactory;
 import utils.dataproviders.interfaces.TestDataProvider;
+import utils.dataproviders.models.CheckoutTestData;
 import utils.dataproviders.models.LoginTestData;
 import utils.dataproviders.models.MenuItemsTestData;
 import exceptions.DataProviderException;
@@ -44,6 +45,26 @@ public class SourceDemoDataProviders {
             );
 
             List<MenuItemsTestData> testData = provider.getTestData(TEST_DATA_FILE, "Following");
+            
+            return testData.stream()
+                .map(data -> new Object[]{data})
+                .toArray(Object[][]::new);
+            
+        } catch (Exception e) {
+            throw new DataProviderException("Failed to load activity test data", e);
+        }
+    }
+    
+    @DataProvider(name = "CheckoutData")
+    public static Object[][] getCheckoutData() {
+        
+    	try {
+            TestDataProvider<CheckoutTestData> provider = DataProviderFactory.createProvider(
+            		CheckoutTestData.class, 
+                DATA_FORMAT
+            );
+
+            List<CheckoutTestData> testData = provider.getTestData(TEST_DATA_FILE, "Following");
             
             return testData.stream()
                 .map(data -> new Object[]{data})

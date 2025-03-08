@@ -40,7 +40,8 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage enterShippingInformation(String firstName, String lastName, String postalCode) {
-        enterFirstName(firstName)
+        
+    	enterFirstName(firstName)
             .enterLastName(lastName)
             .enterPostalCode(postalCode);
         return this;
@@ -52,22 +53,26 @@ public class CheckoutPage extends BasePage {
     }
 
     public CheckoutPage enterLastName(String lastName) {
-        sendKeys(lastNameInput, lastName);
+        
+    	sendKeys(lastNameInput, lastName);
         return this;
     }
 
     public CheckoutPage enterPostalCode(String postalCode) {
-        sendKeys(postalCodeInput, postalCode);
+        
+    	sendKeys(postalCodeInput, postalCode);
         return this;
     }
 
     public CheckoutOverviewPage continueToOverview() {
-        clickElement(continueButton);
+        
+    	clickElement(continueButton);
         return new CheckoutOverviewPage(driver);
     }
 
     public CartPage cancelCheckout() {
-        clickElement(cancelButton);
+        
+    	clickElement(cancelButton);
         return new CartPage(driver);
     }
 

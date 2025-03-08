@@ -3,15 +3,14 @@ package utils.dataproviders.concrete;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
-
 import utils.dataproviders.interfaces.SheetConfig;
-import utils.dataproviders.models.SocialsTestData;
+import utils.dataproviders.models.CheckoutTestData;
 
-public class SocialsSheetConfig implements SheetConfig<SocialsTestData> {
+public class CheckoutSheetConfig implements SheetConfig<CheckoutTestData> {
 
 	private enum Columns {
 
-		TEST_CASE_ID(0), SOCIAL_MEDIA_NAME(1), EXPECTED_TITLE(3);
+		TEST_CASE_ID(0), FIRST_NAME(1), LAST_NAME(2), ZIP_CODE(3), EXPECTED_RESULTS(4);
 
 		final int index;
 
@@ -26,15 +25,15 @@ public class SocialsSheetConfig implements SheetConfig<SocialsTestData> {
 	}
 
 	@Override
-	public SocialsTestData mapRow(Row row) {
-		
-		return new SocialsTestData().setTestCaseId(getString(row, Columns.TEST_CASE_ID))
-				.setSocialMediaName(getString(row, Columns.SOCIAL_MEDIA_NAME))
-				.setExpectedTitle(getString(row, Columns.EXPECTED_TITLE));
+	public CheckoutTestData mapRow(Row row) {
+		return new CheckoutTestData().setTestCaseId(getString(row, Columns.TEST_CASE_ID))
+				.setFirstName(getString(row, Columns.FIRST_NAME))
+				.setLastName(getString(row, Columns.LAST_NAME))
+				.setZipCode(getString(row, Columns.ZIP_CODE))
+				.setExpectedResult(getString(row, Columns.EXPECTED_RESULTS));
 	}
 
 	private String getString(Row row, Columns column) {
-		
 		Cell cell = row.getCell(column.index);
 		if (cell == null)
 			return "";
@@ -44,8 +43,9 @@ public class SocialsSheetConfig implements SheetConfig<SocialsTestData> {
 	}
 
 	@Override
-	public void validateRequiredFields(SocialsTestData data, int rowNumber) {
+	public void validateRequiredFields(CheckoutTestData data, int rowNumber) {
 		// TODO Auto-generated method stub
 
 	}
+
 }

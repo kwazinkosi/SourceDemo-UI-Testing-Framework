@@ -51,7 +51,7 @@ public class LandingPage extends BasePage {
 
 	// Core Page Actions
 	public LandingPage selectSortOption(SortOption option) {
-		
+
 		executeWithLogging(sortDropdown, "Select sort option", () -> {
 			new Select(sortDropdown).selectByValue(option.getValue());
 			waitForElementStale(productContainers.get(0));
@@ -71,10 +71,9 @@ public class LandingPage extends BasePage {
 
 		return this;
 	}
-	
 
 	public boolean verifyProductSortingByName(SortOption option) {
-		
+
 		List<String> names = products.stream().map(ProductComponent::getProductName).collect(Collectors.toList());
 
 		List<String> sortedNames = new ArrayList<>(names);
@@ -90,74 +89,92 @@ public class LandingPage extends BasePage {
 	}
 
 	public boolean verifyProductSortingByPrice(SortOption option) {
-	    // Refresh product list to ensure we're checking the latest elements
-	    refreshProductList();
+		// Refresh product list to ensure we're checking the latest elements
+		refreshProductList();
 
-	    List<Double> prices = products.stream()
-	        .map(ProductComponent::getProductPrice)
-	        .map(price -> Double.parseDouble(price.replace("$", "")))
-	        .collect(Collectors.toList());
+		List<Double> prices = products.stream().map(ProductComponent::getProductPrice)
+				.map(price -> Double.parseDouble(price.replace("$", ""))).collect(Collectors.toList());
 
-	    // Create a sorted version of the prices based on the selected sorting option
-	    List<Double> sortedPrices = new ArrayList<>(prices);
-	    sortedPrices.sort(getPriceComparator(option));
+		// Create a sorted version of the prices based on the selected sorting option
+		List<Double> sortedPrices = new ArrayList<>(prices);
+		sortedPrices.sort(getPriceComparator(option));
 
-	    return prices.equals(sortedPrices);
+		return prices.equals(sortedPrices);
 	}
 
 	public LandingPage addItemToCart(int index) {
-		
+
 		validateIndexBoundaries(index);
 		products.get(index).addProductToCart();
 		verifyCartCountChange(1);
 		return this;
 	}
-	
+
 	public LandingPage removeItemFromCart(int index) {
-		
+
 		validateIndexBoundaries(index);
 		products.get(index).removeProductFromCart();
 		verifyCartCountChange(1);
 		return this;
 	}
 
+	public LandingPage addItemToCart(String name) {
+
+		products.stream()
+				.filter(p -> p.getProductName()
+				.equalsIgnoreCase(name))
+				.findFirst()
+				.ifPresent(p -> p.addProductToCart());
+
+		return this;
+	}
+
+	public LandingPage removeItemFromCart(String name) {
+
+		products.stream()
+				.filter(p -> p.getProductName()
+				.equalsIgnoreCase(name))
+				.findFirst()
+				.ifPresent(p -> p.removeProductFromCart());
+
+		return this;
+	}
+
 	public ProductDetailsPage viewProductDetails(int index) {
-		
+
 		validateIndexBoundaries(index);
 		clickElement(productContainers.get(index));
 		return products.get(index).viewDetails();
 	}
 
-	// Product access methods
 	public ProductComponent getProductByIndex(int index) {
-		
+
 		validateIndexBoundaries(index);
 		return products.get(index);
 	}
 
 	public ProductComponent getProductByName(String name) {
-		
+
 		return products.stream().filter(p -> p.getProductName().equalsIgnoreCase(name)).findFirst()
 				.orElseThrow(() -> new ProductNotFoundException(name));
 	}
 
 	public ProductComponent getProductByExactPrice(double price) {
-		
+
 		String formattedPrice = String.format("$%.2f", price);
 		return products.stream().filter(p -> p.getProductPrice().equals(formattedPrice)).findFirst()
 				.orElseThrow(() -> new ProductNotFoundException("Price: " + price));
 	}
 
-	
 	private Comparator<Double> getPriceComparator(SortOption option) {
-		 
+
 		if (option == SortOption.PRICE_HIGH_LOW) {
-		        return Comparator.reverseOrder();
-		    } else if (option == SortOption.PRICE_LOW_HIGH) {
-		        return Comparator.naturalOrder();
-		    }
-		    throw new UnsupportedOperationException("Sorting by name should be handled differently.");
+			return Comparator.reverseOrder();
+		} else if (option == SortOption.PRICE_LOW_HIGH) {
+			return Comparator.naturalOrder();
 		}
+		throw new UnsupportedOperationException("Sorting by name should be handled differently.");
+	}
 
 	private void validateIndexBoundaries(int index) {
 		if (index < 0 || index >= products.size()) {
