@@ -1,6 +1,6 @@
 # SourceDemo-UI-Testing-Framework
 
-This is a Selenium-based Page Object Model (POM) framework designed for automated testing of Takealot.com
+This is a Selenium-based Page Object Model (POM) framework designed for automated testing of sourcedemo.com
 
 ## Prerequisites
 
