@@ -1,8 +1,10 @@
 package components;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import constants.WaitTime;
@@ -23,6 +25,7 @@ public class CartComponent {
     public CartComponent(WebDriver driver) {
         this.driver = driver;
         this.customWait = new CustomWait(driver);
+        PageFactory.initElements(driver, this); // Add this line
     }
 
     public CartPage navigateToCart() {
@@ -35,8 +38,13 @@ public class CartComponent {
     
     public int getCurrentCartCount() {
     	
-    	int qty = Integer.parseInt(cartBadge.getText());
-    	return qty;
+    	try{
+    		return Integer.parseInt(cartBadge.getText());
+    	}
+    	catch(NoSuchElementException e) {
+    		
+    	}
+    	return 0;
     }
 
 	public boolean isBadgeDisplayed() {

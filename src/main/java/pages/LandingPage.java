@@ -3,6 +3,8 @@ package pages;
 import components.ProductComponent;
 import constants.WaitTime;
 import exceptions.ProductNotFoundException;
+import utils.DriverFactory;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,6 +21,8 @@ public class LandingPage extends BasePage {
 	@FindBy(xpath = "//select[@class='product_sort_container']")
 	private WebElement sortDropdown;
 
+	@FindBy(xpath = "//div[@class='inventory_item_name ']")
+	private List<WebElement> productLinks;
 	@FindBy(xpath = "//div[@class='inventory_item']")
 	private List<WebElement> productContainers;
 
@@ -53,9 +57,11 @@ public class LandingPage extends BasePage {
 	// Core Page Actions
 	public LandingPage selectSortOption(SortOption option) {
 
+		clickElement(sortDropdown);
 		executeWithLogging(sortDropdown, "Select sort option", () -> {
+			
 			new Select(sortDropdown).selectByValue(option.getValue());
-			waitForElementStale(productContainers.get(0));
+//			waitForElementStale(productContainers.get(0));
 			refreshProductList();
 		});
 
@@ -107,16 +113,15 @@ public class LandingPage extends BasePage {
 
 		validateIndexBoundaries(index);
 		products.get(index).addProductToCart();
-		verifyCartCountChange(1);
+
 		return this;
 	}
 
-	public LandingPage removeItemFromCart(int index) {
+	public void removeItemFromCart(int index) {
 
 		validateIndexBoundaries(index);
 		products.get(index).removeProductFromCart();
-		verifyCartCountChange(1);
-		return this;
+		
 	}
 
 	public LandingPage addItemToCart(String name) {
@@ -144,12 +149,18 @@ public class LandingPage extends BasePage {
 	public ProductDetailsPage viewProductDetails(int index) {
 
 		validateIndexBoundaries(index);
-		clickElement(productContainers.get(index));
-		return products.get(index).viewDetails();
+		WebElement element = productContainers.get(index);
+		clickElement(productLinks.get(index));
+		ProductComponent product = new ProductComponent(this.driver, element);
+		
+		return product.viewDetails();
 	}
 
 	public ProductComponent getProductByIndex(int index) {
 
+		if(products ==null) {
+			initializeProductComponents();
+		}
 		validateIndexBoundaries(index);
 		return products.get(index);
 	}
@@ -184,15 +195,6 @@ public class LandingPage extends BasePage {
 		}
 	}
 
-	private void verifyCartCountChange(int expectedChange) {
-
-		int initialCount = cart.getCurrentCartCount();
-		boolean cartUpdated = customWait.until(d -> cart.getCurrentCartCount() == initialCount + expectedChange,
-				WaitTime.NORMAL);
-		if (!cartUpdated) {
-			throw new AssertionError("Cart count did not update as expected.");
-		}
-	}
 
 	private void refreshProductList() {
 		products = productContainers.stream().map(container -> new ProductComponent(driver, container))

@@ -5,6 +5,7 @@ import utils.dataproviders.interfaces.TestDataProvider;
 import utils.dataproviders.models.CheckoutTestData;
 import utils.dataproviders.models.LoginTestData;
 import utils.dataproviders.models.MenuItemsTestData;
+import utils.dataproviders.models.SocialsTestData;
 import exceptions.DataProviderException;
 import org.testng.annotations.DataProvider;
 import java.util.List;
@@ -35,7 +36,7 @@ public class SourceDemoDataProviders {
         }
     }
     
-    @DataProvider(name = "MenuItemsData")
+    @DataProvider(name = "menuItemsData")
     public static Object[][] getMenuItemData() {
         
     	try {
@@ -44,18 +45,38 @@ public class SourceDemoDataProviders {
                 DATA_FORMAT
             );
 
-            List<MenuItemsTestData> testData = provider.getTestData(TEST_DATA_FILE, "Following");
+            List<MenuItemsTestData> testData = provider.getTestData(TEST_DATA_FILE, "MenuItemsData");
             
             return testData.stream()
                 .map(data -> new Object[]{data})
                 .toArray(Object[][]::new);
             
         } catch (Exception e) {
-            throw new DataProviderException("Failed to load activity test data", e);
+            throw new DataProviderException("Failed to load menuItem test data", e);
         }
     }
     
-    @DataProvider(name = "CheckoutData")
+    @DataProvider(name = "socialsData")
+    public static Object[][] getSocialsData() {
+        
+    	try {
+            TestDataProvider<SocialsTestData> provider = DataProviderFactory.createProvider(
+            		SocialsTestData.class, 
+                DATA_FORMAT
+            );
+
+            List<SocialsTestData> testData = provider.getTestData(TEST_DATA_FILE, "SocialsData");
+            
+            return testData.stream()
+                .map(data -> new Object[]{data})
+                .toArray(Object[][]::new);
+            
+        } catch (Exception e) {
+            throw new DataProviderException("Failed to load socials test data", e);
+        }
+    }
+    
+    @DataProvider(name = "checkoutData")
     public static Object[][] getCheckoutData() {
         
     	try {
@@ -64,14 +85,14 @@ public class SourceDemoDataProviders {
                 DATA_FORMAT
             );
 
-            List<CheckoutTestData> testData = provider.getTestData(TEST_DATA_FILE, "Following");
+            List<CheckoutTestData> testData = provider.getTestData(TEST_DATA_FILE, "CheckoutData");
             
             return testData.stream()
                 .map(data -> new Object[]{data})
                 .toArray(Object[][]::new);
             
         } catch (Exception e) {
-            throw new DataProviderException("Failed to load activity test data", e);
+            throw new DataProviderException("Failed to load checkout test data", e);
         }
     }
 }

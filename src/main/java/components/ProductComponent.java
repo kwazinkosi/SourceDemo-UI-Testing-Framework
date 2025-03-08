@@ -10,6 +10,7 @@ import constants.WaitTime;
 import pages.BasePage;
 import pages.ProductDetailsPage;
 import pages.base.CustomWait;
+import utils.DriverFactory;
 
 public class ProductComponent extends BasePage {
 
@@ -51,6 +52,7 @@ public class ProductComponent extends BasePage {
 	public void removeProductFromCart() {
 
 		try {
+			customWait.until(ExpectedConditions.elementToBeClickable(removeProductBtn), WaitTime.NORMAL);
 			removeProductBtn.click();
 		} catch (Exception e) {
 			System.out.println("Exception occured whilst removing product cart.");
@@ -96,8 +98,7 @@ public class ProductComponent extends BasePage {
 	public ProductDetailsPage viewDetails() {
 
 		try {
-			imageLink.click();
-			return new ProductDetailsPage(driver);
+			return new ProductDetailsPage(DriverFactory.getDriver());
 		} catch (Exception e) {
 			System.out.println("Exception occured: " + e.getMessage());
 		}

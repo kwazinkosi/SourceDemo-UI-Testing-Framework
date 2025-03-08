@@ -4,24 +4,18 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.PageFactory;
 
-import constants.WaitTime;
-import pages.base.CustomWait;
 
 import java.util.List;
 
 public class SocialsComponent {
 	
-    private final WebDriver driver;
-    private final CustomWait customWait;
-
     @FindBy(xpath = "//ul[@class='social']//a")
     private List<WebElement> socialLinks;
 
     public SocialsComponent(WebDriver driver) {
-        this.driver = driver;
-        this.customWait = new CustomWait(driver);
+        PageFactory.initElements(driver, this);
     }
 
     

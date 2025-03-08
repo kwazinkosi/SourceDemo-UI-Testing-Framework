@@ -24,6 +24,7 @@ public class ProductDetailsPage extends BasePage {
     public ProductDetailsPage(WebDriver driver) {
         super(driver);
         this.productComponent = new ProductComponent(driver, productDetailsContainer);
+        
     }
 
     public LandingPage navigateBackToProducts() {

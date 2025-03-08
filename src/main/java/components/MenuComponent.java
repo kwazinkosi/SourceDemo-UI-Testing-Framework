@@ -4,10 +4,10 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import constants.WaitTime;
-import pages.BasePage;
 import pages.base.CustomWait;
 
 
@@ -23,12 +23,11 @@ public class MenuComponent {
 
     private final CustomWait customWait;
 
-    private WebDriver driver;
     
     public MenuComponent(WebDriver driver) {
         
-    	this.driver = driver;
         this.customWait = new CustomWait(driver);
+        PageFactory.initElements(driver, this); 
     }
 
     public MenuComponent openMenu() {
@@ -62,7 +61,13 @@ public class MenuComponent {
     }
     
 	public boolean isDisplayed() {
-		return menuButton.isDisplayed();
+		try {
+			return menuButton.isDisplayed();
+		}
+		catch(Exception e) {
+			System.out.println("Exception: "+e.getMessage());
+		}
+		return false;
 	}
 
 	public void resetAppState() {
