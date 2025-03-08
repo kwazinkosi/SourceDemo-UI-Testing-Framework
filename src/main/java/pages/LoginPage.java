@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
 
+	
 	@FindBy(id = "user-name")
 	private WebElement usernameField;
 
@@ -17,9 +18,10 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "//h3[@data-test ='error']")
 	private WebElement error;
 
-	@FindBy(xpath = "login-button")
+	@FindBy(id = "login-button")
 	private WebElement loginButton;
 
+	public static final String PAGE_URL ="https://www.saucedemo.com/";
 	public LoginPage(WebDriver driver) {
 		super(driver);
 	}
@@ -40,7 +42,7 @@ public class LoginPage extends BasePage {
 	    enterPassword(password);
 	    clickElement(loginButton);
 	    
-	    if (isElementDisplayed(error)) {
+	    if (driver.getCurrentUrl().equals(PAGE_URL)) {
 	        return this; // Return LoginPage instance on error
 	    }
 	    return new LandingPage(driver); // Return LandingPage on success

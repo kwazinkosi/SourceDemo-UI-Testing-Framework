@@ -59,7 +59,7 @@ public class BasePage {
     	executeWithLogging(element, "click", () -> {
             customWait.until(ExpectedConditions.elementToBeClickable(element), WaitTime.NORMAL);
             element.click();
-            checkForAlerts();
+//            checkForAlerts();
         });
     }
 
@@ -76,12 +76,13 @@ public class BasePage {
     private void checkForAlerts() {
         
     	try {
-            Alert alert = customWait.until(ExpectedConditions.alertIsPresent(), WaitTime.NORMAL);
+            Alert alert = customWait.until(ExpectedConditions.alertIsPresent(), WaitTime.FASTER);
             String alertText = alert.getText();
             LoggingManager.info("Alert detected: " + alertText);
             alert.accept();
         } catch (TimeoutException e) {
             // No alert present
+        	System.out.println("TimeoutException: No alert found.");
         }
     }
 
@@ -121,7 +122,7 @@ public class BasePage {
         
     	return customWait.until(d -> !d.getTitle().isEmpty() && 
             !d.getTitle().contains("Error"), 
-            WaitTime.NORMAL
+            WaitTime.FAST
         );
     }
 

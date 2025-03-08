@@ -2,50 +2,59 @@ package tests.pages;
 
 import org.testng.annotations.Test;
 
-
 import org.testng.annotations.BeforeClass;
 import org.testng.Assert;
 import pages.LandingPage;
 import pages.LoginPage;
 import tests.base.BaseTest;
 import utils.ConfigReader;
+import utils.LoggingManager;
 import utils.dataproviders.SourceDemoDataProviders;
+import utils.dataproviders.models.LoginTestData;
 import pages.BasePage;
 
 public class LoginTests extends BaseTest {
 
 	private String urlToLandingPage;
-	//Driver is init in BaseTest
-	
+	// Driver is init in BaseTest
+
 	@BeforeClass
 	public void setUp() {
-		urlToLandingPage =ConfigReader.getProperty("base_url");
+		urlToLandingPage = ConfigReader.getProperty("base_url");
 	}
-	
-    
-    @Test(priority =0, dataProvider = "loginData", dataProviderClass = SourceDemoDataProviders.class)
-    public void testLoginFunctionality(String username, String password, String message, String expectedResult) {
-        
-    	LoginPage loginPage = new LoginPage(driver);
-        
-        // Navigate to login page
-        loginPage.navigateTo(urlToLandingPage);
-        Assert.assertTrue(loginPage.isPageDisplayed(), "Login page not displayed");
 
-        // Perform login
-        BasePage resultPage = loginPage.login(username, password);
+	@Test(priority = 0, dataProvider = "loginData", dataProviderClass = SourceDemoDataProviders.class)
+	public void testLoginFunctionality(LoginTestData data) {
 
-        if ("success".equals(expectedResult)) {
-            // Verify successful login
-            Assert.assertTrue(resultPage instanceof LandingPage, "Not redirected to landing page");
-            LandingPage landingPage = (LandingPage) resultPage;
-            Assert.assertTrue(landingPage.isPageDisplayed(), "Landing page not displayed after login");
-        } else {
-            // Verify error state
-            Assert.assertTrue(resultPage instanceof LoginPage, "Unexpected page after failed login");
-            Assert.assertEquals(loginPage.getErrorMessage(), message);
-        }
-    }
-    
- 
+		String username = data.getUsername();
+		String password = data.getPassword();
+		String expectedResult = data.getExpectedResult();
+		String message = data.getMessage();
+		String TCID = data.getTestCaseId();
+		LoginPage loginPage = new LoginPage(driver);
+
+		// Navigate to login page
+		loginPage.navigateTo(urlToLandingPage);
+		Assert.assertTrue(loginPage.isPageDisplayed(), "Login page not displayed");
+
+		// Perform login
+		BasePage resultPage = loginPage.login(username, password);
+
+		if ("success".equals(expectedResult)) {
+			// Verify successful login
+			Assert.assertTrue(resultPage instanceof LandingPage, "Not redirected to landing page");
+			LandingPage landingPage = (LandingPage) resultPage;
+			Assert.assertTrue(landingPage.isPageDisplayed(), "Landing page not displayed after login");
+			LoggingManager.info(TCID + " in LoginTests PASSED!");
+			System.out.println(TCID + " in LoginTests PASSED!");
+
+		} else {
+			// Verify error state
+			Assert.assertTrue(resultPage instanceof LoginPage, "Unexpected page after failed login");
+			Assert.assertEquals(loginPage.getErrorMessage(), message);
+			LoggingManager.info(TCID + " in LoginTests PASSED!");
+			System.out.println(TCID + " in LoginTests PASSED!");
+		}
+	}
+
 }

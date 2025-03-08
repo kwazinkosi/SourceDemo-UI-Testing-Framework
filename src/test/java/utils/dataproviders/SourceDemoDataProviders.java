@@ -11,7 +11,7 @@ import java.util.List;
 public class SourceDemoDataProviders {
 
     // Configuration constants
-    private static final String TEST_DATA_FILE = "/testdata/test-data.xlsx";
+    private static final String TEST_DATA_FILE = "/data/test-data.xlsx";
     private static final String DATA_FORMAT = "excel";
     
 

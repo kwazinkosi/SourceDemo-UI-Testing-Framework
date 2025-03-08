@@ -4,6 +4,7 @@ import java.util.Set;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -15,13 +16,15 @@ import pages.LandingPage;
 import pages.LandingPage.SortOption;
 import pages.ProductDetailsPage;
 import tests.base.BaseTest;
+import utils.ConfigReader;
 import utils.dataproviders.SortDataProvider;
 import utils.dataproviders.SourceDemoDataProviders;
 
 public class LandingPageTest extends BaseTest {
 
 	private LandingPage landingPage;
-	private static final String LANDING_PAGE_URL = "https://your-app-url.com/inventory.html";
+	private static final String LANDING_PAGE_URL = ConfigReader.getProperty("base_url");
+
 
 	@BeforeMethod
 	public void setUpTest() {

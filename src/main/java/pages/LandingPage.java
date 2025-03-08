@@ -25,6 +25,7 @@ public class LandingPage extends BasePage {
 	// Product components
 	private List<ProductComponent> products;
 
+	public static final String COMPLETION_URL_FRAGMENT ="inventory.html";
 	public enum SortOption {
 		PRICE_LOW_HIGH("lohi"), PRICE_HIGH_LOW("hilo"), A_TO_Z("az"), Z_TO_A("za");
 
@@ -197,5 +198,14 @@ public class LandingPage extends BasePage {
 		products = productContainers.stream().map(container -> new ProductComponent(driver, container))
 				.collect(Collectors.toList());
 	}
+	@Override
+	public boolean isPageDisplayed() {
+        return customWait.until(d -> 
+            d.getCurrentUrl().contains(COMPLETION_URL_FRAGMENT) && 
+            isElementDisplayed(sortDropdown), 
+            WaitTime.NORMAL
+        );
+    }
+	
 
 }

@@ -3,6 +3,7 @@ package utils.dataproviders.factory;
 import utils.dataproviders.interfaces.SheetConfig;
 import utils.dataproviders.interfaces.TestDataModel;
 import utils.dataproviders.interfaces.TestDataProvider;
+import utils.dataproviders.models.CheckoutTestData;
 import utils.dataproviders.models.LoginTestData;
 import utils.dataproviders.models.MenuItemsTestData;
 import utils.dataproviders.models.SocialsTestData;
@@ -10,6 +11,7 @@ import utils.dataproviders.models.SocialsTestData;
 import java.util.Map;
 
 import utils.dataproviders.GenericExcelDataProvider;
+import utils.dataproviders.concrete.CheckoutSheetConfig;
 import utils.dataproviders.concrete.LoginSheetConfig;
 import utils.dataproviders.concrete.MenuItemsSheetConfig;
 import utils.dataproviders.concrete.SocialsSheetConfig;
@@ -21,7 +23,8 @@ public class DataProviderFactory {
     		
         LoginTestData.class, new LoginSheetConfig(),
         MenuItemsTestData.class, new MenuItemsSheetConfig(),
-        SocialsTestData.class, new SocialsSheetConfig()
+        SocialsTestData.class, new SocialsSheetConfig(),
+        CheckoutTestData.class, new CheckoutSheetConfig()
     );
 
     @SuppressWarnings("unchecked")
