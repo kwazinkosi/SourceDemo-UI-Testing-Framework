@@ -6,20 +6,20 @@ import org.testng.annotations.Test;
 import pages.LandingPage;
 import pages.ProductDetailsPage;
 import tests.base.BaseTest;
+import utils.LoggingManager;
 
 public class ProductDetailsPageTest extends BaseTest {
 
+	
     private ProductDetailsPage productDetailsPage;
 
     @BeforeMethod
     public void setUpTest() {
         
-    	LandingPage landingPage = new LandingPage(driver);
-        landingPage.navigateTo("https://your-app-url.com/inventory.html");
         productDetailsPage = landingPage.viewProductDetails(0);
     }
 
-    @Test
+    @Test(priority = 0)
     public void testProductDetailsDisplayed() {
     	
         Assert.assertTrue(productDetailsPage.isPageDisplayed(), "Product details page not displayed");
@@ -27,9 +27,12 @@ public class ProductDetailsPageTest extends BaseTest {
         Assert.assertFalse(productDetailsPage.getProductName().isEmpty(), "Product name is empty");
         Assert.assertFalse(productDetailsPage.getProductDescription().isEmpty(), "Product description is empty");
         Assert.assertFalse(productDetailsPage.getProductPrice().isEmpty(), "Product price is empty");
+
+		LoggingManager.info("ProductPageTests::testProductDetailsDisplayed PASSED!");
+		System.out.println("ProductPageTests::testProductDetailsDisplayed PASSED!");
     }
 
-    @Test
+    @Test(priority = 1)
     public void testAddRemoveItemFromCart() {
     	
         productDetailsPage.addItemToCart();
@@ -37,11 +40,17 @@ public class ProductDetailsPageTest extends BaseTest {
 
         productDetailsPage.removeItemFromCart();
         Assert.assertTrue(productDetailsPage.isAddToCartVisible(), "Add to cart button not visible after removal");
+        LoggingManager.info("ProductPageTests::testAddRemoveItemFromCart PASSED!");
+		System.out.println("ProductPageTests::testAddRemoveItemFromCart PASSED!");
     }
 
-    @Test
+    @Test(priority = 2)
     public void testNavigateBackToProducts() {
+    	
         LandingPage landingPage = productDetailsPage.navigateBackToProducts();
         Assert.assertTrue(landingPage.isPageDisplayed(), "Did not return to landing page");
+        LoggingManager.info("ProductPageTests::testNavigateBackToProducts PASSED!");
+		System.out.println("ProductPageTests::testNavigateBackToProducts PASSED!");
+        
     }
 }

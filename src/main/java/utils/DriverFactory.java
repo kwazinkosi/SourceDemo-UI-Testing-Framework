@@ -71,7 +71,8 @@ public class DriverFactory {
         
     	ChromeOptions options = new ChromeOptions();
         if (HEADLESS_MODE.equals(browserMode)) {
-            options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
+            options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors", "--disable-features=PasswordChangeNotification",
+            	    "--disable-component-update");
         }
         options.addArguments("--no-sandbox", "--disable-dev-shm-usage", "--disable-notifications");
         options.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.IGNORE); // Handle alerts

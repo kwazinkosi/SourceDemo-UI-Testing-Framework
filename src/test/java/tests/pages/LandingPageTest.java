@@ -4,7 +4,6 @@ import java.util.Set;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -12,12 +11,9 @@ import components.CartComponent;
 import components.MenuComponent;
 import components.ProductComponent;
 import components.SocialsComponent;
-import pages.LandingPage;
 import pages.LandingPage.SortOption;
-import pages.LoginPage;
 import pages.ProductDetailsPage;
 import tests.base.BaseTest;
-import utils.ConfigReader;
 import utils.LoggingManager;
 import utils.dataproviders.SortDataProvider;
 import utils.dataproviders.SourceDemoDataProviders;
@@ -26,22 +22,6 @@ import utils.dataproviders.models.SocialsTestData;
 
 public class LandingPageTest extends BaseTest {
 
-	private LandingPage landingPage;
-	private LoginPage loginPage;
-	private static final String validUsername = ConfigReader.getProperty("valid_login_username");
-	private static final String validPassword = ConfigReader.getProperty("valid_login_password");
-	private static final String LANDING_PAGE_URL = ConfigReader.getProperty("base_url");
-
-	
-	@BeforeMethod
-	public void setUpTest() {
-		loginPage = new LoginPage(driver);
-		loginPage.navigateTo(LANDING_PAGE_URL);
-		
-
-		landingPage = (LandingPage) loginPage.login(validUsername, validPassword);
-		landingPage.waitForPageLoad();
-	}
 
 	@AfterMethod
 	public void cleanUp() {

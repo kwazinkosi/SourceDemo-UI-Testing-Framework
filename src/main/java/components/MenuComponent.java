@@ -1,5 +1,6 @@
 package components;
 
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +13,7 @@ import pages.base.CustomWait;
 
 
 public class MenuComponent {
-    @FindBy(xpath = "//button[@id='react-burger-menu-btn']")
+    @FindBy(xpath = "//div[@class='bm-burger-button']")
     private WebElement menuButton;
     
     @FindBy(xpath = "//a[@class='bm-item menu-item']")
@@ -32,7 +33,12 @@ public class MenuComponent {
 
     public MenuComponent openMenu() {
         customWait.until(ExpectedConditions.elementToBeClickable(menuButton), WaitTime.NORMAL);
-        menuButton.click();
+        try{
+        	menuButton.click();
+        }
+        catch(ElementClickInterceptedException e) {
+        	System.out.println("EXception: click intercepted");
+        }
         return this;
     }
 
@@ -41,6 +47,7 @@ public class MenuComponent {
     	if(!closeMenuButton.isDisplayed())
     		openMenu();
         
+    	customWait.until(ExpectedConditions.elementToBeClickable(menuItems.get(0)), WaitTime.NORMAL);
         // Find matching menu item
         WebElement targetItem = menuItems.stream()
             .filter(item -> item.getText().equalsIgnoreCase(menuItemText))

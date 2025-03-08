@@ -2,12 +2,11 @@ package tests.pages;
 
 import org.testng.annotations.Test;
 
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
 import pages.LandingPage;
 import pages.LoginPage;
 import tests.base.BaseTest;
-import utils.ConfigReader;
 import utils.LoggingManager;
 import utils.dataproviders.SourceDemoDataProviders;
 import utils.dataproviders.models.LoginTestData;
@@ -15,14 +14,17 @@ import pages.BasePage;
 
 public class LoginTests extends BaseTest {
 
-	private String urlToLandingPage;
-	// Driver is init in BaseTest
+	
 
-	@BeforeClass
-	public void setUp() {
-		urlToLandingPage = ConfigReader.getProperty("base_url");
-	}
-
+	@BeforeMethod
+    @Override
+    public void setup() {
+        driver = driverFactory.initDriver(browserName, browserMode);
+        loginPage = new LoginPage(driver);
+        loginPage.navigateTo(LOGIN_PAGE_URL);
+       
+    }
+	
 	@Test(priority = 0, dataProvider = "loginData", dataProviderClass = SourceDemoDataProviders.class)
 	public void testLoginFunctionality(LoginTestData data) {
 
@@ -34,7 +36,7 @@ public class LoginTests extends BaseTest {
 		LoginPage loginPage = new LoginPage(driver);
 
 		// Navigate to login page
-		loginPage.navigateTo(urlToLandingPage);
+		loginPage.navigateTo(LOGIN_PAGE_URL);
 		Assert.assertTrue(loginPage.isPageDisplayed(), "Login page not displayed");
 
 		// Perform login
