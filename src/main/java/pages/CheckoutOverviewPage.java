@@ -4,14 +4,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import constants.WaitTime;
 
 import java.text.NumberFormat;
 import java.text.ParseException;
+import java.util.List;
 import java.util.Locale;
 
 public class CheckoutOverviewPage extends BasePage {
 
+	@FindBy(xpath = "//div[@class='cart_item']")
+	private List<WebElement>products;
+	
     @FindBy(xpath = "//div[@data-test='payment-info-value']")
     private WebElement paymentInformation;
     
@@ -35,15 +38,6 @@ public class CheckoutOverviewPage extends BasePage {
 
     public CheckoutOverviewPage(WebDriver driver) {
         super(driver);
-    }
-
-    @Override
-    public boolean isPageDisplayed() {
-        return customWait.until(d -> 
-            d.getCurrentUrl().contains("checkout-step-two.html") && 
-            isElementDisplayed(finishButton),
-            WaitTime.NORMAL
-        );
     }
 
     public String getPaymentInformation() {
@@ -78,6 +72,10 @@ public class CheckoutOverviewPage extends BasePage {
 
     public boolean verifyTotalCalculation() {
         return Math.abs((getSubtotal() + getTax()) - getTotal()) < 0.01;
+    }
+    
+    public int getCartItemCount() {
+        return products.size();
     }
 
     private double parseCurrency(String valueText) {
