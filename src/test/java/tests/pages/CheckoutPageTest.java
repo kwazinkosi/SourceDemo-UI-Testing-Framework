@@ -14,8 +14,8 @@ public class CheckoutPageTest extends BaseTest {
 	private CheckoutPage checkoutPage;
 	private static final String PRODUCT_NAME = "Sauce Labs Backpack";
 
-	@BeforeMethod
-	public void setUp() {
+	@BeforeMethod(dependsOnMethods = {"setup"})
+	public void classSetUp() {
 
 		landingPage.addItemToCart(PRODUCT_NAME);
 		checkoutPage = landingPage.getCart().navigateToCart().proceedToCheckout();
