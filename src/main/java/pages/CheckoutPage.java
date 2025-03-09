@@ -1,101 +1,105 @@
 package pages;
 
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import constants.WaitTime;
 
 public class CheckoutPage extends BasePage {
 
-    @FindBy(id = "first-name")
-    private WebElement firstNameInput;
-    
-    @FindBy(id = "last-name")
-    private WebElement lastNameInput;
-    
-    @FindBy(id = "postal-code")
-    private WebElement postalCodeInput;
+	@FindBy(id = "first-name")
+	private WebElement firstNameInput;
 
-    @FindBy(id = "cancel")
-    private WebElement cancelButton;
-    
-    @FindBy(id = "continue")
-    private WebElement continueButton;
-    
-    @FindBy(xpath = "//h3[@data-test='error']")
-    private WebElement errorMessage;
+	@FindBy(id = "last-name")
+	private WebElement lastNameInput;
 
-    public CheckoutPage(WebDriver driver) {
-        super(driver);
-    }
+	@FindBy(id = "postal-code")
+	private WebElement postalCodeInput;
 
-    @Override
-    public boolean isPageDisplayed() {
-        return customWait.until(d -> 
-            d.getCurrentUrl().contains("checkout-step-one.html") && 
-            isElementDisplayed(firstNameInput),
-            WaitTime.NORMAL
-        );
-    }
+	@FindBy(id = "cancel")
+	private WebElement cancelButton;
 
-    public CheckoutPage enterShippingInformation(String firstName, String lastName, String postalCode) {
-        
-    	enterFirstName(firstName)
-            .enterLastName(lastName)
-            .enterPostalCode(postalCode);
-        return this;
-    }
+	@FindBy(id = "continue")
+	private WebElement continueButton;
 
-    public CheckoutPage enterFirstName(String firstName) {
-        sendKeys(firstNameInput, firstName);
-        return this;
-    }
+	@FindBy(xpath = "//h3[@data-test='error']")
+	private WebElement errorMessage;
 
-    public CheckoutPage enterLastName(String lastName) {
-        
-    	sendKeys(lastNameInput, lastName);
-        return this;
-    }
+	public CheckoutPage(WebDriver driver) {
+		super(driver);
+	}
 
-    public CheckoutPage enterPostalCode(String postalCode) {
-        
-    	sendKeys(postalCodeInput, postalCode);
-        return this;
-    }
+	@Override
+	public boolean isPageDisplayed() {
+		return customWait.until(
+				d -> d.getCurrentUrl().contains("checkout-step-one.html") && isElementDisplayed(firstNameInput),
+				WaitTime.NORMAL);
+	}
 
-    public CheckoutOverviewPage continueToOverview() {
-        
-    	clickElement(continueButton);
-        return new CheckoutOverviewPage(driver);
-    }
+	public CheckoutPage enterShippingInformation(String firstName, String lastName, String postalCode) {
 
-    public CartPage cancelCheckout() {
-        
-    	clickElement(cancelButton);
-        return new CartPage(driver);
-    }
+		enterFirstName(firstName).enterLastName(lastName).enterPostalCode(postalCode);
+		return this;
+	}
 
-    public String getErrorMessage() {
-        return isElementDisplayed(errorMessage) ? errorMessage.getText() : "";
-    }
+	public CheckoutPage enterFirstName(String firstName) {
+		sendKeys(firstNameInput, firstName);
+		return this;
+	}
 
-    public String getEnteredFirstName() {
-        return firstNameInput.getAttribute("value");
-    }
+	public CheckoutPage enterLastName(String lastName) {
 
-    public String getEnteredLastName() {
-        return lastNameInput.getAttribute("value");
-    }
+		sendKeys(lastNameInput, lastName);
+		return this;
+	}
 
-    public String getEnteredPostalCode() {
-        return postalCodeInput.getAttribute("value");
-    }
+	public CheckoutPage enterPostalCode(String postalCode) {
 
-    public CheckoutPage clearForm() {
-        firstNameInput.clear();
-        lastNameInput.clear();
-        postalCodeInput.clear();
-        return this;
-    }
+		sendKeys(postalCodeInput, postalCode);
+		return this;
+	}
+
+	public BasePage continueToOverview() {
+
+		try {
+			clickElement(continueButton);
+			customWait.until(ExpectedConditions.visibilityOf(errorMessage), WaitTime.FASTER);
+			return this;
+		} catch (TimeoutException e) {
+
+		}
+		return new CheckoutOverviewPage(driver);
+	}
+
+	public CartPage cancelCheckout() {
+
+		clickElement(cancelButton);
+		return new CartPage(driver);
+	}
+
+	public String getErrorMessage() {
+		return isElementDisplayed(errorMessage) ? errorMessage.getText() : "";
+	}
+
+	public String getEnteredFirstName() {
+		return firstNameInput.getAttribute("value");
+	}
+
+	public String getEnteredLastName() {
+		return lastNameInput.getAttribute("value");
+	}
+
+	public String getEnteredPostalCode() {
+		return postalCodeInput.getAttribute("value");
+	}
+
+	public CheckoutPage clearForm() {
+		firstNameInput.clear();
+		lastNameInput.clear();
+		postalCodeInput.clear();
+		return this;
+	}
 }

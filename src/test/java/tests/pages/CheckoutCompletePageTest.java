@@ -17,15 +17,13 @@ public class CheckoutCompletePageTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
         LandingPage landingPage = (LandingPage) loginPage.login("standard_user", "secret_sauce");
         
-        landingPage.addItemToCart(PRODUCT_NAME)
+        CheckoutOverviewPage page = (CheckoutOverviewPage) landingPage.addItemToCart(PRODUCT_NAME)
                    .getCart()
                    .navigateToCart()
                    .proceedToCheckout()
                    .enterShippingInformation("John", "Doe", "12345")
-                   .continueToOverview()
-                   .finishCheckout();
-        
-        completePage = new CheckoutCompletePage(driver);
+                   .continueToOverview();
+        completePage =page.finishCheckout();
     }
 
     @Test

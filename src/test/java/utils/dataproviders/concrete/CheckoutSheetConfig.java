@@ -10,7 +10,7 @@ public class CheckoutSheetConfig implements SheetConfig<CheckoutTestData> {
 
 	private enum Columns {
 
-		TEST_CASE_ID(0), FIRST_NAME(1), LAST_NAME(2), ZIP_CODE(3), EXPECTED_RESULTS(4);
+		TEST_CASE_ID(0), FIRST_NAME(1), LAST_NAME(2), ZIP_CODE(3), EXPECTED_RESULT(4);
 
 		final int index;
 
@@ -21,16 +21,17 @@ public class CheckoutSheetConfig implements SheetConfig<CheckoutTestData> {
 
 	@Override
 	public String[] getExpectedHeaders() {
-		return new String[] { "TestCaseID", "SocialMediaName", "ExpectedTitle"};
+		return new String[] { "TestCaseID", "FirstName", "LastName", "ZipCode", "ExpectedResult"};
 	}
 
 	@Override
 	public CheckoutTestData mapRow(Row row) {
-		return new CheckoutTestData().setTestCaseId(getString(row, Columns.TEST_CASE_ID))
+		return new CheckoutTestData()
+				.setTestCaseId(getString(row, Columns.TEST_CASE_ID))
 				.setFirstName(getString(row, Columns.FIRST_NAME))
 				.setLastName(getString(row, Columns.LAST_NAME))
 				.setZipCode(getString(row, Columns.ZIP_CODE))
-				.setExpectedResult(getString(row, Columns.EXPECTED_RESULTS));
+				.setExpectedResult(getString(row, Columns.EXPECTED_RESULT));
 	}
 
 	private String getString(Row row, Columns column) {

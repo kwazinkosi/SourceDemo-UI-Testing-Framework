@@ -5,9 +5,12 @@ import constants.WaitTime;
 import exceptions.ProductNotFoundException;
 import utils.DriverFactory;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
@@ -125,15 +128,19 @@ public class LandingPage extends BasePage {
 	}
 
 	public LandingPage addItemToCart(String name) {
+	    WebElement productContainer = driver.findElements(By.xpath("//div[@class='inventory_item']"))
+	        .stream()
+	        .filter(container -> container.getText().contains(name))
+	        .findFirst()
+	        .orElseThrow(() -> new NoSuchElementException("Product not found: " + name));
 
-		products.stream()
-				.filter(p -> p.getProductName()
-				.equalsIgnoreCase(name))
-				.findFirst()
-				.ifPresent(p -> p.addProductToCart());
+	    WebElement addToCartButton = productContainer.findElement(By.xpath(".//button[contains(text(),'Add to cart')]"));
+	    addToCartButton.click();
 
-		return this;
+	    return this;
 	}
+
+
 
 	public LandingPage removeItemFromCart(String name) {
 

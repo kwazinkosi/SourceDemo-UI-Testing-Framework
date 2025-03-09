@@ -107,7 +107,6 @@ public class LandingPageTest extends BaseTest {
 		Assert.assertTrue(actualUrl.contains(expectedDestUrl), "Navigation to " + menuItem + " failed, Link might be disabled");
 		LoggingManager.info(testCaseID + " in LandingPageTests::testMenuNavigation PASSED!");
 		System.out.println(testCaseID + " in LandingPageTests::testMenuNavigation PASSED!");
-
 	}
 
 	@Test(priority = 5, dataProvider = "socialsData", dataProviderClass = SourceDemoDataProviders.class)
