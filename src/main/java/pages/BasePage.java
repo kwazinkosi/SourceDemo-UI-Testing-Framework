@@ -72,20 +72,6 @@ public class BasePage {
         });
     }
 
-    // Improved Alert Handling
-    private void checkForAlerts() {
-        
-    	try {
-            Alert alert = customWait.until(ExpectedConditions.alertIsPresent(), WaitTime.FASTER);
-            String alertText = alert.getText();
-            LoggingManager.info("Alert detected: " + alertText);
-            alert.accept();
-        } catch (TimeoutException e) {
-            // No alert present
-        	System.out.println("TimeoutException: No alert found.");
-        }
-    }
-
     // Enhanced Verification Methods
     protected boolean isElementDisplayed(WebElement element) {
         

@@ -26,7 +26,7 @@ public class LandingPageTest extends BaseTest {
 
 
 	private static final String PRODUCT_1 = "Sauce Labs Backpack";
-	private static final String PRODUCT_1_DESCRIPTION = "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.";
+	private static final String PRODUCT_1_DESCRIPTION = "arry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.";
 	private static final String PRODUCT_1_PRICE = "$29.99";
 	private WebDriver driver;
 	

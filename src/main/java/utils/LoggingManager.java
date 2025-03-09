@@ -21,7 +21,7 @@ public class LoggingManager {
     public static void configureLogging() {
         
     	String fileSeparator = File.separator;
-        String logFilePath = System.getProperty("user.dir") + fileSeparator + "logs" + fileSeparator + "problem2logs.log";
+        String logFilePath = System.getProperty("user.dir") + fileSeparator + "logs" + fileSeparator + "source_demo_logs.log";
         String pathToXml = System.getProperty("user.dir") + fileSeparator + "log4j2.xml";
         // Set system property for log file path
         System.setProperty("logFilePath", logFilePath);

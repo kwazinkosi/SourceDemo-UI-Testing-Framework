@@ -9,6 +9,7 @@ import pages.LandingPage;
 import pages.LoginPage;
 import utils.ConfigReader;
 import utils.DriverFactory;
+import utils.LoggingManager;
 
 //BaseTest.java
 public class BaseTest {
@@ -24,7 +25,7 @@ public class BaseTest {
 	protected WebDriver driver;
 	@BeforeSuite
 	public void suiteSetup() {
-		// Load config ONCE but keep as static variables
+		LoggingManager.configureLogging();
 		driverFactory = new DriverFactory();
 		browserName = ConfigReader.getProperty("browser_name");
 		browserMode = ConfigReader.getProperty("browser_mode");

@@ -31,11 +31,9 @@ public class ProductComponent extends BasePage {
     @FindBy(xpath = ".//img[contains(@src, 'jpg')]")
     private WebElement imageLink;
 
-    private final WebElement rootElement;
 
     public ProductComponent(WebDriver driver, WebElement rootElement) {
         super(driver);
-        this.rootElement = rootElement;
         // Initialize elements within the rootElement context
         PageFactory.initElements(rootElement, this);
     }
