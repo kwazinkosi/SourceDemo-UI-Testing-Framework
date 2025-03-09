@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="SauceDemo_Automation_Suite" verbose="1">
+<suite name="SauceDemo_Automation_Suite" verbose="1"   parallel="classes" thread-count="4">
     <!-- ================== -->
     <!-- Global Configurations -->
     <!-- ================== -->
@@ -17,21 +17,20 @@
         <classes>
             <class name="tests.pages.LoginPageTest"/>
             <class name="tests.pages.LandingPageTest"/>
-            <!-- <class name="tests.pages.ProductDetailsPageTest"/> -->
+            <class name="tests.pages.ProductDetailsPageTest"/>
         </classes>
     </test>
 
     <!-- Checkout Flow Tests -->
     <!-- Uncomment the following block if you want to include Checkout Process Tests -->
-    <!-- 
+    
     <test name="Checkout_Process">
         <classes>
             <class name="tests.pages.CartPageTest"/>
             <class name="tests.pages.CheckoutPageTest"/>
-            <class name="tests.pages.CheckoutOverviewPageTest"/>
-            <class name="tests.pages.CheckoutCompletePageTest"/>
+<!--             <class name="tests.pages.CheckoutOverviewPageTest"/> -->
+<!--             <class name="tests.pages.CheckoutCompletePageTest"/> -->
         </classes>
     </test>
-    -->
 
 </suite>
