@@ -22,14 +22,12 @@
     </test>
 
     <!-- Checkout Flow Tests -->
-    <!-- Uncomment the following block if you want to include Checkout Process Tests -->
-    
     <test name="Checkout_Process">
         <classes>
             <class name="tests.pages.CartPageTest"/>
             <class name="tests.pages.CheckoutPageTest"/>
-<!--             <class name="tests.pages.CheckoutOverviewPageTest"/> -->
-<!--             <class name="tests.pages.CheckoutCompletePageTest"/> -->
+            <class name="tests.pages.CheckoutOverviewPageTest"/>
+            <class name="tests.pages.CheckoutCompletePageTest"/>
         </classes>
     </test>
 
