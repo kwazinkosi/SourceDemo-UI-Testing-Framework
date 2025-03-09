@@ -9,15 +9,12 @@ import org.openqa.selenium.TakesScreenshot;
 public class ScreenshotUtil {
     public static String captureScreenshot(WebDriver driver, String testName) {
         try {
-            String directory = "test-output/screenshots/";
-            new File(directory).mkdirs();
-            
-            String filePath = directory + testName + "_" + System.currentTimeMillis() + ".png";
-            File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(screenshot, new File(filePath));
-            return filePath;
+            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            String destPath = System.getProperty("user.dir") + "/screenshots/" + testName + "_" + System.currentTimeMillis() + ".png";
+            FileUtils.copyFile(scrFile, new File(destPath));
+            return destPath;
         } catch (Exception e) {
-            System.out.println("Failed to capture screenshot: " + e.getMessage());
+            System.err.println("Failed to capture screenshot: " + e.getMessage());
             return null;
         }
     }

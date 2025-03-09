@@ -1,21 +1,23 @@
 package tests.pages;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.*;
 import tests.base.BaseTest;
+import utils.DriverFactory;
 import utils.LoggingManager;
 
 public class CheckoutCompletePageTest extends BaseTest {
 
 	private CheckoutCompletePage completePage;
 	private static final String PRODUCT_NAME = "Sauce Labs Backpack";
-
+	private WebDriver driver;
 	@BeforeMethod
 	public void setUp() {
 		// Complete checkout to reach success page
-
+		driver = DriverFactory.getDriver();
 		CheckoutOverviewPage page = (CheckoutOverviewPage) landingPage.addItemToCart(PRODUCT_NAME).getCart()
 				.navigateToCart().proceedToCheckout().enterShippingInformation("John", "Doe", "12345")
 				.continueToOverview();

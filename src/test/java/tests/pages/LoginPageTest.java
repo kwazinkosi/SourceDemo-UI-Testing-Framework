@@ -1,7 +1,6 @@
 package tests.pages;
 
 import org.testng.annotations.Test;
-
 import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
 import pages.LandingPage;
@@ -15,28 +14,27 @@ import pages.BasePage;
 public class LoginPageTest extends BaseTest {
 
 	
-
+	private LoginPage loginPage;
+	
+	 
 	@BeforeMethod
     @Override
     public void setup() {
-        driver = driverFactory.initDriver(browserName, browserMode);
+		driver = driverFactory.initDriver(browserName, browserMode);
         loginPage = new LoginPage(driver);
-        loginPage.navigateTo(LOGIN_PAGE_URL);
-       
     }
 	
 	@Test(priority = 0, dataProvider = "loginData", dataProviderClass = SourceDemoDataProviders.class)
 	public void testLoginFunctionality(LoginTestData data) {
 
+
+        loginPage.navigateTo(baseUrl);
 		String username = data.getUsername();
 		String password = data.getPassword();
 		String expectedResult = data.getExpectedResult();
 		String message = data.getMessage();
 		String TCID = data.getTestCaseId();
-		LoginPage loginPage = new LoginPage(driver);
 
-		// Navigate to login page
-		loginPage.navigateTo(LOGIN_PAGE_URL);
 		Assert.assertTrue(loginPage.isPageDisplayed(), "Login page not displayed");
 
 		// Perform login

@@ -1,16 +1,25 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.kwazi</groupId>
-  <artifactId>SourceDemo</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.kwazi</groupId>
+	<artifactId>SourceDemo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<!--  <properties>-->
+	<!--     Force UTF-8 encoding for ALL file operations -->
+	<!--    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+	<!--
+	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>-->
+	<!--</properties>-->
 	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.10.2</version>
-			<!--<scope>compile</scope>-->
+			<scope>test</scope>
 		</dependency>
+
 
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -70,11 +79,18 @@
 			<version>5.1.2</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<!--
+		https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 		<dependency>
-		    <groupId>com.fasterxml.jackson.core</groupId>
-		    <artifactId>jackson-databind</artifactId>
-		    <version>2.18.2</version>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.18.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven.surefire</groupId>
+			<artifactId>surefire-testng</artifactId>
+			<version>3.5.2</version>
 		</dependency>
 
 
@@ -91,6 +107,18 @@
 					<target>11</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.5.2</version> <!-- Update to the latest version if
+				needed -->
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>src/test/resources/sourcedemo_testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 

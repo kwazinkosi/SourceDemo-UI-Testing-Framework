@@ -2,18 +2,20 @@ package tests.pages;
 
 import java.util.Set;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import components.CartComponent;
 import components.MenuComponent;
-import components.ProductComponent;
 import components.SocialsComponent;
 import pages.LandingPage.SortOption;
 import pages.ProductDetailsPage;
 import tests.base.BaseTest;
+import utils.DriverFactory;
 import utils.LoggingManager;
 import utils.dataproviders.SortDataProvider;
 import utils.dataproviders.SourceDemoDataProviders;
@@ -26,6 +28,12 @@ public class LandingPageTest extends BaseTest {
 	private static final String PRODUCT_1 = "Sauce Labs Backpack";
 	private static final String PRODUCT_1_DESCRIPTION = "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.";
 	private static final String PRODUCT_1_PRICE = "$29.99";
+	private WebDriver driver;
+	
+	@BeforeMethod(dependsOnMethods = {"setup"})
+	public void testSetup() {
+		driver = DriverFactory.getDriver();
+	}
 	
 	@AfterMethod
 	public void cleanUp() {

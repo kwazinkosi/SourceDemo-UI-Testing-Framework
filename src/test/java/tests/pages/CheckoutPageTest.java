@@ -1,10 +1,12 @@
 package tests.pages;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.*;
 import tests.base.BaseTest;
+import utils.DriverFactory;
 import utils.LoggingManager;
 import utils.dataproviders.SourceDemoDataProviders;
 import utils.dataproviders.models.CheckoutTestData;
@@ -13,10 +15,12 @@ public class CheckoutPageTest extends BaseTest {
 
 	private CheckoutPage checkoutPage;
 	private static final String PRODUCT_NAME = "Sauce Labs Backpack";
+	private WebDriver driver;
 
 	@BeforeMethod(dependsOnMethods = {"setup"})
 	public void classSetUp() {
-
+		
+		driver = DriverFactory.getDriver();
 		landingPage.addItemToCart(PRODUCT_NAME);
 		checkoutPage = landingPage.getCart().navigateToCart().proceedToCheckout();
 	}
@@ -41,7 +45,8 @@ public class CheckoutPageTest extends BaseTest {
 			System.out.println(
 					testCaseID + " (expected success) in CheckoutPageTests::testCheckoutFormSubmissions PASSED!");
 		} else {
-			BasePage page = checkoutPage.continueToOverview();
+			
+			checkoutPage.continueToOverview();
 			Assert.assertEquals(checkoutPage.getErrorMessage(), expectedResult,
 					"Unexpected error message for test case: " + testCaseID);
 

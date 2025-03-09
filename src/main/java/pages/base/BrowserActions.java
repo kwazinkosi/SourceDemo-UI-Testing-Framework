@@ -14,9 +14,9 @@ public class BrowserActions {
     public void navigateTo(String url) {
         try {
             driver.get(url);
-            LoggingManager.info("Navigated to URL: {}"+ url);
+            LoggingManager.info("Navigated to URL:"+ url);
         } catch (Exception e) {
-            LoggingManager.error("Failed to navigate to URL: {}"+ url, e);
+            LoggingManager.error("Failed to navigate to URL: "+ url, e);
             throw e;
         }
     }

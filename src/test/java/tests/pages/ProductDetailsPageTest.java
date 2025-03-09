@@ -13,7 +13,7 @@ public class ProductDetailsPageTest extends BaseTest {
 	
     private ProductDetailsPage productDetailsPage;
 
-    @BeforeMethod
+    @BeforeMethod(dependsOnMethods = {"setup"})
     public void setUpTest() {
         
         productDetailsPage = landingPage.viewProductDetails(0);
