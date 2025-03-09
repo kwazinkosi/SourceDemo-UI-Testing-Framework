@@ -12,7 +12,7 @@ import utils.dataproviders.SourceDemoDataProviders;
 import utils.dataproviders.models.LoginTestData;
 import pages.BasePage;
 
-public class LoginTests extends BaseTest {
+public class LoginPageTest extends BaseTest {
 
 	
 
@@ -47,15 +47,15 @@ public class LoginTests extends BaseTest {
 			Assert.assertTrue(resultPage instanceof LandingPage, "Not redirected to landing page");
 			LandingPage landingPage = (LandingPage) resultPage;
 			Assert.assertTrue(landingPage.isPageDisplayed(), "Landing page not displayed after login");
-			LoggingManager.info(TCID + " in LoginTests::testLoginFunctionality PASSED!");
-			System.out.println(TCID + " in LoginTests::testLoginFunctionality PASSED!");
+			LoggingManager.info(TCID + " in LoginPageTest::testLoginFunctionality PASSED!");
+			System.out.println(TCID + " in LoginPageTest::testLoginFunctionality PASSED!");
 
 		} else {
 			// Verify error state
 			Assert.assertTrue(resultPage instanceof LoginPage, "Unexpected page after failed login");
 			Assert.assertEquals(loginPage.getErrorMessage(), message);
-			LoggingManager.info(TCID + " in LoginTests::testLoginFunctionality PASSED!");
-			System.out.println(TCID + " in LoginTests::testLoginFunctionality PASSED!");
+			LoggingManager.info(TCID + " in LoginPageTest::testLoginFunctionality PASSED!");
+			System.out.println(TCID + " in LoginPageTest::testLoginFunctionality PASSED!");
 		}
 	}
 

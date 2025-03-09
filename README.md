@@ -39,7 +39,7 @@ mvn test
 ```
 ### Running in eclipse
 
-- Run as testNG or click on dropdown of the run button and then select sourcedemo_test.xml"
+- Run as testNG or click on dropdown of the run button and then select sourcedemo_testNG.xml"
 
 ## Project Structure
 
@@ -47,21 +47,21 @@ mvn test
 ```plaintext
 SourceDemo/
 │
-├── src/main/java
-│   ├── components
+├── src/main/java/
+│   ├── components/
 │   │   ├── BaseComponent.java
 │   │   ├── MenuComponent.java
 │   │   ├── ProductComponent.java
 │   │   ├── CartComponent.java
 │   │   └── SocialsComponent.java
 │   │
-│   ├── config
+│   ├── config/
 │   │   └── ConfigReader.java
 │   │
 │   ├── interfaces
 │   │   └── 
 │   │
-│   ├── pages
+│   ├── pages/
 │   │   ├── BasePage.java
 │   │   ├── LandingPage.java
 │   │   ├── CartPage.java
@@ -71,7 +71,7 @@ SourceDemo/
 │   │   ├── LoginPage.java
 │   │   └── CheckoutPage.java
 │   │
-│   └── utils
+│   └── utils/
 │       ├── ConfigReader.java
 │       ├── LoggingManager.java
 │       ├── DriverFactory.java
@@ -83,7 +83,7 @@ SourceDemo/
 │   └── config/
 │ 	└── config.properties
 │
-├── src/test/java
+├── src/test/java/
 │   ├──  tests/
 │   │   ├── BasePageTest.java
 │   │   ├── LandingPage.java
@@ -99,9 +99,9 @@ SourceDemo/
 ├── logs/
 │   └── soucerdemo.log
 │
-├── reports
+├── reports/
 │
-├── screenshots
+├── screenshots/
 │
 │
 │
@@ -109,9 +109,9 @@ SourceDemo/
 │
 ├── pom.xml
 │
-├── readme.md
+├── README.md
 │
-└── test.xml
+└── sourcedemo_testNG.xml
  
  ```
 
@@ -119,8 +119,10 @@ SourceDemo/
 - **Test Data:** Located in the src/test/resources/data/ directory.
 - **Config Files:** Configuration files like config.properties are located in the SourceDemo/ directory.
 
-To change or modify test data, you can edit the excel document named test_data.xlsx.
-To change or modify config data you can edit the config.properties file├── ├──
+To change or modify test data, you can edit the excel document named test_data.xlsx.  
+To change or modify config data you can edit the config.properties file.		
+To run tests seletively and have control over how the suite is executed, you can modify the source_demo.xml file
+
 ### Logging
 Logging is managed by LoggingManager, which outputs logs to both the console and a file in the logs/ directory.
 
