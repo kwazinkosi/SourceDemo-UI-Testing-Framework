@@ -1,96 +1,85 @@
 package pages;
 
 import components.ProductComponent;
-import exceptions.ProductNotFoundException;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class CartPage extends BasePage {
 
-    @FindBy(xpath = "//div[@class='cart_item']")
-    private List<WebElement> cartItems;
-    
-    @FindBy(id = "checkout")
-    private WebElement checkoutButton;
-    
-    @FindBy(id = "continue-shopping")
-    private WebElement continueShoppingButton;
+	@FindBy(css = ".cart_list")
+	private WebElement cartContainer;
 
-    private List<ProductComponent> productComponents;
+	@FindBy(xpath = ".//div[@class='cart_item']")
+	private List<WebElement> cartItems;
 
-    public CartPage(WebDriver driver) {
-        
-    	super(driver);
-        initializeProductComponents();
-    }
+	@FindBy(id = "checkout")
+	private WebElement checkoutButton;
 
-    private void initializeProductComponents() {
-        
-    	productComponents = cartItems.stream()
-            .map(item -> new ProductComponent(driver, item))
-            .collect(Collectors.toList());
-    }
+	@FindBy(id = "continue-shopping")
+	private WebElement continueShoppingButton;
 
-    public ProductComponent getProductByName(String name) {
+	private List<ProductComponent> productComponents;
 
-		return productComponents.stream()
-				.filter(p -> p.getProductName()
-				.equalsIgnoreCase(name))
-				.findFirst()
-				.orElseThrow(() -> new ProductNotFoundException(name));
+	public CartPage(WebDriver driver) {
+		super(driver);
+		PageFactory.initElements(driver, this);
+		initializeProductComponents();
 	}
 
-    public CartPage removeProduct(String productName) {
-        
-    	productComponents.stream()
-            .filter(p -> p.getProductName().equals(productName))
-            .findFirst()
-            .ifPresentOrElse(
-                ProductComponent::removeProductFromCart,
-                () -> { throw new RuntimeException("Product not found in cart: " + productName); }
-            );
-    	
-        return this;
-    }
+	private void initializeProductComponents() {
 
-    
-    public List<ProductComponent> getCartItems() {
-    	
-        return cartItems.stream()
-            .map(item -> new ProductComponent(driver, item))
-            .collect(Collectors.toList());
-    }
-
-    public int getCartItemCount() {
-        return getCartItems().size();
-    }
-
-    public CheckoutPage proceedToCheckout() {
-       
-    	clickElement(checkoutButton);
-        return new CheckoutPage(driver);
-    }
-
-    public LandingPage continueShopping() {
-        
-    	clickElement(continueShoppingButton);
-        return new LandingPage(driver);
-    }
+		productComponents = cartItems.stream().map(item -> new ProductComponent(driver, item))
+				.collect(Collectors.toList());
+	}
 
 	public boolean containsProduct(String productName) {
-	    
-		return getCartItems()
-				.stream()
-				.anyMatch(p -> p.getProductName()
-				.equals(productName));
+
+		return productComponents.stream().anyMatch(p -> p.getProductName().equalsIgnoreCase(productName));
+	}
+
+	public List<ProductComponent> getCartItems() {
+
+		initializeProductComponents(); // Refresh components
+		return productComponents;
+	}
+
+	public int getCartItemCount() {
+		return getCartItems().size();
+	}
+
+	public CartPage removeProduct(String productName) {
+
+		productComponents.stream().filter(p -> p.getProductName().equals(productName)).findFirst()
+				.ifPresentOrElse(ProductComponent::removeProductFromCart, () -> {
+					throw new RuntimeException("Product not found in cart: " + productName);
+				});
+		initializeProductComponents();
+		System.out.println("Removed: " + productName);
+		return this;
+	}
+
+	public ProductComponent getProductByName(String name) {
+
+		return productComponents.stream().filter(p -> p.getProductName().equalsIgnoreCase(name)).findFirst()
+				.orElseThrow();
+	}
+
+	public CheckoutPage proceedToCheckout() {
+		clickElement(checkoutButton);
+		return new CheckoutPage(driver);
+	}
+
+	public LandingPage continueShopping() {
+		clickElement(continueShoppingButton);
+		return new LandingPage(driver);
 	}
 
 	public boolean isCartEmpty() {
-	    
-		return getCartItemCount() == 0 && isElementDisplayed(cartItems.get(0));
+		return getCartItemCount() == 0;
 	}
 }

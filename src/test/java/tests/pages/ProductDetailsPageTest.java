@@ -23,7 +23,7 @@ public class ProductDetailsPageTest extends BaseTest {
     public void testProductDetailsDisplayed() {
     	
         Assert.assertTrue(productDetailsPage.isPageDisplayed(), "Product details page not displayed");
-        Assert.assertTrue(productDetailsPage.getProduct().isProductImageDispalyed(), "Product image not displayed");
+        Assert.assertTrue(productDetailsPage.getProduct().isProductImageDisplayed(), "Product image not displayed");
         Assert.assertFalse(productDetailsPage.getProductName().isEmpty(), "Product name is empty");
         Assert.assertFalse(productDetailsPage.getProductDescription().isEmpty(), "Product description is empty");
         Assert.assertFalse(productDetailsPage.getProductPrice().isEmpty(), "Product price is empty");

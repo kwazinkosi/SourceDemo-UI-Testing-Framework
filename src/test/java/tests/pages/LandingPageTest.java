@@ -23,6 +23,10 @@ import utils.dataproviders.models.SocialsTestData;
 public class LandingPageTest extends BaseTest {
 
 
+	private static final String PRODUCT_1 = "Sauce Labs Backpack";
+	private static final String PRODUCT_1_DESCRIPTION = "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.";
+	private static final String PRODUCT_1_PRICE = "$29.99";
+	
 	@AfterMethod
 	public void cleanUp() {
 		landingPage.getMenu().resetAppState();
@@ -76,16 +80,15 @@ public class LandingPageTest extends BaseTest {
 	@Test(priority = 3)
 	public void testProductDetailsNavigation() {
 		
-		ProductComponent product = landingPage.getProductByIndex(0);
 		ProductDetailsPage detailsPage = landingPage.viewProductDetails(0);
-
+		
 		SoftAssert softAssert = new SoftAssert();
 
 		softAssert.assertTrue(detailsPage.isPageDisplayed(), "Details page not opened");
-		softAssert.assertEquals(detailsPage.getProductName(), product.getProductName(), "Product name mismatch");
-		softAssert.assertEquals(detailsPage.getProductDescription(), product.getProductDescription(),
+		softAssert.assertEquals(detailsPage.getProductName(), PRODUCT_1, "Product name mismatch");
+		softAssert.assertEquals(detailsPage.getProductDescription(), PRODUCT_1_DESCRIPTION,
 				"Product description mismatch");
-		softAssert.assertEquals(detailsPage.getProductPrice(), product.getProductPrice(), "Product price mismatch");
+		softAssert.assertEquals(detailsPage.getProductPrice(), PRODUCT_1_PRICE, "Product price mismatch");
 
 		softAssert.assertAll(); // Ensure all assertions are checked
 		LoggingManager.info("LandingPageTests::testProductDetailsNavigation PASSED!");

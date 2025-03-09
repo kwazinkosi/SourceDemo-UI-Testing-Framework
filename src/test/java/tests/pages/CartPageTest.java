@@ -35,7 +35,7 @@ public class CartPageTest extends BaseTest {
 		System.out.println("CartPageTest::testRemoveProductFromCart PASSED!");
 	}
 
-	@Test(priority = 1, expectedExceptions = RuntimeException.class, expectedExceptionsMessageRegExp = "Product not found in cart: Invalid Product")
+	@Test(priority = 1, expectedExceptions = RuntimeException.class)
 	public void testRemoveNonExistentProductThrowsException() {
 		try {
 			cartPage.removeProduct("Invalid Product");

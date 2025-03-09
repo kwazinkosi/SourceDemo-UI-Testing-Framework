@@ -3,6 +3,7 @@ package pages;
 import components.ProductComponent;
 import constants.WaitTime;
 import exceptions.ProductNotFoundException;
+import utils.DriverFactory;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -24,7 +25,7 @@ public class LandingPage extends BasePage {
 
 	@FindBy(xpath = "//div[@class='inventory_item_name ']")
 	private List<WebElement> productLinks;
-	@FindBy(xpath = "//div[@class='inventory_item']")
+	@FindBy(xpath = ".//div[@class='inventory_item']")
 	private List<WebElement> productContainers;
 
 	// Product components
@@ -126,6 +127,8 @@ public class LandingPage extends BasePage {
 	}
 
 	public LandingPage addItemToCart(String name) {
+		
+		System.out.println("Adding: "+name);
 	    WebElement productContainer = driver.findElements(By.xpath("//div[@class='inventory_item']"))
 	        .stream()
 	        .filter(container -> container.getText().contains(name))
@@ -154,20 +157,23 @@ public class LandingPage extends BasePage {
 	public ProductDetailsPage viewProductDetails(int index) {
 
 		validateIndexBoundaries(index);
-		WebElement element = productContainers.get(index);
 		clickElement(productLinks.get(index));
-		ProductComponent product = new ProductComponent(this.driver, element);
+		WebElement el = DriverFactory.getDriver().findElement(By.className("inventory_details"));
+		ProductComponent product = new ProductComponent( DriverFactory.getDriver(), el);
 		
 		return product.viewDetails();
 	}
 
 	public ProductComponent getProductByIndex(int index) {
 
-		if(products ==null) {
-			initializeProductComponents();
-		}
+		initializeProductComponents();
+
 		validateIndexBoundaries(index);
-		return products.get(index);
+		clickElement(productLinks.get(index));
+		WebElement el = DriverFactory.getDriver().findElement(By.className("inventory_details"));
+		ProductComponent product = new ProductComponent( DriverFactory.getDriver(), el);
+		product.viewDetails().navigateBackToProducts();
+		return product;
 	}
 
 	public ProductComponent getProductByName(String name) {

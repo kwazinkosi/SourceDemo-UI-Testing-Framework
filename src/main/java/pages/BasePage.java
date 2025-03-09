@@ -95,6 +95,10 @@ public class BasePage {
         } catch (TimeoutException e) {
             return false;
         }
+    	catch(Exception f) {
+    		System.out.println("Exception: "+f.getMessage());
+    	}
+    	return false;
     }
 
     
