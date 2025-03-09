@@ -38,14 +38,8 @@ You can run the test suite using Maven by executing the following command:
 mvn test
 ```
 ### Running in eclipse
-#### Adding Jars in Eclipse
 
-- Right-click on the project and select Properties.
-- Go to Java Build Path.
-- Click the Libraries tab.
-- Click Add JARs or Add External JARs and select the JARs from the libs folder.
-- Apply and close the dialog.
-- Run as testNG or click on drodown of the run button and then select "takealot-automation_test.xml"
+- Run as testNG or click on dropdown of the run button and then select sourcedemo_test.xml"
 
 ## Project Structure
 
@@ -83,20 +77,25 @@ SourceDemo/
 │       ├── DriverFactory.java
 │       └── ScreenshotUtil.java
 │
-├── src/main/test/resources/data/
-│   └── testdata.xlsx
+├── src/main/test/resources/
+│   ├── data/
+│   │  	└── testdata.xlsx
+│   └── config/
+│ 	└── config.properties
 │
 ├── src/test/java
-│   └── tests/
-│       ├── BasePageTest.java
-│       ├── LandingPage.java
-│       ├── CartPageTest.java
-│       ├── ProductDetailsPageTest.java
-│       ├── CheckoutOverviewPageTest.java
-│       ├── CheckoutCompletePageTest.java
-│       ├── LoginPageTest.java
-│       └── CheckoutPageTest.java
-│
+│   ├──  tests/
+│   │   ├── BasePageTest.java
+│   │   ├── LandingPage.java
+│   │   ├── CartPageTest.java
+│   │   ├── ProductDetailsPageTest.java
+│   │   ├── CheckoutOverviewPageTest.java
+│   │   ├── CheckoutCompletePageTest.java
+│   │   ├── LoginPageTest.java
+│   │   └── CheckoutPageTest.java
+│   │ 
+│   └── utils/dataproviders/
+│   
 ├── logs/
 │   └── soucerdemo.log
 │
@@ -104,7 +103,6 @@ SourceDemo/
 │
 ├── screenshots
 │
-├── config.properties
 │
 │
 ├── log4j2.xml
@@ -118,9 +116,11 @@ SourceDemo/
  ```
 
 ### Configuration
-- **Test Data:** Located in the src/test/resources directory.
+- **Test Data:** Located in the src/test/resources/data/ directory.
 - **Config Files:** Configuration files like config.properties are located in the SourceDemo/ directory.
 
+To change or modify test data, you can edit the excel document named test_data.xlsx.
+To change or modify config data you can edit the config.properties file├── ├──
 ### Logging
 Logging is managed by LoggingManager, which outputs logs to both the console and a file in the logs/ directory.
 

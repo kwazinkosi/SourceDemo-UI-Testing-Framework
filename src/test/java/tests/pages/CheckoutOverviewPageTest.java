@@ -70,7 +70,6 @@ public class CheckoutOverviewPageTest extends BaseTest {
 
 		CartPage cartPage = overviewPage.cancelCheckout();
 		Assert.assertTrue(cartPage.isPageDisplayed(), "Cart page not displayed after cancellation");
-
 		LoggingManager.info("CheckoutOverviewPage::testNavigationToCartPage PASSED!");
 		System.out.println("CheckoutOverviewPage::testNavigationToCartPage PASSED!");
 	}

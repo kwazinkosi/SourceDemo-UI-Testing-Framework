@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.*;
 import tests.base.BaseTest;
+import utils.LoggingManager;
 
 public class CheckoutCompletePageTest extends BaseTest {
 
@@ -14,10 +15,9 @@ public class CheckoutCompletePageTest extends BaseTest {
     @BeforeMethod
     public void setUp() {
         // Complete checkout to reach success page
-        LoginPage loginPage = new LoginPage(driver);
-        LandingPage landingPage = (LandingPage) loginPage.login("standard_user", "secret_sauce");
-        
-        CheckoutOverviewPage page = (CheckoutOverviewPage) landingPage.addItemToCart(PRODUCT_NAME)
+      
+        CheckoutOverviewPage page = (CheckoutOverviewPage) landingPage
+        		   .addItemToCart(PRODUCT_NAME)
                    .getCart()
                    .navigateToCart()
                    .proceedToCheckout()
@@ -26,7 +26,7 @@ public class CheckoutCompletePageTest extends BaseTest {
         completePage =page.finishCheckout();
     }
 
-    @Test
+    @Test(priority = 0)
     public void testPageDisplayState() {
         // Verify URL and core elements
         Assert.assertTrue(completePage.isPageDisplayed(), 
@@ -35,23 +35,32 @@ public class CheckoutCompletePageTest extends BaseTest {
         // Verify visual elements
         Assert.assertEquals(completePage.getPageTitle(), "Checkout: Complete!",
             "Page title mismatch");
+
+		LoggingManager.info("CheckoutCompletePageTest::testPageDisplayState PASSED!");
+		System.out.println("CheckoutCompletePageTest::testPageDisplayState PASSED!");
     }
 
-    @Test
+    @Test(priority = 1)
     public void testSuccessMessageContent() {
         String actualMessage = completePage.getSuccessMessage();
         Assert.assertEquals(actualMessage, CheckoutCompletePage.SUCCESS_MESSAGE,
             "Success message text mismatch.\nExpected: " + CheckoutCompletePage.SUCCESS_MESSAGE +
             "\nActual: " + actualMessage);
+
+		LoggingManager.info("CheckoutCompletePageTest::testSuccessMessageContent PASSED!");
+		System.out.println("CheckoutCompletePageTest::testSuccessMessageContent PASSED!");
     }
 
-    @Test
+    @Test(priority = 2)
     public void testOrderSuccessStatus() {
         Assert.assertTrue(completePage.isOrderSuccessful(),
             "Order success status verification failed");
+
+		LoggingManager.info("CheckoutCompletePageTest::testOrderSuccessStatus PASSED!");
+		System.out.println("CheckoutCompletePageTest::testOrderSuccessStatus PASSED!");
     }
 
-    @Test
+    @Test(priority = 3)
     public void testNavigationBackToProducts() {
         LandingPage landingPage = completePage.navigateBackToHome();
         
@@ -60,9 +69,12 @@ public class CheckoutCompletePageTest extends BaseTest {
             "Failed to return to landing page");
         Assert.assertTrue(landingPage.getCart().getCurrentCartCount() == 0,
             "Cart should be empty after completed order");
+
+		LoggingManager.info("CheckoutCompletePageTest::testNavigationBackToProducts PASSED!");
+		System.out.println("CheckoutCompletePageTest::testNavigationBackToProducts PASSED!");
     }
 
-    @Test
+    @Test(priority = 4)
     public void testPageRefreshPersistsState() {
     	
         driver.navigate().refresh();
@@ -72,5 +84,8 @@ public class CheckoutCompletePageTest extends BaseTest {
             "Page state not persisted after refresh");
         Assert.assertTrue(completePage.isOrderSuccessful(),
             "Order success status lost after refresh");
+
+		LoggingManager.info("CheckoutOverviewPage::testPageRefreshPersistsState PASSED!");
+		System.out.println("CheckoutOverviewPage::testPageRefreshPersistsState PASSED!");
     }
 }
