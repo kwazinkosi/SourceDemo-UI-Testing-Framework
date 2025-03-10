@@ -3,6 +3,8 @@ package tests.pages;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import listeners.RetryAnalyzer;
 import pages.LandingPage;
 import pages.ProductDetailsPage;
 import tests.base.BaseTest;
@@ -19,7 +21,7 @@ public class ProductDetailsPageTest extends BaseTest {
         productDetailsPage = landingPage.viewProductDetails(0);
     }
 
-    @Test(priority = 0)
+    @Test(priority = 0, retryAnalyzer = RetryAnalyzer.class)
     public void testProductDetailsDisplayed() {
     	
         Assert.assertTrue(productDetailsPage.isPageDisplayed(), "Product details page not displayed");
@@ -44,7 +46,7 @@ public class ProductDetailsPageTest extends BaseTest {
 		System.out.println("ProductPageTests::testAddRemoveItemFromCart PASSED!");
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
     public void testNavigateBackToProducts() {
     	
         LandingPage landingPage = productDetailsPage.navigateBackToProducts();

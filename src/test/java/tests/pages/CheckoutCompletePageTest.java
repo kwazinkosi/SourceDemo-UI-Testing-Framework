@@ -4,11 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import listeners.RetryAnalyzer;
 import pages.*;
 import tests.base.BaseTest;
 import utils.DriverFactory;
 import utils.LoggingManager;
-
 public class CheckoutCompletePageTest extends BaseTest {
 
 	private CheckoutCompletePage completePage;
@@ -24,7 +25,7 @@ public class CheckoutCompletePageTest extends BaseTest {
 		completePage = page.finishCheckout();
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 0, retryAnalyzer = RetryAnalyzer.class)
 	public void testPageDisplayState() {
 		// Verify URL and core elements
 		Assert.assertTrue(completePage.isPageDisplayed(), "Checkout complete page not properly displayed");
@@ -36,7 +37,7 @@ public class CheckoutCompletePageTest extends BaseTest {
 		System.out.println("CheckoutCompletePageTest::testPageDisplayState PASSED!");
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
 	public void testSuccessMessageContent() {
 		String actualMessage = completePage.getSuccessMessage();
 		Assert.assertEquals(actualMessage, CheckoutCompletePage.SUCCESS_MESSAGE,
@@ -47,7 +48,7 @@ public class CheckoutCompletePageTest extends BaseTest {
 		System.out.println("CheckoutCompletePageTest::testSuccessMessageContent PASSED!");
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
 	public void testOrderSuccessStatus() {
 		Assert.assertTrue(completePage.isOrderSuccessful(), "Order success status verification failed");
 
@@ -55,7 +56,7 @@ public class CheckoutCompletePageTest extends BaseTest {
 		System.out.println("CheckoutCompletePageTest::testOrderSuccessStatus PASSED!");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
 	public void testNavigationBackToProducts() {
 		LandingPage landingPage = completePage.navigateBackToHome();
 

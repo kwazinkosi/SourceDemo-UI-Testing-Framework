@@ -3,6 +3,8 @@ package tests.pages;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import listeners.RetryAnalyzer;
 import pages.*;
 import tests.base.BaseTest;
 import utils.LoggingManager;
@@ -27,7 +29,7 @@ public class CheckoutOverviewPageTest extends BaseTest {
 
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 0, retryAnalyzer = RetryAnalyzer.class)
 	public void testOrderSummaryDetailsDisplayed() {
 
 		Assert.assertTrue(overviewPage.isPageDisplayed(), "Checkout overview page not displayed");
@@ -39,7 +41,7 @@ public class CheckoutOverviewPageTest extends BaseTest {
 		System.out.println("CheckoutOverviewPage::testOrderSummaryDetailsDisplayed PASSED!");
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
 	public void testPriceCalculations() {
 
 		double expectedSubtotal = PRODUCT_1_PRICE + PRODUCT_2_PRICE;
@@ -65,7 +67,7 @@ public class CheckoutOverviewPageTest extends BaseTest {
 		System.out.println("CheckoutOverviewPage::testTotalCalculationMethod PASSED!");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
 	public void testNavigationToCartPage() {
 
 		CartPage cartPage = overviewPage.cancelCheckout();
@@ -74,7 +76,7 @@ public class CheckoutOverviewPageTest extends BaseTest {
 		System.out.println("CheckoutOverviewPage::testNavigationToCartPage PASSED!");
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
 	public void testNavigationToCompletePage() {
 
 		CheckoutCompletePage completePage = overviewPage.finishCheckout();

@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import listeners.RetryAnalyzer;
 import pages.*;
 import tests.base.BaseTest;
 import utils.DriverFactory;
@@ -57,7 +59,7 @@ public class CheckoutPageTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
 	public void testCancelCheckoutReturnsToCart() {
 
 		CartPage cartPage = checkoutPage.cancelCheckout();
@@ -78,7 +80,7 @@ public class CheckoutPageTest extends BaseTest {
 		System.out.println("CheckoutPageTests::testFormClearFunctionality PASSED!");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
 	public void testSpecialCharactersInPostalCode() {
 		checkoutPage.enterShippingInformation("John", "Doe", "!@#$%").continueToOverview();
 

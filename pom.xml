@@ -6,12 +6,6 @@
 	<artifactId>SourceDemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<!--  <properties>-->
-	<!--     Force UTF-8 encoding for ALL file operations -->
-	<!--    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
-	<!--
-	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>-->
-	<!--</properties>-->
 	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -107,6 +101,7 @@
 					<target>11</target>
 				</configuration>
 			</plugin>
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -118,8 +113,6 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
-
 </project>

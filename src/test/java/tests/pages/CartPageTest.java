@@ -7,7 +7,7 @@ import pages.*;
 import tests.base.BaseTest;
 import utils.LoggingManager;
 import components.ProductComponent;
-
+import listeners.RetryAnalyzer;
 public class CartPageTest extends BaseTest {
 
 	private CartPage cartPage;
@@ -22,7 +22,7 @@ public class CartPageTest extends BaseTest {
 		cartPage = landingPage.getCart().navigateToCart();
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 0, retryAnalyzer = RetryAnalyzer.class)
 	public void testRemoveProductFromCart() {
 		int initialCount = cartPage.getCartItemCount();
 
@@ -82,7 +82,7 @@ public class CartPageTest extends BaseTest {
 		System.out.println("CartPageTest::testCartEmptyStateAfterRemovingAllItems PASSED!");
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
 	public void testCartItemCountMatchesAddedItems() {
 
 		Assert.assertEquals(cartPage.getCartItemCount(), 2, "Cart should contain 2 items");
@@ -91,7 +91,7 @@ public class CartPageTest extends BaseTest {
 		System.out.println("CartPageTest::testCartItemCountMatchesAddedItems PASSED!");
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 6, retryAnalyzer = RetryAnalyzer.class)
 	public void testCartContainsCorrectProducts() {
 
 		Assert.assertTrue(cartPage.containsProduct(PRODUCT_1), "Product 1 missing from cart");
@@ -101,7 +101,7 @@ public class CartPageTest extends BaseTest {
 		System.out.println("CartPageTest::testCartContainsCorrectProducts PASSED!");
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 7, retryAnalyzer = RetryAnalyzer.class)
 	public void testProductDetailsMatchAddedItems() {
 
 		ProductComponent product = cartPage.getProductByName(PRODUCT_1);

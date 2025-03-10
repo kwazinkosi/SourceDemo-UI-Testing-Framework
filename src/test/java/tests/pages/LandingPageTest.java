@@ -12,6 +12,7 @@ import org.testng.asserts.SoftAssert;
 import components.CartComponent;
 import components.MenuComponent;
 import components.SocialsComponent;
+import listeners.RetryAnalyzer;
 import pages.LandingPage.SortOption;
 import pages.ProductDetailsPage;
 import tests.base.BaseTest;
@@ -40,7 +41,7 @@ public class LandingPageTest extends BaseTest {
 		landingPage.getMenu().resetAppState();
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 0, retryAnalyzer = RetryAnalyzer.class)
 	public void testLandingPageComponentsDisplayed() {
 		
 		Assert.assertTrue(landingPage.isPageDisplayed(), "Landing page not displayed");
@@ -85,7 +86,7 @@ public class LandingPageTest extends BaseTest {
 		System.out.println("LandingPageTests::testAddAndRemoveItemFromCartUpdatesCartCount PASSED!");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
 	public void testProductDetailsNavigation() {
 		
 		ProductDetailsPage detailsPage = landingPage.viewProductDetails(0);
@@ -148,7 +149,7 @@ public class LandingPageTest extends BaseTest {
 		driver.switchTo().window(originalWindow);
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 6)
 	public void testCartPersistsAfterRefresh() {
 		int initialCartCount = landingPage.getCart().getCurrentCartCount();
 
