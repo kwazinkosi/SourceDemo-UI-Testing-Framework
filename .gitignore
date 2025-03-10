@@ -39,8 +39,8 @@ build/
 test-output/
 
 # Logs
-*.log
-logs/
+#*.log
+#logs/
 
 # Reports
 extent-reports/
