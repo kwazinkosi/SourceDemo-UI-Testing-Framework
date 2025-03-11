@@ -8,6 +8,7 @@ import tests.base.BaseTest;
 import utils.LoggingManager;
 import components.ProductComponent;
 import listeners.RetryAnalyzer;
+
 public class CartPageTest extends BaseTest {
 
 	private CartPage cartPage;
@@ -22,7 +23,7 @@ public class CartPageTest extends BaseTest {
 		cartPage = landingPage.getCart().navigateToCart();
 	}
 
-	@Test(priority = 0, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 0, description = "Verify removing a product from the cart works correctly", retryAnalyzer = RetryAnalyzer.class)
 	public void testRemoveProductFromCart() {
 		int initialCount = cartPage.getCartItemCount();
 
@@ -35,7 +36,7 @@ public class CartPageTest extends BaseTest {
 		System.out.println("CartPageTest::testRemoveProductFromCart PASSED!");
 	}
 
-	@Test(priority = 1, expectedExceptions = RuntimeException.class)
+	@Test(priority = 1, description = "Check if removing a non-existent product throws an exception", expectedExceptions = RuntimeException.class)
 	public void testRemoveNonExistentProductThrowsException() {
 		try {
 			cartPage.removeProduct("Invalid Product");
@@ -49,7 +50,7 @@ public class CartPageTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, description = "Ensure proceeding to checkout navigates to the checkout page")
 	public void testProceedToCheckoutNavigatesToCheckoutPage() {
 
 		Assert.assertTrue(cartPage.getCartItemCount() > 0, "Cart should not be empty before checkout");
@@ -60,7 +61,7 @@ public class CartPageTest extends BaseTest {
 		System.out.println("CartPageTest::testProceedToCheckoutNavigatesToCheckoutPage PASSED!");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, description = "Verify that continuing shopping redirects back to the landing page")
 	public void testContinueShoppingReturnsToLandingPage() {
 
 		LandingPage landingPage = cartPage.continueShopping();
@@ -70,7 +71,7 @@ public class CartPageTest extends BaseTest {
 		System.out.println("CartPageTest::testContinueShoppingReturnsToLandingPage PASSED!");
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 4, description = "Ensure the cart shows an empty state after all items are removed")
 	public void testCartEmptyStateAfterRemovingAllItems() {
 
 		cartPage.removeProduct(PRODUCT_1).removeProduct(PRODUCT_2);
@@ -82,7 +83,7 @@ public class CartPageTest extends BaseTest {
 		System.out.println("CartPageTest::testCartEmptyStateAfterRemovingAllItems PASSED!");
 	}
 
-	@Test(priority = 5, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 5, description = "Validate that the cart item count matches the number of added items", retryAnalyzer = RetryAnalyzer.class)
 	public void testCartItemCountMatchesAddedItems() {
 
 		Assert.assertEquals(cartPage.getCartItemCount(), 2, "Cart should contain 2 items");
@@ -91,7 +92,7 @@ public class CartPageTest extends BaseTest {
 		System.out.println("CartPageTest::testCartItemCountMatchesAddedItems PASSED!");
 	}
 
-	@Test(priority = 6, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 6, description = "Check if the cart contains the correct products after adding them", retryAnalyzer = RetryAnalyzer.class)
 	public void testCartContainsCorrectProducts() {
 
 		Assert.assertTrue(cartPage.containsProduct(PRODUCT_1), "Product 1 missing from cart");
@@ -101,7 +102,7 @@ public class CartPageTest extends BaseTest {
 		System.out.println("CartPageTest::testCartContainsCorrectProducts PASSED!");
 	}
 
-	@Test(priority = 7, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 7, description = "Ensure product details in cart match the items added", retryAnalyzer = RetryAnalyzer.class)
 	public void testProductDetailsMatchAddedItems() {
 
 		ProductComponent product = cartPage.getProductByName(PRODUCT_1);

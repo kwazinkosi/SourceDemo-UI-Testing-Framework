@@ -55,8 +55,6 @@
 			<version>7.10.2</version>
 			<scope>test</scope>
 		</dependency>
-
-
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
@@ -128,10 +126,7 @@
 			<artifactId>surefire-testng</artifactId>
 			<version>3.5.2</version>
 		</dependency>
-
-
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>

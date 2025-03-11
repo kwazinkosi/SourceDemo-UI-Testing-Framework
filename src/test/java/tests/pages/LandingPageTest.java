@@ -25,25 +25,24 @@ import utils.dataproviders.models.SocialsTestData;
 
 public class LandingPageTest extends BaseTest {
 
-
 	private static final String PRODUCT_1 = "Sauce Labs Backpack";
 	private static final String PRODUCT_1_DESCRIPTION = "arry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.";
 	private static final String PRODUCT_1_PRICE = "$29.99";
 	private WebDriver driver;
-	
-	@BeforeMethod(dependsOnMethods = {"setup"})
+
+	@BeforeMethod(dependsOnMethods = { "setup" })
 	public void testSetup() {
 		driver = DriverFactory.getDriver();
 	}
-	
+
 	@AfterMethod
 	public void cleanUp() {
 		landingPage.getMenu().resetAppState();
 	}
 
-	@Test(priority = 0, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 0, description = "Ensure all landing page components are displayed correctly", retryAnalyzer = RetryAnalyzer.class)
 	public void testLandingPageComponentsDisplayed() {
-		
+
 		Assert.assertTrue(landingPage.isPageDisplayed(), "Landing page not displayed");
 		Assert.assertTrue(landingPage.getMenu().isDisplayed(), "Menu component missing");
 		Assert.assertTrue(landingPage.getCart().isBadgeDisplayed(), "Cart badge missing");
@@ -53,7 +52,7 @@ public class LandingPageTest extends BaseTest {
 
 	}
 
-	@Test(priority = 1, dataProvider = "sortOptions", dataProviderClass = SortDataProvider.class)
+	@Test(priority = 1, description = "Verify sorting functionality for products", dataProvider = "sortOptions", dataProviderClass = SortDataProvider.class)
 	public void testSortingFunctionality(SortOption option) {
 
 		landingPage.selectSortOption(option);
@@ -64,11 +63,11 @@ public class LandingPageTest extends BaseTest {
 
 		Assert.assertTrue(isSorted, "Sorting failed for: " + option.name());
 
-		LoggingManager.info(option.toString()+" sorting in LandingPageTests::testSortingFunctionality PASSED!");
-		System.out.println(option.toString()+" sorting in LandingPageTests::testSortingFunctionality PASSED!");
+		LoggingManager.info(option.toString() + " sorting in LandingPageTests::testSortingFunctionality PASSED!");
+		System.out.println(option.toString() + " sorting in LandingPageTests::testSortingFunctionality PASSED!");
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, description = "Check if adding/removing an item updates cart count correctly")
 	public void testAddAndRemoveItemFromCartUpdatesCartCount() {
 
 		CartComponent cart = landingPage.getCart();
@@ -76,7 +75,7 @@ public class LandingPageTest extends BaseTest {
 
 		landingPage = landingPage.addItemToCart(0);
 		int countAfterAddition = cart.getCurrentCartCount();
-		Assert.assertEquals(countAfterAddition,  initialCount + 1);
+		Assert.assertEquals(countAfterAddition, initialCount + 1);
 
 		landingPage.removeItemFromCart(0);
 		int countAfterRemoval = cart.getCurrentCartCount();
@@ -86,11 +85,11 @@ public class LandingPageTest extends BaseTest {
 		System.out.println("LandingPageTests::testAddAndRemoveItemFromCartUpdatesCartCount PASSED!");
 	}
 
-	@Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 3, description = "Ensure product details page is accessible from landing page", retryAnalyzer = RetryAnalyzer.class)
 	public void testProductDetailsNavigation() {
-		
+
 		ProductDetailsPage detailsPage = landingPage.viewProductDetails(0);
-		
+
 		SoftAssert softAssert = new SoftAssert();
 
 		softAssert.assertTrue(detailsPage.isPageDisplayed(), "Details page not opened");
@@ -104,24 +103,26 @@ public class LandingPageTest extends BaseTest {
 		System.out.println("LandingPageTests::testProductDetailsNavigation PASSED!");
 	}
 
-	@Test(priority = 4, dataProvider = "menuItemsData", dataProviderClass = SourceDemoDataProviders.class)
+	@Test(priority = 4, description = "Validate navigation through menu items", dataProvider = "menuItemsData", dataProviderClass = SourceDemoDataProviders.class)
 	public void testMenuNavigation(MenuItemsTestData data) {
-		
+
 		String testCaseID = data.getTestCaseId();
-		String menuItem =data.getMenuItem();
-		String expectedDestUrl =data.getDestinationUrl();
-		MenuComponent menu =landingPage.getMenu().openMenu();
+		String menuItem = data.getMenuItem();
+		String expectedDestUrl = data.getDestinationUrl();
+		MenuComponent menu = landingPage.getMenu().openMenu();
 
 		Assert.assertTrue(landingPage.getMenu().isDisplayed());
 		menu.selectMenuItem(menuItem);
-		String actualUrl = driver.getCurrentUrl().equals("https://www.saucedemo.com/inventory.html")?"":driver.getCurrentUrl();
-		
-		Assert.assertTrue(actualUrl.contains(expectedDestUrl), "Navigation to " + menuItem + " failed, Link might be disabled");
+		String actualUrl = driver.getCurrentUrl().equals("https://www.saucedemo.com/inventory.html") ? ""
+				: driver.getCurrentUrl();
+
+		Assert.assertTrue(actualUrl.contains(expectedDestUrl),
+				"Navigation to " + menuItem + " failed, Link might be disabled");
 		LoggingManager.info(testCaseID + " in LandingPageTests::testMenuNavigation PASSED!");
 		System.out.println(testCaseID + " in LandingPageTests::testMenuNavigation PASSED!");
 	}
 
-	@Test(priority = 5, dataProvider = "socialsData", dataProviderClass = SourceDemoDataProviders.class)
+	@Test(priority = 5, description = "Ensure social media links on the landing page are functional", dataProvider = "socialsData", dataProviderClass = SourceDemoDataProviders.class)
 	public void testSocialMediaLinks(SocialsTestData data) {
 
 		String testCaseID = data.getTestCaseId();
@@ -149,7 +150,7 @@ public class LandingPageTest extends BaseTest {
 		driver.switchTo().window(originalWindow);
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 6, description = "Verify cart persistence after page refresh")
 	public void testCartPersistsAfterRefresh() {
 		int initialCartCount = landingPage.getCart().getCurrentCartCount();
 

@@ -20,16 +20,13 @@ public class CheckoutOverviewPageTest extends BaseTest {
 	@BeforeMethod
 	public void setUp() {
 
-		overviewPage = (CheckoutOverviewPage) landingPage
-				.addItemToCart(PRODUCT_1)
-				.addItemToCart(PRODUCT_2)
-				.getCart()
+		overviewPage = (CheckoutOverviewPage) landingPage.addItemToCart(PRODUCT_1).addItemToCart(PRODUCT_2).getCart()
 				.navigateToCart().proceedToCheckout().enterShippingInformation("John", "Doe", "12345")
 				.continueToOverview();
 
 	}
 
-	@Test(priority = 0, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 0, description = "Verify that order summary details are displayed correctly", retryAnalyzer = RetryAnalyzer.class)
 	public void testOrderSummaryDetailsDisplayed() {
 
 		Assert.assertTrue(overviewPage.isPageDisplayed(), "Checkout overview page not displayed");
@@ -41,7 +38,7 @@ public class CheckoutOverviewPageTest extends BaseTest {
 		System.out.println("CheckoutOverviewPage::testOrderSummaryDetailsDisplayed PASSED!");
 	}
 
-	@Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 1, description = "Ensure price calculations in the checkout overview are correct", retryAnalyzer = RetryAnalyzer.class)
 	public void testPriceCalculations() {
 
 		double expectedSubtotal = PRODUCT_1_PRICE + PRODUCT_2_PRICE;
@@ -58,7 +55,7 @@ public class CheckoutOverviewPageTest extends BaseTest {
 		System.out.println("CheckoutOverviewPage::testPriceCalculations PASSED!");
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, description = "Check the total price calculation method in checkout overview")
 	public void testTotalCalculationMethod() {
 
 		Assert.assertTrue(overviewPage.verifyTotalCalculation(), "Total amount does not match subtotal + tax");
@@ -67,7 +64,7 @@ public class CheckoutOverviewPageTest extends BaseTest {
 		System.out.println("CheckoutOverviewPage::testTotalCalculationMethod PASSED!");
 	}
 
-	@Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 3, description = "Ensure navigation to cart page from checkout overview works", retryAnalyzer = RetryAnalyzer.class)
 	public void testNavigationToCartPage() {
 
 		CartPage cartPage = overviewPage.cancelCheckout();
@@ -76,7 +73,7 @@ public class CheckoutOverviewPageTest extends BaseTest {
 		System.out.println("CheckoutOverviewPage::testNavigationToCartPage PASSED!");
 	}
 
-	@Test(priority = 4, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 4, description = "Verify successful navigation to order completion page", retryAnalyzer = RetryAnalyzer.class)
 	public void testNavigationToCompletePage() {
 
 		CheckoutCompletePage completePage = overviewPage.finishCheckout();

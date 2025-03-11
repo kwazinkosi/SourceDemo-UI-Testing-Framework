@@ -13,22 +13,19 @@ import pages.BasePage;
 
 public class LoginPageTest extends BaseTest {
 
-	
 	private LoginPage loginPage;
-	
-	 
+
 	@BeforeMethod
-    @Override
-    public void setup() {
+	@Override
+	public void setup() {
 		driver = driverFactory.initDriver(browserName, browserMode);
-        loginPage = new LoginPage(driver);
-    }
-	
-	@Test(priority = 0, dataProvider = "loginData", dataProviderClass = SourceDemoDataProviders.class)
+		loginPage = new LoginPage(driver);
+	}
+
+	@Test(priority = 0, description = "Verify login functionality with different credentials", dataProvider = "loginData", dataProviderClass = SourceDemoDataProviders.class)
 	public void testLoginFunctionality(LoginTestData data) {
 
-
-        loginPage.navigateTo(baseUrl);
+		loginPage.navigateTo(baseUrl);
 		String username = data.getUsername();
 		String password = data.getPassword();
 		String expectedResult = data.getExpectedResult();

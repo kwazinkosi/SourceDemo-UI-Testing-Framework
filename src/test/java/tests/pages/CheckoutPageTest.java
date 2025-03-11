@@ -19,15 +19,15 @@ public class CheckoutPageTest extends BaseTest {
 	private static final String PRODUCT_NAME = "Sauce Labs Backpack";
 	private WebDriver driver;
 
-	@BeforeMethod(dependsOnMethods = {"setup"})
+	@BeforeMethod(dependsOnMethods = { "setup" })
 	public void classSetUp() {
-		
+
 		driver = DriverFactory.getDriver();
 		landingPage.addItemToCart(PRODUCT_NAME);
 		checkoutPage = landingPage.getCart().navigateToCart().proceedToCheckout();
 	}
 
-	@Test(priority = 0, dataProvider = "checkoutData", dataProviderClass = SourceDemoDataProviders.class)
+	@Test(priority = 0, description = "Validate checkout form submissions with various test data", dataProvider = "checkoutData", dataProviderClass = SourceDemoDataProviders.class)
 	public void testCheckoutFormSubmissions(CheckoutTestData data) {
 
 		String testCaseID = data.getTestCaseId();
@@ -47,7 +47,7 @@ public class CheckoutPageTest extends BaseTest {
 			System.out.println(
 					testCaseID + " (expected success) in CheckoutPageTests::testCheckoutFormSubmissions PASSED!");
 		} else {
-			
+
 			checkoutPage.continueToOverview();
 			Assert.assertEquals(checkoutPage.getErrorMessage(), expectedResult,
 					"Unexpected error message for test case: " + testCaseID);
@@ -59,7 +59,7 @@ public class CheckoutPageTest extends BaseTest {
 		}
 	}
 
-	@Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 1, description = "Ensure canceling checkout redirects back to cart", retryAnalyzer = RetryAnalyzer.class)
 	public void testCancelCheckoutReturnsToCart() {
 
 		CartPage cartPage = checkoutPage.cancelCheckout();
@@ -69,7 +69,7 @@ public class CheckoutPageTest extends BaseTest {
 		System.out.println("CheckoutPageTests::testCancelCheckoutReturnsToCart PASSED!");
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, description = "Verify form clear functionality in the checkout page")
 	public void testFormClearFunctionality() {
 		checkoutPage.enterShippingInformation("Test", "User", "67890").clearForm();
 
@@ -80,7 +80,7 @@ public class CheckoutPageTest extends BaseTest {
 		System.out.println("CheckoutPageTests::testFormClearFunctionality PASSED!");
 	}
 
-	@Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 3, description = "Test handling of special characters in postal code fields", retryAnalyzer = RetryAnalyzer.class)
 	public void testSpecialCharactersInPostalCode() {
 		checkoutPage.enterShippingInformation("John", "Doe", "!@#$%").continueToOverview();
 

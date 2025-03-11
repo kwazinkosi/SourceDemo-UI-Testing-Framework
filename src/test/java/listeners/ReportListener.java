@@ -5,6 +5,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -16,41 +17,57 @@ import utils.DriverFactory;
 import utils.ScreenshotUtil;
 
 public class ReportListener implements ITestListener {
-    
-	private static final ExtentReports extent = ExtentManager.createInstance();
-    private static final ThreadLocal<ExtentTest> test = new ThreadLocal<>();
-    private static long startTime;
-    
+    private ExtentReports extent;
+    private ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+    private long startTime;
+
     @Override
     public void onStart(ITestContext context) {
+        // Capture suite name and initialize ExtentReports
+        String suiteName = context.getSuite().getName();
+        extent = ExtentManager.createInstance(suiteName);
         startTime = System.currentTimeMillis();
     }
-    
+
     @Override
     public void onTestStart(ITestResult result) {
-        
-    	// Create a new ExtentTest instance and set it in ThreadLocal
-    	String suiteName = result.getTestContext().getSuite().getName();
-    	  ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName())
-    	    .assignCategory(suiteName); // Group by suite in the report
-    	  test.set(extentTest);
+        // Create test with method name and assign suite category
+        String testDescription = result.getMethod().getDescription();
+        ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(), testDescription)
+            .assignCategory(result.getTestContext().getSuite().getName());
+
+        // Log parameters if present
+        Object[] parameters = result.getParameters();
+        if (parameters != null && parameters.length > 0) {
+            extentTest.info("Test Parameters: " + Arrays.toString(parameters));
+        }
+
+        test.set(extentTest);
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        // Log test success
+        // Capture screenshot for passed tests (optional)
+        WebDriver driver = DriverFactory.getDriver();
+        if (driver != null) {
+            String screenshotPath = ScreenshotUtil.captureScreenshot(driver, result.getName());
+            if (screenshotPath != null) {
+                try {
+                    test.get().pass("Screenshot: " + 
+                        test.get().addScreenCaptureFromPath(screenshotPath));
+                } catch (Exception e) {
+                    test.get().pass("Failed to attach screenshot: " + e.getMessage());
+                }
+            }
+        }
         test.get().log(Status.PASS, "Test passed");
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        // Log test failure
         WebDriver driver = DriverFactory.getDriver();
         if (driver != null) {
-            // Capture screenshot
             String screenshotPath = ScreenshotUtil.captureScreenshot(driver, result.getName());
-            
-            // Attach screenshot to report if it exists
             if (screenshotPath != null) {
                 try {
                     test.get().fail("Screenshot: " + 
@@ -64,23 +81,27 @@ public class ReportListener implements ITestListener {
         } else {
             test.get().fail("WebDriver instance is null.");
         }
-        
-        // Log the exception
         test.get().fail(result.getThrowable());
     }
 
     @Override
+    public void onTestSkipped(ITestResult result) {
+        test.get().log(Status.SKIP, "Test skipped: " + result.getThrowable().getMessage());
+    }
+
+    @Override
     public void onFinish(ITestContext context) {
-    	long totalTime = System.currentTimeMillis() - startTime;
+        // Calculate execution time
+        long totalTime = System.currentTimeMillis() - startTime;
         String formattedTime = formatDuration(totalTime);
 
-        // Add system info
+        // Add execution metrics
         extent.setSystemInfo("Total Execution Time", formattedTime);
         extent.setSystemInfo("Passed Tests", String.valueOf(context.getPassedTests().size()));
         extent.setSystemInfo("Failed Tests", String.valueOf(context.getFailedTests().size()));
         extent.setSystemInfo("Skipped Tests", String.valueOf(context.getSkippedTests().size()));
 
-        // Custom summary table
+        // Add summary table
         String[][] summary = {
             {"Total Tests", String.valueOf(context.getAllTestMethods().length)},
             {"Passed", String.valueOf(context.getPassedTests().size())},
@@ -92,6 +113,7 @@ public class ReportListener implements ITestListener {
         extent.createTest("Execution Summary")
               .info(MarkupHelper.createTable(summary));
 
+        // Flush the report
         extent.flush();
     }
 

@@ -10,11 +10,13 @@ import pages.*;
 import tests.base.BaseTest;
 import utils.DriverFactory;
 import utils.LoggingManager;
+
 public class CheckoutCompletePageTest extends BaseTest {
 
 	private CheckoutCompletePage completePage;
 	private static final String PRODUCT_NAME = "Sauce Labs Backpack";
 	private WebDriver driver;
+
 	@BeforeMethod
 	public void setUp() {
 		// Complete checkout to reach success page
@@ -25,7 +27,7 @@ public class CheckoutCompletePageTest extends BaseTest {
 		completePage = page.finishCheckout();
 	}
 
-	@Test(priority = 0, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 0, description = "Ensure checkout complete page is displayed properly", retryAnalyzer = RetryAnalyzer.class)
 	public void testPageDisplayState() {
 		// Verify URL and core elements
 		Assert.assertTrue(completePage.isPageDisplayed(), "Checkout complete page not properly displayed");
@@ -37,7 +39,7 @@ public class CheckoutCompletePageTest extends BaseTest {
 		System.out.println("CheckoutCompletePageTest::testPageDisplayState PASSED!");
 	}
 
-	@Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 1, description = "Verify success message content on the checkout complete page", retryAnalyzer = RetryAnalyzer.class)
 	public void testSuccessMessageContent() {
 		String actualMessage = completePage.getSuccessMessage();
 		Assert.assertEquals(actualMessage, CheckoutCompletePage.SUCCESS_MESSAGE,
@@ -48,7 +50,7 @@ public class CheckoutCompletePageTest extends BaseTest {
 		System.out.println("CheckoutCompletePageTest::testSuccessMessageContent PASSED!");
 	}
 
-	@Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 2, description = "Ensure order success status is displayed correctly", retryAnalyzer = RetryAnalyzer.class)
 	public void testOrderSuccessStatus() {
 		Assert.assertTrue(completePage.isOrderSuccessful(), "Order success status verification failed");
 
@@ -56,7 +58,7 @@ public class CheckoutCompletePageTest extends BaseTest {
 		System.out.println("CheckoutCompletePageTest::testOrderSuccessStatus PASSED!");
 	}
 
-	@Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
+	@Test(priority = 3, description = "Validate navigation back to the products page from order complete", retryAnalyzer = RetryAnalyzer.class)
 	public void testNavigationBackToProducts() {
 		LandingPage landingPage = completePage.navigateBackToHome();
 
@@ -69,7 +71,7 @@ public class CheckoutCompletePageTest extends BaseTest {
 		System.out.println("CheckoutCompletePageTest::testNavigationBackToProducts PASSED!");
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 4, description = "Check if refreshing the checkout complete page persists the state")
 	public void testPageRefreshPersistsState() {
 
 		driver.navigate().refresh();
