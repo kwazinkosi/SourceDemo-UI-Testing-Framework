@@ -1,4 +1,4 @@
-<suite name="Product Validation Suite" parallel="classes"
+<suite name="Product_Validation_Suite" parallel="classes"
 	thread-count="2">
 	<listeners>
 		<listener class-name="listeners.ReportListener" />

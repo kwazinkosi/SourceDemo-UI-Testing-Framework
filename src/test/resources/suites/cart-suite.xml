@@ -1,4 +1,4 @@
-<suite name="Cart Management Suite">
+<suite name="Cart_Management_Suite">
 
 	<listeners>
 		<listener class-name="listeners.ReportListener" />
