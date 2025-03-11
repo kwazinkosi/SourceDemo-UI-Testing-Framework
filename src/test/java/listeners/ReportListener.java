@@ -28,9 +28,12 @@ public class ReportListener implements ITestListener {
     
     @Override
     public void onTestStart(ITestResult result) {
-        // Create a new ExtentTest instance and set it in ThreadLocal
-        ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName());
-        test.set(extentTest);
+        
+    	// Create a new ExtentTest instance and set it in ThreadLocal
+    	String suiteName = result.getTestContext().getSuite().getName();
+    	  ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName())
+    	    .assignCategory(suiteName); // Group by suite in the report
+    	  test.set(extentTest);
     }
 
     @Override

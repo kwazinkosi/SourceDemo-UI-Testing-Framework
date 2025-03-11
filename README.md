@@ -32,14 +32,18 @@ Ensure you're in the project's root directory, where the pom.xml file is located
 
 
 ### 4. Run Tests
-You can run the test suite using Maven by executing the following command:
+You can run the test suites using Maven by executing the following commands:
 
 ```sh
-mvn test
+mvn test -Psmoke       # Run smoke tests
+mvn test -Pcheckout    # Run checkout tests
+mvn test -Pproduct     # Run product tests
+mvn test -Pcart        # Run cart tests
+mvn test -Pregression  # Run full regression
 ```
 ### Running in eclipse
 
-- Run as testNG or click on dropdown of the run button and then select sourcedemo_testNG.xml"
+- Run as testNG or click on dropdown of the run button and then select regression-suite.xml or any suite
 
 ## Project Structure
 
@@ -80,9 +84,16 @@ SourceDemo/
 ├── src/main/test/resources/
 │   ├── data/
 │   │  	└── testdata.xlsx
-│   └── config/
-│ 	└── config.properties
-│
+│   ├── config/
+│   │   └── config.properties   
+│   │  
+│   └── suites/  
+│       ├── cart-suite.xml
+│       ├── checkout-suite.xml
+│       ├── product-suite.xml  
+│       ├── regression-suite.xml
+│       └── smoke-test.xml  
+│   
 ├── src/test/java/
 │   ├──  tests/
 │   │   ├── BasePageTest.java

@@ -1,0 +1,21 @@
+<suite name="Cart Management Suite">
+  <test name="Cart Tests">
+    <classes>
+      <!-- Add/Remove Items -->
+      <class name="tests.pages.LandingPageTest">
+        <methods>
+          <include name="testAddAndRemoveItemFromCartUpdatesCartCount"/>
+          <include name="testCartPersistsAfterRefresh"/>
+        </methods>
+      </class>
+
+      <!-- Cart Page Tests -->
+      <class name="tests.pages.CartPageTest">
+        <methods>
+          <include name="testCartEmptyStateAfterRemovingAllItems"/>
+          <include name="testCartContainsCorrectProducts"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

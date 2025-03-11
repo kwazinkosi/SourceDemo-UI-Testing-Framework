@@ -6,6 +6,48 @@
 	<artifactId>SourceDemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<profiles>
+		<!-- Smoke Test Profile -->
+		<profile>
+			<id>smoke</id>
+			<properties>
+				<suiteFile>src/test/resources/suites/smoke-test-suite.xml</suiteFile>
+			</properties>
+		</profile>
+
+		<!-- Checkout Flow Profile -->
+		<profile>
+			<id>checkout</id>
+			<properties>
+				<suiteFile>src/test/resources/suites/checkout-suite.xml</suiteFile>
+			</properties>
+		</profile>
+
+		<!-- Product Validation Profile -->
+		<profile>
+			<id>product</id>
+			<properties>
+				<suiteFile>src/test/resources/suites/product-suite.xml</suiteFile>
+			</properties>
+		</profile>
+
+		<!-- Cart Management Profile -->
+		<profile>
+			<id>cart</id>
+			<properties>
+				<suiteFile>src/test/resources/suites/cart-suite.xml</suiteFile>
+			</properties>
+		</profile>
+
+		<!-- Full Regression Profile -->
+		<profile>
+			<id>regression</id>
+			<properties>
+				<suiteFile>src/test/resources/suites/regression-suite.xml</suiteFile>
+			</properties>
+		</profile>
+	</profiles>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -101,15 +143,14 @@
 					<target>11</target>
 				</configuration>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.5.2</version> <!-- Update to the latest version if
-				needed -->
+				<version>3.5.2</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/sourcedemo_testng.xml</suiteXmlFile>
+						<suiteXmlFile>${suiteFile}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
