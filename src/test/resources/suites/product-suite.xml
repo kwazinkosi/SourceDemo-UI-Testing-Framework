@@ -1,14 +1,19 @@
-<suite name="Product Validation Suite" parallel="classes" thread-count="2">
-  <test name="Product Tests">
-    <classes>
-      <!-- Sorting & Product Details -->
-      <class name="tests.pages.LandingPageTest">
-        <methods>
-          <include name="testSortingFunctionality"/>
-          <include name="testSocialMediaLinks"/>
-        </methods>
-      </class>
-      <class name="tests.pages.ProductDetailsPageTest"/>
-    </classes>
-  </test>
+<suite name="Product Validation Suite" parallel="classes"
+	thread-count="2">
+	<listeners>
+		<listener class-name="listeners.ReportListener" />
+	</listeners>
+
+	<test name="Product Tests">
+		<classes>
+			<!-- Sorting & Product Details -->
+			<class name="tests.pages.LandingPageTest">
+				<methods>
+					<include name="testSortingFunctionality" />
+					<include name="testSocialMediaLinks" />
+				</methods>
+			</class>
+			<class name="tests.pages.ProductDetailsPageTest" />
+		</classes>
+	</test>
 </suite>

@@ -1,27 +1,33 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Smoke Test Suite" parallel="methods" thread-count="3">
-  <test name="Critical Paths">
-    <classes>
-      <!-- Login -->
-      <class name="tests.pages.LoginPageTest">
-        <methods>
-          <include name="testLoginFunctionality"/>
-        </methods>
-      </class>
 
-      <!-- Add Item to Cart -->
-      <class name="tests.pages.LandingPageTest">
-        <methods>
-          <include name="testAddAndRemoveItemFromCartUpdatesCartCount"/>
-        </methods>
-      </class>
+	<listeners>
+		<listener class-name="listeners.ReportListener" />
+	</listeners>
 
-      <!-- Checkout Flow -->
-      <class name="tests.pages.CheckoutPageTest">
-        <methods>
-          <include name="testCheckoutFormSubmissions"/>
-        </methods>
-      </class>
-    </classes>
-  </test>
+	<test name="Critical Paths">
+		<classes>
+			<!-- Login -->
+			<class name="tests.pages.LoginPageTest">
+				<methods>
+					<include name="testLoginFunctionality" />
+				</methods>
+			</class>
+
+			<!-- Add Item to Cart -->
+			<class name="tests.pages.LandingPageTest">
+				<methods>
+					<include
+						name="testAddAndRemoveItemFromCartUpdatesCartCount" />
+				</methods>
+			</class>
+
+			<!-- Checkout Flow -->
+			<class name="tests.pages.CheckoutPageTest">
+				<methods>
+					<include name="testCheckoutFormSubmissions" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 </suite>

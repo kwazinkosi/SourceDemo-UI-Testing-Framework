@@ -1,18 +1,23 @@
 <suite name="Checkout Flow Suite">
-  <test name="Checkout Tests">
-    <classes>
-      <!-- Cart -->
-      <class name="tests.pages.CartPageTest">
-        <methods>
-          <include name="testProceedToCheckoutNavigatesToCheckoutPage"/>
-          <include name="testRemoveProductFromCart"/>
-        </methods>
-      </class>
 
-      <!-- Checkout Steps -->
-      <class name="tests.pages.CheckoutPageTest"/>
-      <class name="tests.pages.CheckoutOverviewTest"/>
-      <class name="tests.pages.CheckoutCompletePageTest"/>
-    </classes>
-  </test>
+	<listeners>
+		<listener class-name="listeners.ReportListener" />
+	</listeners>
+	<test name="Checkout Tests">
+		<classes>
+			<!-- Cart -->
+			<class name="tests.pages.CartPageTest">
+				<methods>
+					<include
+						name="testProceedToCheckoutNavigatesToCheckoutPage" />
+					<include name="testRemoveProductFromCart" />
+				</methods>
+			</class>
+
+			<!-- Checkout Steps -->
+			<class name="tests.pages.CheckoutPageTest" />
+			<class name="tests.pages.CheckoutOverviewTest" />
+			<class name="tests.pages.CheckoutCompletePageTest" />
+		</classes>
+	</test>
 </suite>
