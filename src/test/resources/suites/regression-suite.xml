@@ -13,17 +13,11 @@
     <!-- ================== -->
     
     <!-- Core Functionality Tests -->
-    <test name="Login_and_Basic_Flow">
+    <test name="source_demo_regression">
         <classes>
             <class name="tests.pages.LoginPageTest"/>
             <class name="tests.pages.LandingPageTest"/>
             <class name="tests.pages.ProductDetailsPageTest"/>
-        </classes>
-    </test>
-
-    <!-- Checkout Flow Tests -->
-    <test name="Checkout_Process">
-        <classes>
             <class name="tests.pages.CartPageTest"/>
             <class name="tests.pages.CheckoutPageTest"/>
             <class name="tests.pages.CheckoutOverviewPageTest"/>

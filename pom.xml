@@ -46,6 +46,14 @@
 				<suiteFile>src/test/resources/suites/regression-suite.xml</suiteFile>
 			</properties>
 		</profile>
+		
+		<!-- Cross Browser Profile -->
+		<profile>
+			<id>cross</id>
+			<properties>
+				<suiteFile>src/test/resources/suites/cross-browser-suite.xml</suiteFile>
+			</properties>
+		</profile>
 	</profiles>
 
 	<dependencies>

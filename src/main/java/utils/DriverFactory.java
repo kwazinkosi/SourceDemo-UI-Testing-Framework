@@ -82,8 +82,9 @@ public class DriverFactory {
     private static WebDriver createFirefoxDriver(String browserMode) {
         
     	FirefoxOptions options = new FirefoxOptions();
+    	
         if (HEADLESS_MODE.equals(browserMode)) {
-            options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
+            options.addArguments("--headless", "-ignore-certificate-errors");
         }
         options.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.IGNORE); // Handle alerts
         return new FirefoxDriver(options);
@@ -95,6 +96,7 @@ public class DriverFactory {
         if (HEADLESS_MODE.equals(browserMode)) {
             options.addArguments("--headless", "--disable-gpu", "--ignore-certificate-errors");
         }
+        options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
         options.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.IGNORE); // Handle alerts
         return new EdgeDriver(options);
     }

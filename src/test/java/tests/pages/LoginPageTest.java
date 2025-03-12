@@ -2,6 +2,8 @@ package tests.pages;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.Assert;
 import pages.LandingPage;
 import pages.LoginPage;
@@ -15,9 +17,18 @@ public class LoginPageTest extends BaseTest {
 
 	private LoginPage loginPage;
 
+	@SuppressWarnings("null")
 	@BeforeMethod
 	@Override
-	public void setup() {
+	@Parameters("browser") // Parameter from XML
+	public void setup(@Optional String browser) {
+		// Use the provided browser parameter, otherwise fallback to config file defined browser name
+		if (browser != null || !browser.isEmpty()) {
+			browserName = browser; 
+		}
+		System.out.println("Running tests on browser: " + browser);
+		LoggingManager.info("Running tests on browser: " +browser);
+
 		driver = driverFactory.initDriver(browserName, browserMode);
 		loginPage = new LoginPage(driver);
 	}

@@ -17,8 +17,9 @@ import utils.DriverFactory;
 import utils.ScreenshotUtil;
 
 public class ReportListener implements ITestListener {
+	
     private ExtentReports extent;
-    private ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
     private long startTime;
 
     @Override
@@ -33,8 +34,10 @@ public class ReportListener implements ITestListener {
     public void onTestStart(ITestResult result) {
         // Create test with method name and assign suite category
         String testDescription = result.getMethod().getDescription();
+        String browser = result.getTestContext().getCurrentXmlTest().getParameter("browser");
+        String suiteName = result.getTestContext().getSuite().getName();
         ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(), testDescription)
-            .assignCategory(result.getTestContext().getSuite().getName());
+            .assignCategory(suiteName).assignCategory(browser);
 
         // Log parameters if present
         Object[] parameters = result.getParameters();
@@ -117,6 +120,14 @@ public class ReportListener implements ITestListener {
         extent.flush();
     }
 
+    public static ExtentTest getTest() {
+        return test.get();
+    }
+
+    public static ExtentTest createStep(String stepName) {
+        return getTest().createNode(stepName);
+    }
+    
     private String formatDuration(long millis) {
         long hours = TimeUnit.MILLISECONDS.toHours(millis);
         long minutes = TimeUnit.MILLISECONDS.toMinutes(millis) % 60;

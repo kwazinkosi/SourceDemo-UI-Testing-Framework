@@ -40,6 +40,7 @@ mvn test -Pcheckout    # Run checkout tests
 mvn test -Pproduct     # Run product tests
 mvn test -Pcart        # Run cart tests
 mvn test -Pregression  # Run full regression
+mvn test -Pcross			# Run cross browser tests
 ```
 ### Running in eclipse
 
