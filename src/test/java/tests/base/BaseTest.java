@@ -27,13 +27,13 @@ public class BaseTest {
 	protected static String validUsername;
 	protected static String validPassword;
 	protected static DriverFactory driverFactory;
-	
+
 	protected LandingPage landingPage;
 	protected WebDriver driver;
-	
+
 	@BeforeSuite
 	public void suiteSetup() {
-		
+
 		LoggingManager.configureLogging();
 		driverFactory = new DriverFactory();
 		browserName = ConfigReader.getProperty("browser_name");
@@ -44,17 +44,18 @@ public class BaseTest {
 
 	}
 
-	@SuppressWarnings("null")
 	@BeforeMethod
 	@Parameters("browser") // Parameter from XML
 	public void setup(@Optional String browser) {
-		
+
 		// Use the provided browser parameter, otherwise fallback to config file browser
-		if (browser != null || !browser.isEmpty()) {
-			browserName = browser; 
+		if (browser != null && !browser.isEmpty()) {
+			browserName = browser;
+		} else {
+//		    browserName = ConfigReader.getProperty("browser"); // Replace with your config method if needed
 		}
-		System.out.println("Running tests on browser: " + browser);
-		LoggingManager.info("Running tests on browser: " +browser);
+		System.out.println("Running tests on browser: " + browserName);
+		LoggingManager.info("Running tests on browser: " + browserName);
 
 		driver = driverFactory.initDriver(browserName, browserMode);
 		// Initialize pages
@@ -69,31 +70,46 @@ public class BaseTest {
 	@AfterMethod
 	public void teardown() {
 		DriverFactory.quitDriver();
-    }
-	
-	
-	// ----------------------
-    // Step Logging Methods
-    // ----------------------
-    protected void logStep(String message) {
-        ExtentTest extentTest = ReportListener.getTest();
-        if (extentTest != null) {
-            extentTest.log(Status.INFO, message);
-        }
-    }
+	}
 
-    protected void logStepWithScreenshot(String message) {
-        ExtentTest extentTest = ReportListener.getTest();
-        if (extentTest != null && driver != null) {
-            String screenshotPath = ScreenshotUtil.captureScreenshot(driver, "step_screenshot");
-            try {
-                extentTest.log(Status.INFO, message + "<br>Screenshot: " + 
-                    extentTest.addScreenCaptureFromPath(screenshotPath));
-            } catch (Exception e) {
-                extentTest.log(Status.INFO, message + "<br>Failed to attach screenshot: " + e.getMessage());
-            }
-        } else {
-            logStep(message);
-        }
-    }
+	// ----------------------
+	// Step Logging Methods
+	// ----------------------
+	protected void logStep(String message) {
+		ExtentTest extentTest = ReportListener.getTest();
+		if (extentTest != null) {
+			extentTest.log(Status.INFO, message);
+		}
+	}
+
+	protected void logStepWithScreenshot(String message) {
+		ExtentTest extentTest = ReportListener.getTest();
+		if (extentTest == null)
+			return;
+
+		WebDriver driver = DriverFactory.getDriver();
+		if (driver != null) {
+			// Step 1: Capture screenshot
+			String screenshotPath = ScreenshotUtil.captureScreenshot(driver, "step_screenshot");
+
+			if (screenshotPath != null) {
+				// Step 2: Attach screenshot to report
+				extentTest.log(Status.INFO,
+						message + "<br>Screenshot: " + extentTest.addScreenCaptureFromPath(screenshotPath));
+
+			} else {
+				extentTest.log(Status.INFO, message);
+			}
+		} else {
+			extentTest.log(Status.INFO, message);
+		}
+	}
+	public static ExtentTest getTest() {
+		return ReportListener.getTest();
+	}
+	
+	protected ExtentTest createNestedStep(String stepName) {
+
+		return ReportListener.createStep(stepName);
+	}
 }
