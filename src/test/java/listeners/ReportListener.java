@@ -30,7 +30,7 @@ public class ReportListener implements ITestListener {
 		extent = ExtentManager.createInstance(suiteName);
 		startTime = System.currentTimeMillis();
 	}
-
+	
 	@Override
 	public void onTestStart(ITestResult result) {
 		// Create test with method name and assign suite category
@@ -91,27 +91,33 @@ public class ReportListener implements ITestListener {
 
 	@Override
 	public void onFinish(ITestContext context) {
-		// Calculate execution time
-		long totalTime = System.currentTimeMillis() - startTime;
-		String formattedTime = formatDuration(totalTime);
+	    // Calculate execution time
+	    long totalTime = System.currentTimeMillis() - startTime;
+	    String formattedTime = formatDuration(totalTime);
 
-		// Add execution metrics
-		extent.setSystemInfo("Total Execution Time", formattedTime);
-		extent.setSystemInfo("Passed Tests", String.valueOf(context.getPassedTests().size()));
-		extent.setSystemInfo("Failed Tests", String.valueOf(context.getFailedTests().size()));
-		extent.setSystemInfo("Skipped Tests", String.valueOf(context.getSkippedTests().size()));
+	    // Add execution metrics
+	    extent.setSystemInfo("Total Execution Time", formattedTime);
+	    extent.setSystemInfo("Passed Tests", String.valueOf(context.getPassedTests().size()));
+	    extent.setSystemInfo("Failed Tests", String.valueOf(context.getFailedTests().size()));
+	    extent.setSystemInfo("Skipped Tests", String.valueOf(context.getSkippedTests().size()));
 
-		// Add summary table
-		String[][] summary = { { "Total Tests", String.valueOf(context.getAllTestMethods().length) },
-				{ "Passed", String.valueOf(context.getPassedTests().size()) },
-				{ "Failed", String.valueOf(context.getFailedTests().size()) },
-				{ "Skipped", String.valueOf(context.getSkippedTests().size()) }, { "Execution Time", formattedTime } };
+	    // Add summary table
+	    String[][] summary = { 
+	        { "Total Tests", String.valueOf(context.getAllTestMethods().length) },
+	        { "Passed", String.valueOf(context.getPassedTests().size()) },
+	        { "Failed", String.valueOf(context.getFailedTests().size()) },
+	        { "Skipped", String.valueOf(context.getSkippedTests().size()) }, 
+	        { "Execution Time", formattedTime } 
+	    };
 
-		extent.setSystemInfo("Test Summary", MarkupHelper.toTable(summary).getMarkup());
+	    // Properly format the summary table
+	    String table = Arrays.deepToString(summary).replace("], ", "]\n");
 
-		// Flush the report
-		extent.flush();
-		test.remove();
+	    extent.setSystemInfo("Test Summary", table);  
+
+	    // Flush the report
+	    extent.flush();
+	    test.remove();
 	}
 
 	public static ExtentTest getTest() {

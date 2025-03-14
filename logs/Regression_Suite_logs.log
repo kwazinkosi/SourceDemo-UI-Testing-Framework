@@ -1,0 +1,1184 @@
+2025-03-14 10:47:31 INFO  LoggingManager:42 - Logging configuration initialized. Log file path: C:\Users\kwazinkosizwane\eclipse-workspace\SourceDemo\logs\Regression_Suite_logs.log
+2025-03-14 10:47:32 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:32 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:32 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:32 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:32 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:32 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:32 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:32 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:32 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:32 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:34 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:34 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:35 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:35 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:35 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:36 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:37 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (e4868deef6a3e8a120c476a93016535f)] -> id: user-name]
+2025-03-14 10:47:37 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:37 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:37 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:37 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:37 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (e4868deef6a3e8a120c476a93016535f)] -> id: password]
+2025-03-14 10:47:37 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (6a90d690f19adc12e426d4f160fd4156)] -> id: user-name]
+2025-03-14 10:47:37 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (cad071a2435e8d3f63ed6d53893b4f21)] -> id: user-name]
+2025-03-14 10:47:37 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4ebe8d4bb36487b712ad15d98ffb4ed0)] -> id: user-name]
+2025-03-14 10:47:37 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (e4868deef6a3e8a120c476a93016535f)] -> id: login-button]
+2025-03-14 10:47:38 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (2b43184210a651eb1b9bb006255687f8)] -> id: user-name]
+2025-03-14 10:47:38 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (6a90d690f19adc12e426d4f160fd4156)] -> id: password]
+2025-03-14 10:47:38 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (cad071a2435e8d3f63ed6d53893b4f21)] -> id: password]
+2025-03-14 10:47:38 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4ebe8d4bb36487b712ad15d98ffb4ed0)] -> id: password]
+2025-03-14 10:47:38 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (2b43184210a651eb1b9bb006255687f8)] -> id: password]
+2025-03-14 10:47:38 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (6a90d690f19adc12e426d4f160fd4156)] -> id: login-button]
+2025-03-14 10:47:38 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (cad071a2435e8d3f63ed6d53893b4f21)] -> id: login-button]
+2025-03-14 10:47:38 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (4ebe8d4bb36487b712ad15d98ffb4ed0)] -> id: login-button]
+2025-03-14 10:47:38 INFO  LoggingManager:51 - LandingPageTests::testLandingPageComponentsDisplayed PASSED!
+2025-03-14 10:47:38 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (2b43184210a651eb1b9bb006255687f8)] -> id: login-button]
+2025-03-14 10:47:38 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:38 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:38 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:38 INFO  LoggingManager:51 - TC01 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 10:47:38 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (6a90d690f19adc12e426d4f160fd4156)] -> id: checkout]
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (4ebe8d4bb36487b712ad15d98ffb4ed0)] -> id: checkout]
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (6a90d690f19adc12e426d4f160fd4156)] -> id: first-name]
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (cad071a2435e8d3f63ed6d53893b4f21)] -> id: checkout]
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4ebe8d4bb36487b712ad15d98ffb4ed0)] -> id: first-name]
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (cad071a2435e8d3f63ed6d53893b4f21)] -> id: first-name]
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (6a90d690f19adc12e426d4f160fd4156)] -> id: last-name]
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4ebe8d4bb36487b712ad15d98ffb4ed0)] -> id: last-name]
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (cad071a2435e8d3f63ed6d53893b4f21)] -> id: last-name]
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (6a90d690f19adc12e426d4f160fd4156)] -> id: postal-code]
+2025-03-14 10:47:39 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4ebe8d4bb36487b712ad15d98ffb4ed0)] -> id: postal-code]
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (cad071a2435e8d3f63ed6d53893b4f21)] -> id: postal-code]
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (6a90d690f19adc12e426d4f160fd4156)] -> id: continue]
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (4ebe8d4bb36487b712ad15d98ffb4ed0)] -> id: continue]
+2025-03-14 10:47:39 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (cad071a2435e8d3f63ed6d53893b4f21)] -> id: continue]
+2025-03-14 10:47:40 INFO  LoggingManager:51 - TC01 (expected error) in CheckoutPageTests::testCheckoutFormSubmissions PASSED!
+2025-03-14 10:47:40 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:40 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:40 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:40 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:41 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:41 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:41 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (daac9add101a3b362f274659b021216e)] -> id: user-name]
+2025-03-14 10:47:42 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:42 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (6a90d690f19adc12e426d4f160fd4156)] -> id: finish]
+2025-03-14 10:47:42 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (daac9add101a3b362f274659b021216e)] -> id: password]
+2025-03-14 10:47:42 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (10926c9ff477271ea7665d120986cad5)] -> id: user-name]
+2025-03-14 10:47:42 INFO  LoggingManager:51 - CheckoutOverviewPage::testOrderSummaryDetailsDisplayed PASSED!
+2025-03-14 10:47:42 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (daac9add101a3b362f274659b021216e)] -> id: login-button]
+2025-03-14 10:47:42 INFO  LoggingManager:51 - CheckoutCompletePageTest::testPageDisplayState PASSED!
+2025-03-14 10:47:42 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:42 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (10926c9ff477271ea7665d120986cad5)] -> id: password]
+2025-03-14 10:47:42 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (daac9add101a3b362f274659b021216e)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 10:47:43 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (10926c9ff477271ea7665d120986cad5)] -> id: login-button]
+2025-03-14 10:47:43 INFO  LoggingManager:51 - Successfully performed Select sort option on element: [[ChromeDriver: chrome on windows (daac9add101a3b362f274659b021216e)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 10:47:43 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:43 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:43 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:43 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:43 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:43 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:43 INFO  LoggingManager:51 - TC02 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 10:47:43 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:43 INFO  LoggingManager:51 - PRICE_LOW_HIGH sorting in LandingPageTests::testSortingFunctionality PASSED!
+2025-03-14 10:47:43 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (fc80e58da313d0b196c89d4d648ba35e)] -> id: user-name]
+2025-03-14 10:47:44 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (fc80e58da313d0b196c89d4d648ba35e)] -> id: password]
+2025-03-14 10:47:44 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:44 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:44 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:44 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:44 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:44 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:44 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (fc80e58da313d0b196c89d4d648ba35e)] -> id: login-button]
+2025-03-14 10:47:45 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (fc80e58da313d0b196c89d4d648ba35e)] -> id: checkout]
+2025-03-14 10:47:45 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:45 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:45 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (fc80e58da313d0b196c89d4d648ba35e)] -> id: first-name]
+2025-03-14 10:47:45 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (fc80e58da313d0b196c89d4d648ba35e)] -> id: last-name]
+2025-03-14 10:47:46 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:46 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:46 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (fc80e58da313d0b196c89d4d648ba35e)] -> id: postal-code]
+2025-03-14 10:47:46 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:46 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (fc80e58da313d0b196c89d4d648ba35e)] -> id: continue]
+2025-03-14 10:47:46 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (87ff9c1e038eb5f14d77b776f24744c6)] -> id: user-name]
+2025-03-14 10:47:46 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (dc8a8c654dec29735b57a5281a046022)] -> id: user-name]
+2025-03-14 10:47:46 INFO  LoggingManager:51 - TC02 (expected error) in CheckoutPageTests::testCheckoutFormSubmissions PASSED!
+2025-03-14 10:47:46 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (dc8a8c654dec29735b57a5281a046022)] -> id: password]
+2025-03-14 10:47:47 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (87ff9c1e038eb5f14d77b776f24744c6)] -> id: password]
+2025-03-14 10:47:47 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (dc8a8c654dec29735b57a5281a046022)] -> id: login-button]
+2025-03-14 10:47:47 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:47 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:47 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (87ff9c1e038eb5f14d77b776f24744c6)] -> id: login-button]
+2025-03-14 10:47:47 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (a5a3d143ce71dbbb00823aa16f8d6f34)] -> id: user-name]
+2025-03-14 10:47:47 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (a5a3d143ce71dbbb00823aa16f8d6f34)] -> id: password]
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (dc8a8c654dec29735b57a5281a046022)] -> id: checkout]
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (a5a3d143ce71dbbb00823aa16f8d6f34)] -> id: login-button]
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (dc8a8c654dec29735b57a5281a046022)] -> id: first-name]
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (87ff9c1e038eb5f14d77b776f24744c6)] -> id: checkout]
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (a5a3d143ce71dbbb00823aa16f8d6f34)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (dc8a8c654dec29735b57a5281a046022)] -> id: last-name]
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (87ff9c1e038eb5f14d77b776f24744c6)] -> id: first-name]
+2025-03-14 10:47:48 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Successfully performed Select sort option on element: [[ChromeDriver: chrome on windows (a5a3d143ce71dbbb00823aa16f8d6f34)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (8c3e547e19116faf2b9aeb77cfbc3795)] -> id: user-name]
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (dc8a8c654dec29735b57a5281a046022)] -> id: postal-code]
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (87ff9c1e038eb5f14d77b776f24744c6)] -> id: last-name]
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (8c3e547e19116faf2b9aeb77cfbc3795)] -> id: password]
+2025-03-14 10:47:48 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (dc8a8c654dec29735b57a5281a046022)] -> id: continue]
+2025-03-14 10:47:49 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (87ff9c1e038eb5f14d77b776f24744c6)] -> id: postal-code]
+2025-03-14 10:47:49 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (8c3e547e19116faf2b9aeb77cfbc3795)] -> id: login-button]
+2025-03-14 10:47:49 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (87ff9c1e038eb5f14d77b776f24744c6)] -> id: continue]
+2025-03-14 10:47:49 INFO  LoggingManager:51 - PRICE_HIGH_LOW sorting in LandingPageTests::testSortingFunctionality PASSED!
+2025-03-14 10:47:49 INFO  LoggingManager:51 - TC03 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 10:47:50 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:50 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:50 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:50 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:50 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:50 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:50 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:51 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:51 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (dc8a8c654dec29735b57a5281a046022)] -> id: finish]
+2025-03-14 10:47:51 INFO  LoggingManager:51 - CheckoutCompletePageTest::testSuccessMessageContent PASSED!
+2025-03-14 10:47:51 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b7c934dbe5c1b844f80e0bad375e012e)] -> id: user-name]
+2025-03-14 10:47:51 INFO  LoggingManager:51 - CheckoutOverviewPage::testPriceCalculations PASSED!
+2025-03-14 10:47:51 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:51 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b7c934dbe5c1b844f80e0bad375e012e)] -> id: password]
+2025-03-14 10:47:51 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:52 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b7c934dbe5c1b844f80e0bad375e012e)] -> id: login-button]
+2025-03-14 10:47:52 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:52 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:52 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:52 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:52 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:52 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:52 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:52 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b7c934dbe5c1b844f80e0bad375e012e)] -> id: checkout]
+2025-03-14 10:47:52 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:53 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b7c934dbe5c1b844f80e0bad375e012e)] -> id: first-name]
+2025-03-14 10:47:53 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (e48fecf5ffd8bbcec0863803a0b42186)] -> id: user-name]
+2025-03-14 10:47:53 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (65975e9e23a50676a4aaae246dd237bf)] -> id: user-name]
+2025-03-14 10:47:53 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b7c934dbe5c1b844f80e0bad375e012e)] -> id: last-name]
+2025-03-14 10:47:53 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (e48fecf5ffd8bbcec0863803a0b42186)] -> id: password]
+2025-03-14 10:47:53 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b7c934dbe5c1b844f80e0bad375e012e)] -> id: postal-code]
+2025-03-14 10:47:53 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (65975e9e23a50676a4aaae246dd237bf)] -> id: password]
+2025-03-14 10:47:53 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b7c934dbe5c1b844f80e0bad375e012e)] -> id: continue]
+2025-03-14 10:47:53 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (65975e9e23a50676a4aaae246dd237bf)] -> id: login-button]
+2025-03-14 10:47:53 INFO  LoggingManager:51 - TC03 (expected error) in CheckoutPageTests::testCheckoutFormSubmissions PASSED!
+2025-03-14 10:47:54 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (65975e9e23a50676a4aaae246dd237bf)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 10:47:54 INFO  LoggingManager:51 - Successfully performed Select sort option on element: [[ChromeDriver: chrome on windows (65975e9e23a50676a4aaae246dd237bf)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 10:47:54 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:54 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:55 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:55 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:55 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:55 INFO  LoggingManager:51 - A_TO_Z sorting in LandingPageTests::testSortingFunctionality PASSED!
+2025-03-14 10:47:55 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:55 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:55 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (ffc00fe1562f4882f81d2435aec24fd3)] -> id: user-name]
+2025-03-14 10:47:55 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:55 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:55 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:55 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b082269898d01909a8949a770a58fc85)] -> id: user-name]
+2025-03-14 10:47:55 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (ffc00fe1562f4882f81d2435aec24fd3)] -> id: password]
+2025-03-14 10:47:55 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b082269898d01909a8949a770a58fc85)] -> id: password]
+2025-03-14 10:47:56 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (ffc00fe1562f4882f81d2435aec24fd3)] -> id: login-button]
+2025-03-14 10:47:56 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b082269898d01909a8949a770a58fc85)] -> id: login-button]
+2025-03-14 10:47:56 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (ffc00fe1562f4882f81d2435aec24fd3)] -> id: checkout]
+2025-03-14 10:47:57 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (ffc00fe1562f4882f81d2435aec24fd3)] -> id: first-name]
+2025-03-14 10:47:57 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b082269898d01909a8949a770a58fc85)] -> id: checkout]
+2025-03-14 10:47:57 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (ffc00fe1562f4882f81d2435aec24fd3)] -> id: last-name]
+2025-03-14 10:47:57 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b082269898d01909a8949a770a58fc85)] -> id: first-name]
+2025-03-14 10:47:57 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:57 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (ffc00fe1562f4882f81d2435aec24fd3)] -> id: postal-code]
+2025-03-14 10:47:57 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b082269898d01909a8949a770a58fc85)] -> id: last-name]
+2025-03-14 10:47:58 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b082269898d01909a8949a770a58fc85)] -> id: postal-code]
+2025-03-14 10:47:58 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (ffc00fe1562f4882f81d2435aec24fd3)] -> id: continue]
+2025-03-14 10:47:58 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:47:58 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:58 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (e48fecf5ffd8bbcec0863803a0b42186)] -> id: login-button]
+2025-03-14 10:47:58 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b082269898d01909a8949a770a58fc85)] -> id: continue]
+2025-03-14 10:47:58 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (6a85947925a180c08fa5738cc1768b87)] -> id: user-name]
+2025-03-14 10:47:58 INFO  LoggingManager:51 - TC04 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 10:47:59 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (6a85947925a180c08fa5738cc1768b87)] -> id: password]
+2025-03-14 10:47:59 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:47:59 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:47:59 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:47:59 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:47:59 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (6a85947925a180c08fa5738cc1768b87)] -> id: login-button]
+2025-03-14 10:47:59 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (68c78eccdcafc018db37c9f046d78228)] -> id: user-name]
+2025-03-14 10:47:59 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (68c78eccdcafc018db37c9f046d78228)] -> id: password]
+2025-03-14 10:48:00 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (68c78eccdcafc018db37c9f046d78228)] -> id: login-button]
+2025-03-14 10:48:00 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (6a85947925a180c08fa5738cc1768b87)] -> id: checkout]
+2025-03-14 10:48:00 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (68c78eccdcafc018db37c9f046d78228)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 10:48:00 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (ffc00fe1562f4882f81d2435aec24fd3)] -> id: finish]
+2025-03-14 10:48:00 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (6a85947925a180c08fa5738cc1768b87)] -> id: first-name]
+2025-03-14 10:48:00 INFO  LoggingManager:51 - Successfully performed Select sort option on element: [[ChromeDriver: chrome on windows (68c78eccdcafc018db37c9f046d78228)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 10:48:00 INFO  LoggingManager:51 - CheckoutCompletePageTest::testOrderSuccessStatus PASSED!
+2025-03-14 10:48:00 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (6a85947925a180c08fa5738cc1768b87)] -> id: last-name]
+2025-03-14 10:48:01 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (6a85947925a180c08fa5738cc1768b87)] -> id: postal-code]
+2025-03-14 10:48:01 INFO  LoggingManager:51 - CheckoutOverviewPage::testTotalCalculationMethod PASSED!
+2025-03-14 10:48:01 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:01 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (6a85947925a180c08fa5738cc1768b87)] -> id: continue]
+2025-03-14 10:48:01 INFO  LoggingManager:51 - Z_TO_A sorting in LandingPageTests::testSortingFunctionality PASSED!
+2025-03-14 10:48:02 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:02 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:02 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:02 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:02 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:02 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:02 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:02 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:02 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:02 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:02 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (9964abfd663461034f611c5e780e2e52)] -> id: user-name]
+2025-03-14 10:48:02 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (9964abfd663461034f611c5e780e2e52)] -> id: password]
+2025-03-14 10:48:03 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (9964abfd663461034f611c5e780e2e52)] -> id: login-button]
+2025-03-14 10:48:03 INFO  LoggingManager:51 - TC05 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 10:48:03 INFO  LoggingManager:51 - TC04 (expected success) in CheckoutPageTests::testCheckoutFormSubmissions PASSED!
+2025-03-14 10:48:04 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:04 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:04 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:05 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:05 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:05 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:05 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:05 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:05 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:05 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:05 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:05 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:05 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4fbae70286239a8a0a72d87551c15fae)] -> id: user-name]
+2025-03-14 10:48:05 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (75d46c966ee5a2e0a7c294abb03d200c)] -> id: user-name]
+2025-03-14 10:48:05 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (146b145f0fef0b5d3b153690ae83675b)] -> id: user-name]
+2025-03-14 10:48:05 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4fbae70286239a8a0a72d87551c15fae)] -> id: password]
+2025-03-14 10:48:05 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (75d46c966ee5a2e0a7c294abb03d200c)] -> id: password]
+2025-03-14 10:48:06 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (146b145f0fef0b5d3b153690ae83675b)] -> id: password]
+2025-03-14 10:48:06 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (4fbae70286239a8a0a72d87551c15fae)] -> id: login-button]
+2025-03-14 10:48:06 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (146b145f0fef0b5d3b153690ae83675b)] -> id: login-button]
+2025-03-14 10:48:06 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (75d46c966ee5a2e0a7c294abb03d200c)] -> id: login-button]
+2025-03-14 10:48:07 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (4fbae70286239a8a0a72d87551c15fae)] -> id: checkout]
+2025-03-14 10:48:07 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:07 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:07 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4fbae70286239a8a0a72d87551c15fae)] -> id: first-name]
+2025-03-14 10:48:07 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (146b145f0fef0b5d3b153690ae83675b)] -> id: checkout]
+2025-03-14 10:48:07 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4fbae70286239a8a0a72d87551c15fae)] -> id: last-name]
+2025-03-14 10:48:07 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (146b145f0fef0b5d3b153690ae83675b)] -> id: first-name]
+2025-03-14 10:48:08 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4fbae70286239a8a0a72d87551c15fae)] -> id: postal-code]
+2025-03-14 10:48:08 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (146b145f0fef0b5d3b153690ae83675b)] -> id: last-name]
+2025-03-14 10:48:08 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:08 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (4fbae70286239a8a0a72d87551c15fae)] -> id: continue]
+2025-03-14 10:48:08 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:08 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (146b145f0fef0b5d3b153690ae83675b)] -> id: postal-code]
+2025-03-14 10:48:08 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (146b145f0fef0b5d3b153690ae83675b)] -> id: continue]
+2025-03-14 10:48:08 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (ca9881d617b4220ed56e1265104980be)] -> id: user-name]
+2025-03-14 10:48:08 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (21bddc4f3160e63087b4fc5ebd7be992)] -> id: user-name]
+2025-03-14 10:48:08 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (ca9881d617b4220ed56e1265104980be)] -> id: password]
+2025-03-14 10:48:08 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (21bddc4f3160e63087b4fc5ebd7be992)] -> id: password]
+2025-03-14 10:48:09 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (ca9881d617b4220ed56e1265104980be)] -> id: login-button]
+2025-03-14 10:48:09 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (21bddc4f3160e63087b4fc5ebd7be992)] -> id: login-button]
+2025-03-14 10:48:09 INFO  LoggingManager:51 - TC06 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 10:48:09 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (21bddc4f3160e63087b4fc5ebd7be992)] -> id: checkout]
+2025-03-14 10:48:09 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:09 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:09 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:09 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (21bddc4f3160e63087b4fc5ebd7be992)] -> id: cancel]
+2025-03-14 10:48:09 INFO  LoggingManager:51 - CheckoutPageTests::testCancelCheckoutReturnsToCart PASSED!
+2025-03-14 10:48:10 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:10 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:10 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:10 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (4fbae70286239a8a0a72d87551c15fae)] -> id: finish]
+2025-03-14 10:48:10 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (4fbae70286239a8a0a72d87551c15fae)] -> id: back-to-products]
+2025-03-14 10:48:10 INFO  LoggingManager:51 - Successfully performed Navigate back to home on element: [[ChromeDriver: chrome on windows (4fbae70286239a8a0a72d87551c15fae)] -> id: back-to-products]
+2025-03-14 10:48:10 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (146b145f0fef0b5d3b153690ae83675b)] -> id: cancel]
+2025-03-14 10:48:11 INFO  LoggingManager:51 - LandingPageTests::testAddAndRemoveItemFromCartUpdatesCartCount PASSED!
+2025-03-14 10:48:11 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:11 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:12 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:12 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:12 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:12 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:12 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:12 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (f3826edb8a7fe142c901681b44e95b8b)] -> id: user-name]
+2025-03-14 10:48:13 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (501293f646d4aa11a63316341c840b69)] -> id: user-name]
+2025-03-14 10:48:13 INFO  LoggingManager:51 - CheckoutOverviewPage::testNavigationToCartPage PASSED!
+2025-03-14 10:48:13 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (f3826edb8a7fe142c901681b44e95b8b)] -> id: password]
+2025-03-14 10:48:13 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (501293f646d4aa11a63316341c840b69)] -> id: password]
+2025-03-14 10:48:13 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (f3826edb8a7fe142c901681b44e95b8b)] -> id: login-button]
+2025-03-14 10:48:13 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (501293f646d4aa11a63316341c840b69)] -> id: login-button]
+2025-03-14 10:48:13 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:13 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:13 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:13 INFO  LoggingManager:51 - TC07 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 10:48:14 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:14 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:14 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:14 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (501293f646d4aa11a63316341c840b69)] -> id: checkout]
+2025-03-14 10:48:14 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:14 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (501293f646d4aa11a63316341c840b69)] -> id: first-name]
+2025-03-14 10:48:14 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (501293f646d4aa11a63316341c840b69)] -> id: last-name]
+2025-03-14 10:48:14 INFO  LoggingManager:51 - CheckoutCompletePageTest::testNavigationBackToProducts PASSED!
+2025-03-14 10:48:14 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (501293f646d4aa11a63316341c840b69)] -> id: postal-code]
+2025-03-14 10:48:15 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:15 INFO  LoggingManager:51 - CheckoutPageTests::testFormClearFunctionality PASSED!
+2025-03-14 10:48:15 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:15 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b2c2f9e7e35ecba0e57333164c2310b9)] -> id: user-name]
+2025-03-14 10:48:16 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:16 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b2c2f9e7e35ecba0e57333164c2310b9)] -> id: password]
+2025-03-14 10:48:16 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b2c2f9e7e35ecba0e57333164c2310b9)] -> id: login-button]
+2025-03-14 10:48:16 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:16 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b2c2f9e7e35ecba0e57333164c2310b9)] -> xpath: //div[@class='inventory_item_name ']]
+2025-03-14 10:48:16 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:16 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:16 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:17 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (9d731de43aaf9c3dd3e5c9b1ce18268e)] -> id: user-name]
+2025-03-14 10:48:17 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:17 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (9d731de43aaf9c3dd3e5c9b1ce18268e)] -> id: password]
+2025-03-14 10:48:17 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (d29d9babf1e6233362b27b6fcdffd993)] -> id: user-name]
+2025-03-14 10:48:17 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:17 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:17 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:17 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (9d731de43aaf9c3dd3e5c9b1ce18268e)] -> id: login-button]
+2025-03-14 10:48:17 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (d29d9babf1e6233362b27b6fcdffd993)] -> id: password]
+2025-03-14 10:48:17 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:17 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:17 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:17 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (d29d9babf1e6233362b27b6fcdffd993)] -> id: login-button]
+2025-03-14 10:48:18 INFO  LoggingManager:51 - TC08 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 10:48:18 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (9d731de43aaf9c3dd3e5c9b1ce18268e)] -> id: checkout]
+2025-03-14 10:48:18 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (9d731de43aaf9c3dd3e5c9b1ce18268e)] -> id: first-name]
+2025-03-14 10:48:18 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:18 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:18 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:19 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:19 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (9d731de43aaf9c3dd3e5c9b1ce18268e)] -> id: last-name]
+2025-03-14 10:48:19 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (9d731de43aaf9c3dd3e5c9b1ce18268e)] -> id: postal-code]
+2025-03-14 10:48:19 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:19 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:20 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (9d731de43aaf9c3dd3e5c9b1ce18268e)] -> id: continue]
+2025-03-14 10:48:20 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:20 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b120be192f9df2cd0106918a0106e18b)] -> id: user-name]
+2025-03-14 10:48:21 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:21 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:21 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b120be192f9df2cd0106918a0106e18b)] -> id: password]
+2025-03-14 10:48:21 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (85cd6db4f8230805c4008254eac8f02b)] -> id: user-name]
+2025-03-14 10:48:21 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b120be192f9df2cd0106918a0106e18b)] -> id: login-button]
+2025-03-14 10:48:21 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:21 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (fb6e1ef83c46c92623b2389513755046)] -> id: user-name]
+2025-03-14 10:48:21 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (85cd6db4f8230805c4008254eac8f02b)] -> id: password]
+2025-03-14 10:48:21 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (fb6e1ef83c46c92623b2389513755046)] -> id: password]
+2025-03-14 10:48:22 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (85cd6db4f8230805c4008254eac8f02b)] -> id: login-button]
+2025-03-14 10:48:22 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (fb6e1ef83c46c92623b2389513755046)] -> id: login-button]
+2025-03-14 10:48:22 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b120be192f9df2cd0106918a0106e18b)] -> id: checkout]
+2025-03-14 10:48:22 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:22 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (9d731de43aaf9c3dd3e5c9b1ce18268e)] -> id: finish]
+2025-03-14 10:48:22 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (85cd6db4f8230805c4008254eac8f02b)] -> xpath: //div[@class='inventory_item_name ']]
+2025-03-14 10:48:22 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b120be192f9df2cd0106918a0106e18b)] -> id: first-name]
+2025-03-14 10:48:22 INFO  LoggingManager:51 - CheckoutOverviewPage::testNavigationToCompletePage PASSED!
+2025-03-14 10:48:22 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b120be192f9df2cd0106918a0106e18b)] -> id: last-name]
+2025-03-14 10:48:22 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (3420028a4621beb1e9895e206d4c028d)] -> id: user-name]
+2025-03-14 10:48:22 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (fb6e1ef83c46c92623b2389513755046)] -> id: checkout]
+2025-03-14 10:48:22 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b120be192f9df2cd0106918a0106e18b)] -> id: postal-code]
+2025-03-14 10:48:23 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:23 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:23 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:23 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (3420028a4621beb1e9895e206d4c028d)] -> id: password]
+2025-03-14 10:48:23 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (fb6e1ef83c46c92623b2389513755046)] -> id: first-name]
+2025-03-14 10:48:23 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:23 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:23 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:23 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b120be192f9df2cd0106918a0106e18b)] -> id: continue]
+2025-03-14 10:48:23 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (3420028a4621beb1e9895e206d4c028d)] -> id: login-button]
+2025-03-14 10:48:23 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (fb6e1ef83c46c92623b2389513755046)] -> id: last-name]
+2025-03-14 10:48:23 INFO  LoggingManager:51 - TC09 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 10:48:23 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (fb6e1ef83c46c92623b2389513755046)] -> id: postal-code]
+2025-03-14 10:48:23 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:23 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:23 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:23 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (fb6e1ef83c46c92623b2389513755046)] -> id: continue]
+2025-03-14 10:48:25 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:25 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:25 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b120be192f9df2cd0106918a0106e18b)] -> id: finish]
+2025-03-14 10:48:25 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:25 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:26 INFO  LoggingManager:51 - CheckoutPageTests::testSpecialCharactersInPostalCode PASSED!
+2025-03-14 10:48:26 INFO  LoggingManager:51 - CheckoutCompletePageTest::testPageRefreshPersistsState PASSED!
+2025-03-14 10:48:26 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:26 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (0a3d41a8643670e5b10e69b60752e760)] -> id: user-name]
+2025-03-14 10:48:26 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (0a3d41a8643670e5b10e69b60752e760)] -> id: password]
+2025-03-14 10:48:26 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (076c52e7141dcb85d5c805c38690b3ab)] -> id: user-name]
+2025-03-14 10:48:26 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:26 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (0a3d41a8643670e5b10e69b60752e760)] -> id: login-button]
+2025-03-14 10:48:26 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (076c52e7141dcb85d5c805c38690b3ab)] -> id: password]
+2025-03-14 10:48:26 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:26 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (412e63601305be7d33aa1f2120d0f0e9)] -> id: user-name]
+2025-03-14 10:48:26 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:27 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (076c52e7141dcb85d5c805c38690b3ab)] -> id: login-button]
+2025-03-14 10:48:27 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (0a3d41a8643670e5b10e69b60752e760)] -> xpath: //div[@class='inventory_item_name ']]
+2025-03-14 10:48:27 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (412e63601305be7d33aa1f2120d0f0e9)] -> id: password]
+2025-03-14 10:48:27 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (076c52e7141dcb85d5c805c38690b3ab)] -> xpath: //div[@class='inventory_item_name ']]
+2025-03-14 10:48:27 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (412e63601305be7d33aa1f2120d0f0e9)] -> id: login-button]
+2025-03-14 10:48:27 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:27 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:27 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:28 INFO  LoggingManager:51 - ProductPageTests::testProductDetailsDisplayed PASSED!
+2025-03-14 10:48:28 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:28 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:28 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:28 INFO  LoggingManager:51 - CartPageTest::testRemoveProductFromCart PASSED!
+2025-03-14 10:48:28 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:28 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:28 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:29 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:29 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:30 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:30 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:30 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:31 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (97d1d24ac2185e0232ccbca2bacb13c1)] -> id: user-name]
+2025-03-14 10:48:31 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (5c44670235418ed6e3eecce11593ec87)] -> id: user-name]
+2025-03-14 10:48:31 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (97d1d24ac2185e0232ccbca2bacb13c1)] -> id: password]
+2025-03-14 10:48:31 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (5c44670235418ed6e3eecce11593ec87)] -> id: password]
+2025-03-14 10:48:31 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (97d1d24ac2185e0232ccbca2bacb13c1)] -> id: login-button]
+2025-03-14 10:48:31 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (5c44670235418ed6e3eecce11593ec87)] -> id: login-button]
+2025-03-14 10:48:31 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (97d1d24ac2185e0232ccbca2bacb13c1)] -> xpath: //div[@class='inventory_item_name ']]
+2025-03-14 10:48:31 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:31 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (97d1d24ac2185e0232ccbca2bacb13c1)] -> xpath: //button[contains(@id, 'add-to-cart')]]
+2025-03-14 10:48:31 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (e4d3ba8e5aebebfff38af626e44a15a5)] -> id: user-name]
+2025-03-14 10:48:32 INFO  LoggingManager:51 - TC01 in LandingPageTests::testMenuNavigation PASSED!
+2025-03-14 10:48:32 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (e4d3ba8e5aebebfff38af626e44a15a5)] -> id: password]
+2025-03-14 10:48:32 INFO  LoggingManager:51 - ProductPageTests::testAddRemoveItemFromCart PASSED!
+2025-03-14 10:48:32 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:32 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:32 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:32 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:32 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:32 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:32 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (e4d3ba8e5aebebfff38af626e44a15a5)] -> id: login-button]
+2025-03-14 10:48:32 INFO  LoggingManager:51 - CartPageTest::testRemoveNonExistentProductThrowsException PASSED!
+2025-03-14 10:48:33 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:33 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:33 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:33 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:34 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:34 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:35 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:35 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (40b3aae26759b2ffdf441e155642a43d)] -> id: user-name]
+2025-03-14 10:48:35 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:35 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (40b3aae26759b2ffdf441e155642a43d)] -> id: password]
+2025-03-14 10:48:35 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (dbdd89b9b1bb12003c5d8ecc2318e597)] -> id: user-name]
+2025-03-14 10:48:35 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (40b3aae26759b2ffdf441e155642a43d)] -> id: login-button]
+2025-03-14 10:48:35 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (dbdd89b9b1bb12003c5d8ecc2318e597)] -> id: password]
+2025-03-14 10:48:35 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (dbdd89b9b1bb12003c5d8ecc2318e597)] -> id: login-button]
+2025-03-14 10:48:35 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:36 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (dbdd89b9b1bb12003c5d8ecc2318e597)] -> xpath: //div[@class='inventory_item_name ']]
+2025-03-14 10:48:36 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (a8dcd52a8fb396b889254f107a17b172)] -> id: user-name]
+2025-03-14 10:48:36 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (dbdd89b9b1bb12003c5d8ecc2318e597)] -> xpath: //button[@id='back-to-products']]
+2025-03-14 10:48:36 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (a8dcd52a8fb396b889254f107a17b172)] -> id: password]
+2025-03-14 10:48:36 INFO  LoggingManager:51 - ProductPageTests::testNavigateBackToProducts PASSED!
+2025-03-14 10:48:36 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (a8dcd52a8fb396b889254f107a17b172)] -> id: login-button]
+2025-03-14 10:48:36 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:37 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (a8dcd52a8fb396b889254f107a17b172)] -> id: checkout]
+2025-03-14 10:48:37 INFO  LoggingManager:51 - CartPageTest::testProceedToCheckoutNavigatesToCheckoutPage PASSED!
+2025-03-14 10:48:37 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:37 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:37 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:38 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:39 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:39 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (c5521cddca2539b44dafa567fe7a6458)] -> id: user-name]
+2025-03-14 10:48:40 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (c5521cddca2539b44dafa567fe7a6458)] -> id: password]
+2025-03-14 10:48:40 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (c5521cddca2539b44dafa567fe7a6458)] -> id: login-button]
+2025-03-14 10:48:40 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (c5521cddca2539b44dafa567fe7a6458)] -> id: continue-shopping]
+2025-03-14 10:48:40 INFO  LoggingManager:51 - CartPageTest::testContinueShoppingReturnsToLandingPage PASSED!
+2025-03-14 10:48:40 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:40 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:40 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:42 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:43 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:43 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (70ab63c46db9a2d982b4228142954a7c)] -> id: user-name]
+2025-03-14 10:48:43 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (70ab63c46db9a2d982b4228142954a7c)] -> id: password]
+2025-03-14 10:48:43 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (70ab63c46db9a2d982b4228142954a7c)] -> id: login-button]
+2025-03-14 10:48:43 INFO  LoggingManager:51 - TC02 in LandingPageTests::testMenuNavigation PASSED!
+2025-03-14 10:48:43 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:43 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:43 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:45 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:46 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:46 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (833f7730ee950db85cf5a96821e84da0)] -> id: user-name]
+2025-03-14 10:48:46 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (833f7730ee950db85cf5a96821e84da0)] -> id: password]
+2025-03-14 10:48:46 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (833f7730ee950db85cf5a96821e84da0)] -> id: login-button]
+2025-03-14 10:48:48 INFO  LoggingManager:51 - TC03 in LandingPageTests::testMenuNavigation PASSED!
+2025-03-14 10:48:48 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:48 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:48 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:49 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:50 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:50 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (8178120b61facc9a3d72bdf31e159ec8)] -> id: user-name]
+2025-03-14 10:48:50 INFO  LoggingManager:51 - CartPageTest::testCartEmptyStateAfterRemovingAllItems PASSED!
+2025-03-14 10:48:50 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (8178120b61facc9a3d72bdf31e159ec8)] -> id: password]
+2025-03-14 10:48:50 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:50 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:50 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:50 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (8178120b61facc9a3d72bdf31e159ec8)] -> id: login-button]
+2025-03-14 10:48:52 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:52 INFO  LoggingManager:51 - TC04 in LandingPageTests::testMenuNavigation PASSED!
+2025-03-14 10:48:52 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:52 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:52 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:52 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:53 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (7edf38af5d5d78d84470e51d47ba5679)] -> id: user-name]
+2025-03-14 10:48:53 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (7edf38af5d5d78d84470e51d47ba5679)] -> id: password]
+2025-03-14 10:48:53 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (7edf38af5d5d78d84470e51d47ba5679)] -> id: login-button]
+2025-03-14 10:48:53 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:54 INFO  LoggingManager:51 - CartPageTest::testCartItemCountMatchesAddedItems PASSED!
+2025-03-14 10:48:54 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:54 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:54 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:54 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:54 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b9df10a7efe1893c7178b5a00627d822)] -> id: user-name]
+2025-03-14 10:48:55 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b9df10a7efe1893c7178b5a00627d822)] -> id: password]
+2025-03-14 10:48:55 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b9df10a7efe1893c7178b5a00627d822)] -> id: login-button]
+2025-03-14 10:48:55 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:56 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:56 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (3e880a1106156c9f11a275a2ed4ffd8f)] -> id: user-name]
+2025-03-14 10:48:56 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (3e880a1106156c9f11a275a2ed4ffd8f)] -> id: password]
+2025-03-14 10:48:56 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (3e880a1106156c9f11a275a2ed4ffd8f)] -> id: login-button]
+2025-03-14 10:48:57 INFO  LoggingManager:51 - CartPageTest::testCartContainsCorrectProducts PASSED!
+2025-03-14 10:48:57 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:48:57 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:48:57 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:48:58 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:48:59 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:48:59 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (35750a3cdbc49b00585b7ac6391d2038)] -> id: user-name]
+2025-03-14 10:48:59 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (35750a3cdbc49b00585b7ac6391d2038)] -> id: password]
+2025-03-14 10:49:00 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (35750a3cdbc49b00585b7ac6391d2038)] -> id: login-button]
+2025-03-14 10:49:00 INFO  LoggingManager:51 - CartPageTest::testProductDetailsMatchAddedItems PASSED!
+2025-03-14 10:49:00 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:49:01 INFO  LoggingManager:51 - TC01 in LandingPageTests::testSocialMediaLinks PASSED!
+2025-03-14 10:49:01 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:49:01 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:49:01 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:49:03 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:49:04 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:49:04 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (96ad0710a4686c0aa64bdf18ae017d2d)] -> id: user-name]
+2025-03-14 10:49:04 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (96ad0710a4686c0aa64bdf18ae017d2d)] -> id: password]
+2025-03-14 10:49:04 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (96ad0710a4686c0aa64bdf18ae017d2d)] -> id: login-button]
+2025-03-14 10:49:06 INFO  LoggingManager:51 - TC02 in LandingPageTests::testSocialMediaLinks PASSED!
+2025-03-14 10:49:06 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:49:06 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:49:06 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:49:08 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:49:09 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:49:09 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (dd2da3afd19c1a6541bef55974f0a7f8)] -> id: user-name]
+2025-03-14 10:49:09 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (dd2da3afd19c1a6541bef55974f0a7f8)] -> id: password]
+2025-03-14 10:49:09 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (dd2da3afd19c1a6541bef55974f0a7f8)] -> id: login-button]
+2025-03-14 10:49:11 INFO  LoggingManager:51 - TC03 in LandingPageTests::testSocialMediaLinks PASSED!
+2025-03-14 10:49:11 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 10:49:11 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 10:49:11 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 10:49:12 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 10:49:13 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 10:49:13 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (63c1d51fa493a572bd2303ea0258cff3)] -> id: user-name]
+2025-03-14 10:49:13 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (63c1d51fa493a572bd2303ea0258cff3)] -> id: password]
+2025-03-14 10:49:13 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (63c1d51fa493a572bd2303ea0258cff3)] -> id: login-button]
+2025-03-14 10:49:16 INFO  LoggingManager:51 - LandingPageTests::testCartPersistsAfterRefresh PASSED!
+2025-03-14 10:49:16 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:06 INFO  LoggingManager:42 - Logging configuration initialized. Log file path: C:\Users\kwazinkosizwane\eclipse-workspace\SourceDemo\logs\Regression_Suite_logs.log
+2025-03-14 11:48:06 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:06 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:06 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:06 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:06 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:06 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:07 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:07 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:07 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:07 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:08 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:08 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:09 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:09 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:09 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:09 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:09 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:09 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (138a837282b3ddec06ae56d2fbe35b77)] -> id: user-name]
+2025-03-14 11:48:10 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:10 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:10 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (76881708b8a7eaa8b48377a7aa17fec5)] -> id: user-name]
+2025-03-14 11:48:10 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (c4a49f41ad21d379ed7e01ec36fba5ae)] -> id: user-name]
+2025-03-14 11:48:10 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (138a837282b3ddec06ae56d2fbe35b77)] -> id: password]
+2025-03-14 11:48:10 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (76881708b8a7eaa8b48377a7aa17fec5)] -> id: password]
+2025-03-14 11:48:10 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (873c830ed4a62f92aefb9d5a023530b9)] -> id: user-name]
+2025-03-14 11:48:10 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (c4a49f41ad21d379ed7e01ec36fba5ae)] -> id: password]
+2025-03-14 11:48:10 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (138a837282b3ddec06ae56d2fbe35b77)] -> id: login-button]
+2025-03-14 11:48:10 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (873c830ed4a62f92aefb9d5a023530b9)] -> id: password]
+2025-03-14 11:48:10 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (76881708b8a7eaa8b48377a7aa17fec5)] -> id: login-button]
+2025-03-14 11:48:10 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:10 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (c4a49f41ad21d379ed7e01ec36fba5ae)] -> id: login-button]
+2025-03-14 11:48:11 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (873c830ed4a62f92aefb9d5a023530b9)] -> id: login-button]
+2025-03-14 11:48:11 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (9f7656dd694b768a4cbb440cea130f88)] -> id: user-name]
+2025-03-14 11:48:11 INFO  LoggingManager:51 - LandingPageTests::testLandingPageComponentsDisplayed PASSED!
+2025-03-14 11:48:11 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (138a837282b3ddec06ae56d2fbe35b77)] -> id: checkout]
+2025-03-14 11:48:11 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (9f7656dd694b768a4cbb440cea130f88)] -> id: password]
+2025-03-14 11:48:11 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (76881708b8a7eaa8b48377a7aa17fec5)] -> id: checkout]
+2025-03-14 11:48:11 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (138a837282b3ddec06ae56d2fbe35b77)] -> id: first-name]
+2025-03-14 11:48:11 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (76881708b8a7eaa8b48377a7aa17fec5)] -> id: first-name]
+2025-03-14 11:48:11 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (9f7656dd694b768a4cbb440cea130f88)] -> id: login-button]
+2025-03-14 11:48:11 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:11 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:11 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:11 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (138a837282b3ddec06ae56d2fbe35b77)] -> id: last-name]
+2025-03-14 11:48:11 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (873c830ed4a62f92aefb9d5a023530b9)] -> id: checkout]
+2025-03-14 11:48:11 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (76881708b8a7eaa8b48377a7aa17fec5)] -> id: last-name]
+2025-03-14 11:48:12 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (138a837282b3ddec06ae56d2fbe35b77)] -> id: postal-code]
+2025-03-14 11:48:12 INFO  LoggingManager:51 - TC01 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 11:48:12 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (873c830ed4a62f92aefb9d5a023530b9)] -> id: first-name]
+2025-03-14 11:48:12 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (76881708b8a7eaa8b48377a7aa17fec5)] -> id: postal-code]
+2025-03-14 11:48:12 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (138a837282b3ddec06ae56d2fbe35b77)] -> id: continue]
+2025-03-14 11:48:12 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (873c830ed4a62f92aefb9d5a023530b9)] -> id: last-name]
+2025-03-14 11:48:12 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (76881708b8a7eaa8b48377a7aa17fec5)] -> id: continue]
+2025-03-14 11:48:12 INFO  LoggingManager:51 - TC01 (expected error) in CheckoutPageTests::testCheckoutFormSubmissions PASSED!
+2025-03-14 11:48:12 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:12 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:12 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:12 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (873c830ed4a62f92aefb9d5a023530b9)] -> id: postal-code]
+2025-03-14 11:48:12 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (873c830ed4a62f92aefb9d5a023530b9)] -> id: continue]
+2025-03-14 11:48:12 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:12 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:12 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:13 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:14 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:14 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:14 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:14 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (545ecb545277538d2ffde251d222b7e1)] -> id: user-name]
+2025-03-14 11:48:14 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (76881708b8a7eaa8b48377a7aa17fec5)] -> id: finish]
+2025-03-14 11:48:14 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (545ecb545277538d2ffde251d222b7e1)] -> id: password]
+2025-03-14 11:48:14 INFO  LoggingManager:51 - CheckoutCompletePageTest::testPageDisplayState PASSED!
+2025-03-14 11:48:15 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:15 INFO  LoggingManager:51 - CheckoutOverviewPage::testOrderSummaryDetailsDisplayed PASSED!
+2025-03-14 11:48:15 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (545ecb545277538d2ffde251d222b7e1)] -> id: login-button]
+2025-03-14 11:48:15 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:15 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (7d141c74bd33ed3e7e6652aebc0f0f7d)] -> id: user-name]
+2025-03-14 11:48:15 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:15 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:15 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:15 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (545ecb545277538d2ffde251d222b7e1)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 11:48:15 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (7d141c74bd33ed3e7e6652aebc0f0f7d)] -> id: password]
+2025-03-14 11:48:15 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:15 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:15 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:15 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (0902916f8d4594b0c5e747d3d664157b)] -> id: user-name]
+2025-03-14 11:48:15 INFO  LoggingManager:51 - Successfully performed Select sort option on element: [[ChromeDriver: chrome on windows (545ecb545277538d2ffde251d222b7e1)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 11:48:15 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (7d141c74bd33ed3e7e6652aebc0f0f7d)] -> id: login-button]
+2025-03-14 11:48:15 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (0902916f8d4594b0c5e747d3d664157b)] -> id: password]
+2025-03-14 11:48:16 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (0902916f8d4594b0c5e747d3d664157b)] -> id: login-button]
+2025-03-14 11:48:16 INFO  LoggingManager:51 - PRICE_LOW_HIGH sorting in LandingPageTests::testSortingFunctionality PASSED!
+2025-03-14 11:48:16 INFO  LoggingManager:51 - TC02 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 11:48:16 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (7d141c74bd33ed3e7e6652aebc0f0f7d)] -> id: checkout]
+2025-03-14 11:48:16 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (7d141c74bd33ed3e7e6652aebc0f0f7d)] -> id: first-name]
+2025-03-14 11:48:17 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (7d141c74bd33ed3e7e6652aebc0f0f7d)] -> id: last-name]
+2025-03-14 11:48:17 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:17 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (7d141c74bd33ed3e7e6652aebc0f0f7d)] -> id: postal-code]
+2025-03-14 11:48:17 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:17 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:17 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:17 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:17 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:17 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:17 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (7d141c74bd33ed3e7e6652aebc0f0f7d)] -> id: continue]
+2025-03-14 11:48:17 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:17 INFO  LoggingManager:51 - TC02 (expected error) in CheckoutPageTests::testCheckoutFormSubmissions PASSED!
+2025-03-14 11:48:18 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:18 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:18 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:18 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:18 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (1910e0f1962186481fca1d0e47a5e7d1)] -> id: user-name]
+2025-03-14 11:48:18 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:18 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (1910e0f1962186481fca1d0e47a5e7d1)] -> id: password]
+2025-03-14 11:48:19 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (1910e0f1962186481fca1d0e47a5e7d1)] -> id: login-button]
+2025-03-14 11:48:19 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:19 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:19 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (22872b8149f95127da2d04a9e622f77e)] -> id: user-name]
+2025-03-14 11:48:19 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (22872b8149f95127da2d04a9e622f77e)] -> id: password]
+2025-03-14 11:48:20 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (1910e0f1962186481fca1d0e47a5e7d1)] -> id: checkout]
+2025-03-14 11:48:20 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:20 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (22872b8149f95127da2d04a9e622f77e)] -> id: login-button]
+2025-03-14 11:48:20 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:20 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (1910e0f1962186481fca1d0e47a5e7d1)] -> id: first-name]
+2025-03-14 11:48:20 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:20 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b17d92cc0ecef6e1c8ad8618328e76d5)] -> id: user-name]
+2025-03-14 11:48:20 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (1910e0f1962186481fca1d0e47a5e7d1)] -> id: last-name]
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b17d92cc0ecef6e1c8ad8618328e76d5)] -> id: password]
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (22872b8149f95127da2d04a9e622f77e)] -> id: checkout]
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (1910e0f1962186481fca1d0e47a5e7d1)] -> id: postal-code]
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (1562a6515c0be8cb3ddfec625d0882a4)] -> id: user-name]
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (22872b8149f95127da2d04a9e622f77e)] -> id: first-name]
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b17d92cc0ecef6e1c8ad8618328e76d5)] -> id: login-button]
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (1910e0f1962186481fca1d0e47a5e7d1)] -> id: continue]
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (1562a6515c0be8cb3ddfec625d0882a4)] -> id: password]
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (22872b8149f95127da2d04a9e622f77e)] -> id: last-name]
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b17d92cc0ecef6e1c8ad8618328e76d5)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (400b608e4d973239bdbf673ad339a9e2)] -> id: user-name]
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (1562a6515c0be8cb3ddfec625d0882a4)] -> id: login-button]
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (22872b8149f95127da2d04a9e622f77e)] -> id: postal-code]
+2025-03-14 11:48:21 INFO  LoggingManager:51 - Successfully performed Select sort option on element: [[ChromeDriver: chrome on windows (b17d92cc0ecef6e1c8ad8618328e76d5)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 11:48:22 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (400b608e4d973239bdbf673ad339a9e2)] -> id: password]
+2025-03-14 11:48:22 INFO  LoggingManager:51 - TC03 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 11:48:22 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (22872b8149f95127da2d04a9e622f77e)] -> id: continue]
+2025-03-14 11:48:22 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (400b608e4d973239bdbf673ad339a9e2)] -> id: login-button]
+2025-03-14 11:48:22 INFO  LoggingManager:51 - PRICE_HIGH_LOW sorting in LandingPageTests::testSortingFunctionality PASSED!
+2025-03-14 11:48:22 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:22 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:22 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:22 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (400b608e4d973239bdbf673ad339a9e2)] -> id: checkout]
+2025-03-14 11:48:22 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:22 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:22 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:23 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (400b608e4d973239bdbf673ad339a9e2)] -> id: first-name]
+2025-03-14 11:48:23 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (400b608e4d973239bdbf673ad339a9e2)] -> id: last-name]
+2025-03-14 11:48:23 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (400b608e4d973239bdbf673ad339a9e2)] -> id: postal-code]
+2025-03-14 11:48:23 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (400b608e4d973239bdbf673ad339a9e2)] -> id: continue]
+2025-03-14 11:48:23 INFO  LoggingManager:51 - CheckoutOverviewPage::testPriceCalculations PASSED!
+2025-03-14 11:48:23 INFO  LoggingManager:51 - TC03 (expected error) in CheckoutPageTests::testCheckoutFormSubmissions PASSED!
+2025-03-14 11:48:24 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:24 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (22872b8149f95127da2d04a9e622f77e)] -> id: finish]
+2025-03-14 11:48:24 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:24 INFO  LoggingManager:51 - CheckoutCompletePageTest::testSuccessMessageContent PASSED!
+2025-03-14 11:48:25 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:25 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:25 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:25 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:25 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:25 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:25 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:25 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:25 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:25 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:25 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:25 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (1cf3f8e225cfa97a909f0bad28660331)] -> id: user-name]
+2025-03-14 11:48:26 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (1cf3f8e225cfa97a909f0bad28660331)] -> id: password]
+2025-03-14 11:48:26 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (72539730c82ce5375bb4b85d5f34b8dd)] -> id: user-name]
+2025-03-14 11:48:26 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (1cf3f8e225cfa97a909f0bad28660331)] -> id: login-button]
+2025-03-14 11:48:26 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (72539730c82ce5375bb4b85d5f34b8dd)] -> id: password]
+2025-03-14 11:48:26 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:26 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (1cf3f8e225cfa97a909f0bad28660331)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 11:48:27 INFO  LoggingManager:51 - Successfully performed Select sort option on element: [[ChromeDriver: chrome on windows (1cf3f8e225cfa97a909f0bad28660331)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 11:48:27 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:27 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:27 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:28 INFO  LoggingManager:51 - A_TO_Z sorting in LandingPageTests::testSortingFunctionality PASSED!
+2025-03-14 11:48:28 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (ef0fdc777a092b9b49fca9aaae0d9ca6)] -> id: user-name]
+2025-03-14 11:48:28 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:28 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (ef0fdc777a092b9b49fca9aaae0d9ca6)] -> id: password]
+2025-03-14 11:48:28 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:28 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:28 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:28 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (f08c148db3ceb03517e8beaf0762a173)] -> id: user-name]
+2025-03-14 11:48:28 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:28 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (ef0fdc777a092b9b49fca9aaae0d9ca6)] -> id: login-button]
+2025-03-14 11:48:28 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (f08c148db3ceb03517e8beaf0762a173)] -> id: password]
+2025-03-14 11:48:28 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (44c29112bc9e5fc614100a9837feb19e)] -> id: user-name]
+2025-03-14 11:48:29 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (f08c148db3ceb03517e8beaf0762a173)] -> id: login-button]
+2025-03-14 11:48:29 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (44c29112bc9e5fc614100a9837feb19e)] -> id: password]
+2025-03-14 11:48:29 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (44c29112bc9e5fc614100a9837feb19e)] -> id: login-button]
+2025-03-14 11:48:29 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (ef0fdc777a092b9b49fca9aaae0d9ca6)] -> id: checkout]
+2025-03-14 11:48:29 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (ef0fdc777a092b9b49fca9aaae0d9ca6)] -> id: first-name]
+2025-03-14 11:48:29 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (f08c148db3ceb03517e8beaf0762a173)] -> id: checkout]
+2025-03-14 11:48:30 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (ef0fdc777a092b9b49fca9aaae0d9ca6)] -> id: last-name]
+2025-03-14 11:48:30 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (44c29112bc9e5fc614100a9837feb19e)] -> id: checkout]
+2025-03-14 11:48:30 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (f08c148db3ceb03517e8beaf0762a173)] -> id: first-name]
+2025-03-14 11:48:30 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (ef0fdc777a092b9b49fca9aaae0d9ca6)] -> id: postal-code]
+2025-03-14 11:48:30 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (44c29112bc9e5fc614100a9837feb19e)] -> id: first-name]
+2025-03-14 11:48:30 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (f08c148db3ceb03517e8beaf0762a173)] -> id: last-name]
+2025-03-14 11:48:30 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (ef0fdc777a092b9b49fca9aaae0d9ca6)] -> id: continue]
+2025-03-14 11:48:30 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:30 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (44c29112bc9e5fc614100a9837feb19e)] -> id: last-name]
+2025-03-14 11:48:30 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (f08c148db3ceb03517e8beaf0762a173)] -> id: postal-code]
+2025-03-14 11:48:30 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (f08c148db3ceb03517e8beaf0762a173)] -> id: continue]
+2025-03-14 11:48:31 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (44c29112bc9e5fc614100a9837feb19e)] -> id: postal-code]
+2025-03-14 11:48:31 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (44c29112bc9e5fc614100a9837feb19e)] -> id: continue]
+2025-03-14 11:48:31 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:31 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (8b0b83f4f1bc83396ed58f73b651feb6)] -> id: user-name]
+2025-03-14 11:48:32 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (72539730c82ce5375bb4b85d5f34b8dd)] -> id: login-button]
+2025-03-14 11:48:32 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (8b0b83f4f1bc83396ed58f73b651feb6)] -> id: password]
+2025-03-14 11:48:32 INFO  LoggingManager:51 - TC04 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 11:48:32 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (8b0b83f4f1bc83396ed58f73b651feb6)] -> id: login-button]
+2025-03-14 11:48:32 INFO  LoggingManager:51 - TC04 (expected success) in CheckoutPageTests::testCheckoutFormSubmissions PASSED!
+2025-03-14 11:48:32 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (8b0b83f4f1bc83396ed58f73b651feb6)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 11:48:32 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:32 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:32 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:32 INFO  LoggingManager:51 - Successfully performed Select sort option on element: [[ChromeDriver: chrome on windows (8b0b83f4f1bc83396ed58f73b651feb6)] -> xpath: //select[@class='product_sort_container']]
+2025-03-14 11:48:32 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:32 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:32 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:33 INFO  LoggingManager:51 - CheckoutOverviewPage::testTotalCalculationMethod PASSED!
+2025-03-14 11:48:33 INFO  LoggingManager:51 - Z_TO_A sorting in LandingPageTests::testSortingFunctionality PASSED!
+2025-03-14 11:48:33 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (44c29112bc9e5fc614100a9837feb19e)] -> id: finish]
+2025-03-14 11:48:33 INFO  LoggingManager:51 - CheckoutCompletePageTest::testOrderSuccessStatus PASSED!
+2025-03-14 11:48:33 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:33 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:33 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:33 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:33 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:33 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:33 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:33 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:33 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:34 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:35 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:35 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:36 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:36 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:36 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (8b7c304a09f51bc8aee72e69ec91e970)] -> id: user-name]
+2025-03-14 11:48:36 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:36 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (685d73944f22fabe41b95f7ca328bb96)] -> id: user-name]
+2025-03-14 11:48:37 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (8b7c304a09f51bc8aee72e69ec91e970)] -> id: password]
+2025-03-14 11:48:37 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (685d73944f22fabe41b95f7ca328bb96)] -> id: password]
+2025-03-14 11:48:37 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:37 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (8b7c304a09f51bc8aee72e69ec91e970)] -> id: login-button]
+2025-03-14 11:48:37 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (685d73944f22fabe41b95f7ca328bb96)] -> id: login-button]
+2025-03-14 11:48:37 INFO  LoggingManager:51 - TC05 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 11:48:37 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:37 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:38 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (685d73944f22fabe41b95f7ca328bb96)] -> id: checkout]
+2025-03-14 11:48:38 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (01a610b87ce2096662cdd7930fcd9065)] -> id: user-name]
+2025-03-14 11:48:38 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (bf0e662074fbe30499a5e3ecbbd0cb6d)] -> id: user-name]
+2025-03-14 11:48:38 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:38 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:38 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:38 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:38 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (685d73944f22fabe41b95f7ca328bb96)] -> id: cancel]
+2025-03-14 11:48:38 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (bf0e662074fbe30499a5e3ecbbd0cb6d)] -> id: password]
+2025-03-14 11:48:38 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (fd543cfcaa4d7f6a6812170fb17931a0)] -> id: user-name]
+2025-03-14 11:48:38 INFO  LoggingManager:51 - CheckoutPageTests::testCancelCheckoutReturnsToCart PASSED!
+2025-03-14 11:48:38 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (01a610b87ce2096662cdd7930fcd9065)] -> id: password]
+2025-03-14 11:48:38 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (bf0e662074fbe30499a5e3ecbbd0cb6d)] -> id: login-button]
+2025-03-14 11:48:38 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (fd543cfcaa4d7f6a6812170fb17931a0)] -> id: password]
+2025-03-14 11:48:38 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (01a610b87ce2096662cdd7930fcd9065)] -> id: login-button]
+2025-03-14 11:48:39 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (fd543cfcaa4d7f6a6812170fb17931a0)] -> id: login-button]
+2025-03-14 11:48:39 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:39 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:39 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:39 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (01a610b87ce2096662cdd7930fcd9065)] -> id: checkout]
+2025-03-14 11:48:39 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (bf0e662074fbe30499a5e3ecbbd0cb6d)] -> id: checkout]
+2025-03-14 11:48:39 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (01a610b87ce2096662cdd7930fcd9065)] -> id: first-name]
+2025-03-14 11:48:39 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (bf0e662074fbe30499a5e3ecbbd0cb6d)] -> id: first-name]
+2025-03-14 11:48:40 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (01a610b87ce2096662cdd7930fcd9065)] -> id: last-name]
+2025-03-14 11:48:40 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (bf0e662074fbe30499a5e3ecbbd0cb6d)] -> id: last-name]
+2025-03-14 11:48:40 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:40 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (01a610b87ce2096662cdd7930fcd9065)] -> id: postal-code]
+2025-03-14 11:48:40 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (bf0e662074fbe30499a5e3ecbbd0cb6d)] -> id: postal-code]
+2025-03-14 11:48:40 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (01a610b87ce2096662cdd7930fcd9065)] -> id: continue]
+2025-03-14 11:48:40 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (bf0e662074fbe30499a5e3ecbbd0cb6d)] -> id: continue]
+2025-03-14 11:48:41 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:41 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:41 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (44badb39df4314f45ac15ec0ae4d3893)] -> id: user-name]
+2025-03-14 11:48:41 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (44badb39df4314f45ac15ec0ae4d3893)] -> id: password]
+2025-03-14 11:48:41 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (44badb39df4314f45ac15ec0ae4d3893)] -> id: login-button]
+2025-03-14 11:48:42 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:42 INFO  LoggingManager:51 - TC06 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 11:48:42 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (02ebf541168c5ae135f2ef96d9021995)] -> id: user-name]
+2025-03-14 11:48:42 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (02ebf541168c5ae135f2ef96d9021995)] -> id: password]
+2025-03-14 11:48:42 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (01a610b87ce2096662cdd7930fcd9065)] -> id: finish]
+2025-03-14 11:48:42 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (bf0e662074fbe30499a5e3ecbbd0cb6d)] -> id: cancel]
+2025-03-14 11:48:42 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:42 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:42 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:42 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (02ebf541168c5ae135f2ef96d9021995)] -> id: login-button]
+2025-03-14 11:48:42 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (01a610b87ce2096662cdd7930fcd9065)] -> id: back-to-products]
+2025-03-14 11:48:42 INFO  LoggingManager:51 - Successfully performed Navigate back to home on element: [[ChromeDriver: chrome on windows (01a610b87ce2096662cdd7930fcd9065)] -> id: back-to-products]
+2025-03-14 11:48:43 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (02ebf541168c5ae135f2ef96d9021995)] -> id: checkout]
+2025-03-14 11:48:43 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (02ebf541168c5ae135f2ef96d9021995)] -> id: first-name]
+2025-03-14 11:48:43 INFO  LoggingManager:51 - LandingPageTests::testAddAndRemoveItemFromCartUpdatesCartCount PASSED!
+2025-03-14 11:48:44 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (02ebf541168c5ae135f2ef96d9021995)] -> id: last-name]
+2025-03-14 11:48:44 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:44 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (02ebf541168c5ae135f2ef96d9021995)] -> id: postal-code]
+2025-03-14 11:48:44 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:44 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:44 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:44 INFO  LoggingManager:51 - CheckoutPageTests::testFormClearFunctionality PASSED!
+2025-03-14 11:48:44 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:44 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:44 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:45 INFO  LoggingManager:51 - CheckoutOverviewPage::testNavigationToCartPage PASSED!
+2025-03-14 11:48:45 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:45 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:45 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:45 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:45 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (f6801c462cb7f3b4e6d5719f99e7ee86)] -> id: user-name]
+2025-03-14 11:48:46 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:46 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (f6801c462cb7f3b4e6d5719f99e7ee86)] -> id: password]
+2025-03-14 11:48:46 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (f6801c462cb7f3b4e6d5719f99e7ee86)] -> id: login-button]
+2025-03-14 11:48:46 INFO  LoggingManager:51 - TC07 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 11:48:46 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:47 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:47 INFO  LoggingManager:51 - CheckoutCompletePageTest::testNavigationBackToProducts PASSED!
+2025-03-14 11:48:47 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:47 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (5536ccfa9bba7b17afff7a8bdb798947)] -> id: user-name]
+2025-03-14 11:48:47 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (5536ccfa9bba7b17afff7a8bdb798947)] -> id: password]
+2025-03-14 11:48:47 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:47 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:47 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:47 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:48 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:48 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:48 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:48 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (5536ccfa9bba7b17afff7a8bdb798947)] -> id: login-button]
+2025-03-14 11:48:48 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (e2701a151bdee998acc0e7325f1cdbce)] -> id: user-name]
+2025-03-14 11:48:48 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (5536ccfa9bba7b17afff7a8bdb798947)] -> xpath: //div[@class='inventory_item_name ']]
+2025-03-14 11:48:48 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:48 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (e2701a151bdee998acc0e7325f1cdbce)] -> id: password]
+2025-03-14 11:48:48 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (e2701a151bdee998acc0e7325f1cdbce)] -> id: login-button]
+2025-03-14 11:48:48 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b69e04aec24bad1e01719677a3efcc72)] -> id: user-name]
+2025-03-14 11:48:49 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b69e04aec24bad1e01719677a3efcc72)] -> id: password]
+2025-03-14 11:48:49 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b69e04aec24bad1e01719677a3efcc72)] -> id: login-button]
+2025-03-14 11:48:49 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (e2701a151bdee998acc0e7325f1cdbce)] -> id: checkout]
+2025-03-14 11:48:49 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:49 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (e2701a151bdee998acc0e7325f1cdbce)] -> id: first-name]
+2025-03-14 11:48:50 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:50 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:50 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:50 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:50 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (e2701a151bdee998acc0e7325f1cdbce)] -> id: last-name]
+2025-03-14 11:48:50 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (e2701a151bdee998acc0e7325f1cdbce)] -> id: postal-code]
+2025-03-14 11:48:50 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b69e04aec24bad1e01719677a3efcc72)] -> id: checkout]
+2025-03-14 11:48:50 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (e2701a151bdee998acc0e7325f1cdbce)] -> id: continue]
+2025-03-14 11:48:50 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:50 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b69e04aec24bad1e01719677a3efcc72)] -> id: first-name]
+2025-03-14 11:48:50 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:51 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (14fa39eff73a76dc776c8b93f1d34043)] -> id: user-name]
+2025-03-14 11:48:51 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b69e04aec24bad1e01719677a3efcc72)] -> id: last-name]
+2025-03-14 11:48:51 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (09408743040e386fef4d2a44b93d6c2a)] -> id: user-name]
+2025-03-14 11:48:51 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b69e04aec24bad1e01719677a3efcc72)] -> id: postal-code]
+2025-03-14 11:48:51 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (14fa39eff73a76dc776c8b93f1d34043)] -> id: password]
+2025-03-14 11:48:51 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (09408743040e386fef4d2a44b93d6c2a)] -> id: password]
+2025-03-14 11:48:51 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (14fa39eff73a76dc776c8b93f1d34043)] -> id: login-button]
+2025-03-14 11:48:51 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b69e04aec24bad1e01719677a3efcc72)] -> id: continue]
+2025-03-14 11:48:51 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (09408743040e386fef4d2a44b93d6c2a)] -> id: login-button]
+2025-03-14 11:48:51 INFO  LoggingManager:51 - TC08 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 11:48:52 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:52 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:52 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:52 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:52 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (09408743040e386fef4d2a44b93d6c2a)] -> id: checkout]
+2025-03-14 11:48:52 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (09408743040e386fef4d2a44b93d6c2a)] -> id: first-name]
+2025-03-14 11:48:52 INFO  LoggingManager:51 - CheckoutPageTests::testSpecialCharactersInPostalCode PASSED!
+2025-03-14 11:48:52 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (09408743040e386fef4d2a44b93d6c2a)] -> id: last-name]
+2025-03-14 11:48:53 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:53 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:53 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (09408743040e386fef4d2a44b93d6c2a)] -> id: postal-code]
+2025-03-14 11:48:53 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:53 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:53 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b212013e2196b87ce1be9f8a18a818c5)] -> id: user-name]
+2025-03-14 11:48:53 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (09408743040e386fef4d2a44b93d6c2a)] -> id: continue]
+2025-03-14 11:48:53 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b212013e2196b87ce1be9f8a18a818c5)] -> id: password]
+2025-03-14 11:48:53 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b69e04aec24bad1e01719677a3efcc72)] -> id: finish]
+2025-03-14 11:48:53 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b212013e2196b87ce1be9f8a18a818c5)] -> id: login-button]
+2025-03-14 11:48:54 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:54 INFO  LoggingManager:51 - CheckoutOverviewPage::testNavigationToCompletePage PASSED!
+2025-03-14 11:48:54 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b212013e2196b87ce1be9f8a18a818c5)] -> xpath: //div[@class='inventory_item_name ']]
+2025-03-14 11:48:54 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:54 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:54 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:54 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:54 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:54 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:54 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:55 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:55 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (fc79e2c83f84621f96d29430b494a754)] -> id: user-name]
+2025-03-14 11:48:55 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (fc79e2c83f84621f96d29430b494a754)] -> id: password]
+2025-03-14 11:48:55 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (09408743040e386fef4d2a44b93d6c2a)] -> id: finish]
+2025-03-14 11:48:55 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (fc79e2c83f84621f96d29430b494a754)] -> id: login-button]
+2025-03-14 11:48:56 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:56 INFO  LoggingManager:51 - CheckoutCompletePageTest::testPageRefreshPersistsState PASSED!
+2025-03-14 11:48:56 INFO  LoggingManager:51 - TC09 in LoginPageTest::testLoginFunctionality PASSED!
+2025-03-14 11:48:56 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (a3cd7018fd4b37b06ad3bc2395bb3221)] -> id: user-name]
+2025-03-14 11:48:56 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:56 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:48:57 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (a3cd7018fd4b37b06ad3bc2395bb3221)] -> id: password]
+2025-03-14 11:48:57 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (a3cd7018fd4b37b06ad3bc2395bb3221)] -> id: login-button]
+2025-03-14 11:48:57 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:57 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:57 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (a3cd7018fd4b37b06ad3bc2395bb3221)] -> xpath: //div[@class='inventory_item_name ']]
+2025-03-14 11:48:57 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:57 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:48:57 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (da41d541f7110be354f3da70f2897d3d)] -> id: user-name]
+2025-03-14 11:48:58 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (a80d71fea561eec0b43ba0da84c9699a)] -> id: user-name]
+2025-03-14 11:48:58 INFO  LoggingManager:51 - ProductPageTests::testProductDetailsDisplayed PASSED!
+2025-03-14 11:48:58 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (da41d541f7110be354f3da70f2897d3d)] -> id: password]
+2025-03-14 11:48:58 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (a80d71fea561eec0b43ba0da84c9699a)] -> id: password]
+2025-03-14 11:48:58 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:58 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:58 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:58 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (da41d541f7110be354f3da70f2897d3d)] -> id: login-button]
+2025-03-14 11:48:58 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (a80d71fea561eec0b43ba0da84c9699a)] -> id: login-button]
+2025-03-14 11:48:58 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (a80d71fea561eec0b43ba0da84c9699a)] -> xpath: //div[@class='inventory_item_name ']]
+2025-03-14 11:48:59 INFO  LoggingManager:51 - CartPageTest::testRemoveProductFromCart PASSED!
+2025-03-14 11:48:59 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:59 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:59 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:48:59 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:48:59 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:48:59 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:00 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:01 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:01 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:01 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:01 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:01 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (2b812805270511432b8337debccf11e6)] -> id: user-name]
+2025-03-14 11:49:01 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (2b812805270511432b8337debccf11e6)] -> id: password]
+2025-03-14 11:49:01 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (2b812805270511432b8337debccf11e6)] -> id: login-button]
+2025-03-14 11:49:02 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (2b812805270511432b8337debccf11e6)] -> xpath: //div[@class='inventory_item_name ']]
+2025-03-14 11:49:02 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:02 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (2b812805270511432b8337debccf11e6)] -> xpath: //button[contains(@id, 'add-to-cart')]]
+2025-03-14 11:49:02 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4135dd69d71eb8107366fef8b3383b49)] -> id: user-name]
+2025-03-14 11:49:02 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (935e0f44ed45806f0accfa30d4187132)] -> id: user-name]
+2025-03-14 11:49:02 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4135dd69d71eb8107366fef8b3383b49)] -> id: password]
+2025-03-14 11:49:02 INFO  LoggingManager:51 - ProductPageTests::testAddRemoveItemFromCart PASSED!
+2025-03-14 11:49:02 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (935e0f44ed45806f0accfa30d4187132)] -> id: password]
+2025-03-14 11:49:02 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (4135dd69d71eb8107366fef8b3383b49)] -> id: login-button]
+2025-03-14 11:49:03 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:03 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:49:03 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:03 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (935e0f44ed45806f0accfa30d4187132)] -> id: login-button]
+2025-03-14 11:49:03 INFO  LoggingManager:51 - CartPageTest::testRemoveNonExistentProductThrowsException PASSED!
+2025-03-14 11:49:03 INFO  LoggingManager:51 - TC01 in LandingPageTests::testMenuNavigation PASSED!
+2025-03-14 11:49:03 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:03 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:49:03 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:03 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:03 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:49:03 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:04 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:05 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:05 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:05 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:05 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (7bddee4751b2aa286b20683894cedda3)] -> id: user-name]
+2025-03-14 11:49:06 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (7bddee4751b2aa286b20683894cedda3)] -> id: password]
+2025-03-14 11:49:06 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (7bddee4751b2aa286b20683894cedda3)] -> id: login-button]
+2025-03-14 11:49:06 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:06 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:06 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (7bddee4751b2aa286b20683894cedda3)] -> xpath: //div[@class='inventory_item_name ']]
+2025-03-14 11:49:06 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (d431da110d8687e2be85024d85fd5cbc)] -> id: user-name]
+2025-03-14 11:49:06 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (7bddee4751b2aa286b20683894cedda3)] -> xpath: //button[@id='back-to-products']]
+2025-03-14 11:49:06 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (969bc88181af57a37f0e1bc09a767209)] -> id: user-name]
+2025-03-14 11:49:06 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (d431da110d8687e2be85024d85fd5cbc)] -> id: password]
+2025-03-14 11:49:06 INFO  LoggingManager:51 - ProductPageTests::testNavigateBackToProducts PASSED!
+2025-03-14 11:49:07 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (969bc88181af57a37f0e1bc09a767209)] -> id: password]
+2025-03-14 11:49:07 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (d431da110d8687e2be85024d85fd5cbc)] -> id: login-button]
+2025-03-14 11:49:07 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:07 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (969bc88181af57a37f0e1bc09a767209)] -> id: login-button]
+2025-03-14 11:49:07 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (d431da110d8687e2be85024d85fd5cbc)] -> id: checkout]
+2025-03-14 11:49:07 INFO  LoggingManager:51 - CartPageTest::testProceedToCheckoutNavigatesToCheckoutPage PASSED!
+2025-03-14 11:49:07 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:07 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:49:07 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:09 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:09 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:10 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (1352c489a2fa42bdeafa238e940cf749)] -> id: user-name]
+2025-03-14 11:49:10 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (1352c489a2fa42bdeafa238e940cf749)] -> id: password]
+2025-03-14 11:49:10 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (1352c489a2fa42bdeafa238e940cf749)] -> id: login-button]
+2025-03-14 11:49:10 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (1352c489a2fa42bdeafa238e940cf749)] -> id: continue-shopping]
+2025-03-14 11:49:11 INFO  LoggingManager:51 - CartPageTest::testContinueShoppingReturnsToLandingPage PASSED!
+2025-03-14 11:49:11 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:11 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:49:11 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:12 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:13 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:13 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (98c1abefa88a9f6ea0f62e2b0778eaf9)] -> id: user-name]
+2025-03-14 11:49:14 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (98c1abefa88a9f6ea0f62e2b0778eaf9)] -> id: password]
+2025-03-14 11:49:14 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (98c1abefa88a9f6ea0f62e2b0778eaf9)] -> id: login-button]
+2025-03-14 11:49:15 INFO  LoggingManager:51 - TC02 in LandingPageTests::testMenuNavigation PASSED!
+2025-03-14 11:49:15 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:15 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:49:15 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:17 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:17 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:18 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4e2de063d9998e75d69bc6434b60cdff)] -> id: user-name]
+2025-03-14 11:49:18 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4e2de063d9998e75d69bc6434b60cdff)] -> id: password]
+2025-03-14 11:49:18 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (4e2de063d9998e75d69bc6434b60cdff)] -> id: login-button]
+2025-03-14 11:49:19 INFO  LoggingManager:51 - TC03 in LandingPageTests::testMenuNavigation PASSED!
+2025-03-14 11:49:19 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:19 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:49:19 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:21 INFO  LoggingManager:51 - CartPageTest::testCartEmptyStateAfterRemovingAllItems PASSED!
+2025-03-14 11:49:21 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:21 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:49:21 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:21 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:22 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:22 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4514e71abefab56d179732497e169ddb)] -> id: user-name]
+2025-03-14 11:49:22 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (4514e71abefab56d179732497e169ddb)] -> id: password]
+2025-03-14 11:49:22 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:22 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (4514e71abefab56d179732497e169ddb)] -> id: login-button]
+2025-03-14 11:49:23 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:23 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (12e047e6da220cb57860e8b336a9c20b)] -> id: user-name]
+2025-03-14 11:49:23 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (12e047e6da220cb57860e8b336a9c20b)] -> id: password]
+2025-03-14 11:49:23 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (12e047e6da220cb57860e8b336a9c20b)] -> id: login-button]
+2025-03-14 11:49:24 INFO  LoggingManager:51 - TC04 in LandingPageTests::testMenuNavigation PASSED!
+2025-03-14 11:49:24 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:24 INFO  LoggingManager:51 - CartPageTest::testCartItemCountMatchesAddedItems PASSED!
+2025-03-14 11:49:24 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:49:24 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:24 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:24 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:49:24 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:25 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:25 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:26 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:26 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:26 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (228c7582f91f460e7bab0d3f38a0d04a)] -> id: user-name]
+2025-03-14 11:49:26 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (6c5f0b20d387bc577fc374a3c684031f)] -> id: user-name]
+2025-03-14 11:49:27 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (228c7582f91f460e7bab0d3f38a0d04a)] -> id: password]
+2025-03-14 11:49:27 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (6c5f0b20d387bc577fc374a3c684031f)] -> id: password]
+2025-03-14 11:49:27 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (228c7582f91f460e7bab0d3f38a0d04a)] -> id: login-button]
+2025-03-14 11:49:27 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (6c5f0b20d387bc577fc374a3c684031f)] -> id: login-button]
+2025-03-14 11:49:27 INFO  LoggingManager:51 - CartPageTest::testCartContainsCorrectProducts PASSED!
+2025-03-14 11:49:27 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:27 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:49:27 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:29 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:30 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:30 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (8503d030ab3d3f118fed8b444dd3f286)] -> id: user-name]
+2025-03-14 11:49:30 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (8503d030ab3d3f118fed8b444dd3f286)] -> id: password]
+2025-03-14 11:49:30 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (8503d030ab3d3f118fed8b444dd3f286)] -> id: login-button]
+2025-03-14 11:49:31 INFO  LoggingManager:51 - CartPageTest::testProductDetailsMatchAddedItems PASSED!
+2025-03-14 11:49:31 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:34 INFO  LoggingManager:51 - TC01 in LandingPageTests::testSocialMediaLinks PASSED!
+2025-03-14 11:49:34 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:34 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:49:34 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:36 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:36 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:36 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (41034626dc9cc47556685cbbcd25e83e)] -> id: user-name]
+2025-03-14 11:49:37 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (41034626dc9cc47556685cbbcd25e83e)] -> id: password]
+2025-03-14 11:49:37 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (41034626dc9cc47556685cbbcd25e83e)] -> id: login-button]
+2025-03-14 11:49:38 INFO  LoggingManager:51 - TC02 in LandingPageTests::testSocialMediaLinks PASSED!
+2025-03-14 11:49:38 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:38 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:49:38 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:39 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:40 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:40 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (7b2a4170f601a03d2543798ddfb7531b)] -> id: user-name]
+2025-03-14 11:49:41 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (7b2a4170f601a03d2543798ddfb7531b)] -> id: password]
+2025-03-14 11:49:41 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (7b2a4170f601a03d2543798ddfb7531b)] -> id: login-button]
+2025-03-14 11:49:42 INFO  LoggingManager:51 - TC03 in LandingPageTests::testSocialMediaLinks PASSED!
+2025-03-14 11:49:44 INFO  LoggingManager:51 - WebDriver quit successfully
+2025-03-14 11:49:44 INFO  LoggingManager:51 - Running tests on browser: chrome
+2025-03-14 11:49:44 INFO  LoggingManager:51 - Initializing chrome browser in normal mode
+2025-03-14 11:49:46 INFO  LoggingManager:51 - WebDriver configured successfully
+2025-03-14 11:49:46 INFO  LoggingManager:51 - Navigated to URL:https://www.saucedemo.com
+2025-03-14 11:49:46 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b296716555b17cab091eed6b972199e9)] -> id: user-name]
+2025-03-14 11:49:47 INFO  LoggingManager:51 - Successfully performed send keys to on element: [[ChromeDriver: chrome on windows (b296716555b17cab091eed6b972199e9)] -> id: password]
+2025-03-14 11:49:47 INFO  LoggingManager:51 - Successfully performed click on element: [[ChromeDriver: chrome on windows (b296716555b17cab091eed6b972199e9)] -> id: login-button]
+2025-03-14 11:49:50 INFO  LoggingManager:51 - LandingPageTests::testCartPersistsAfterRefresh PASSED!
+2025-03-14 11:49:50 INFO  LoggingManager:51 - WebDriver quit successfully

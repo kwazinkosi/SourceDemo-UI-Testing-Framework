@@ -17,12 +17,15 @@ public class LoggingManager {
     /**
      * Configures the logging system using the specified Log4j2 configuration file.
      * Sets the path for the log file and initializes the logger configuration.
+     * @param suiteName 
      */
-    public static void configureLogging() {
+    public static void configureLogging(String suiteName) {
         
     	String fileSeparator = File.separator;
-        String logFilePath = System.getProperty("user.dir") + fileSeparator + "logs" + fileSeparator + "source_demo_logs.log";
+        String logDirPath = System.getProperty("user.dir") + fileSeparator + "logs";
+        String logFilePath = logDirPath + fileSeparator + suiteName + "_logs.log"; // Dynamic log file name
         String pathToXml = System.getProperty("user.dir") + fileSeparator + "log4j2.xml";
+
         // Set system property for log file path
         System.setProperty("logFilePath", logFilePath);
 

@@ -1,9 +1,11 @@
 package tests.base;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -31,10 +33,11 @@ public class BaseTest {
 	protected LandingPage landingPage;
 	protected WebDriver driver;
 
-	@BeforeSuite
-	public void suiteSetup() {
+	@BeforeTest
+	public void suiteSetup(ITestContext context) {
 
-		LoggingManager.configureLogging();
+		String suiteName = context.getSuite().getName(); // Get suite name
+        LoggingManager.configureLogging(suiteName);
 		driverFactory = new DriverFactory();
 		browserName = ConfigReader.getProperty("browser_name");
 		browserMode = ConfigReader.getProperty("browser_mode");
