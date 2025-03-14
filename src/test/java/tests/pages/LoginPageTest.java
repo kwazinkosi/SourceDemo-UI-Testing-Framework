@@ -67,14 +67,14 @@ public class LoginPageTest extends BaseTest {
 	    ExtentTest verification = createNestedStep("Result Verification");
 	    if ("success".equals(expectedResult)) {
 	        // Step 5a: Verify successful login
-	    	verification.pass("Verifying successful login");
+	    	verification.info("Verifying successful login");
 	        Assert.assertTrue(resultPage instanceof LandingPage, "Not redirected to landing page");
 	        LandingPage landingPage = (LandingPage) resultPage;
 	        Assert.assertTrue(landingPage.isPageDisplayed(), "Landing page not displayed after login");
 	        logStepWithScreenshot("Login successful. Redirected to landing page.");
 	    } else {
 	        // Step 5b: Verify failed login
-	    	verification.fail("Verifying failed login");
+	    	verification.info("Verifying failed login");
 	        Assert.assertTrue(resultPage instanceof LoginPage, "Unexpected page after failed login");
 	        Assert.assertEquals(loginPage.getErrorMessage(), message, "Error message mismatch");
 	        logStepWithScreenshot("Login failed. Error message: " + loginPage.getErrorMessage());

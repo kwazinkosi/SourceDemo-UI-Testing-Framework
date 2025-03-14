@@ -7,6 +7,7 @@ This is a Selenium-based Page Object Model (POM) framework designed for automate
 Before you begin, ensure you have the following installed on your system:
 
 - **Java Development Kit (JDK) 11 or above**
+- **Selenium 4 or above**
 - **Apache Maven 3.6.0 or above**
 - **Git**
 
@@ -39,8 +40,7 @@ mvn test -Psmoke       # Run smoke tests
 mvn test -Pcheckout    # Run checkout tests
 mvn test -Pproduct     # Run product tests
 mvn test -Pcart        # Run cart tests
-mvn test -Pregression  # Run full regression
-mvn test -Pcross			# Run cross browser tests
+mvn test -Pcross			# Run cross browser tests (Chrome + Firefox + Edge)
 ```
 ### Running in eclipse
 

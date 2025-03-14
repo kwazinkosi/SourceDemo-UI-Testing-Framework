@@ -7,7 +7,7 @@
     </listeners>
     
     <!-- Chrome Tests -->
-    <test name="Chrome Tests">
+    <test name="Chrome Tests" parallel="classes" thread-count="2">
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="tests.pages.LoginPageTest"/>

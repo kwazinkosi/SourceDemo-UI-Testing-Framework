@@ -58,17 +58,6 @@ public class ReportListener implements ITestListener {
 		ExtentTest extentTest = test.get();
 		if (extentTest == null) return;
 		
-//		WebDriver driver = DriverFactory.getDriver();
-//		if (driver != null) {
-//			String screenshotPath = ScreenshotUtil.captureScreenshot(driver, result.getName());
-//			if (screenshotPath != null) {
-//				try {
-//					test.get().pass("Screenshot: " + test.get().addScreenCaptureFromPath(screenshotPath));
-//				} catch (Exception e) {
-//					test.get().pass("Failed to attach screenshot: " + e.getMessage());
-//				}
-//			}
-//		}
 		test.get().log(Status.PASS, "Test passed");
 	}
 
@@ -134,7 +123,8 @@ public class ReportListener implements ITestListener {
 	}
 
 	public static ExtentTest createStep(String stepName) {
-	    ExtentTest parentTest = getTest();
+	   
+		ExtentTest parentTest = getTest();
 	    if (parentTest == null) {
 	        System.out.println("Parent test is null. Cannot create step: " + stepName);
 	        
@@ -143,6 +133,7 @@ public class ReportListener implements ITestListener {
 	}
 
 	private String formatDuration(long millis) {
+		
 		long hours = TimeUnit.MILLISECONDS.toHours(millis);
 		long minutes = TimeUnit.MILLISECONDS.toMinutes(millis) % 60;
 		long seconds = TimeUnit.MILLISECONDS.toSeconds(millis) % 60;
